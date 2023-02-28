@@ -5,7 +5,7 @@ const trad = require('cnchar-trad')
 cnchar.use(trad)
 
 const [
-    zhFileName = 'zh.json', // 简体文件名
+    zhFileName = 'cn.json', // 简体文件名
     twFileName = 'tw.json', // 繁体文件名
     filePath = process.env.INIT_CWD, // 文件所在目录路径
 ] = process.argv.slice(2)
