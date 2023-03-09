@@ -92,7 +92,7 @@ class BaseRequest {
   }
 
   clear() {
-    // 清空拦截器列表, 重新发起请求
+    // 执行列表中的方法拦截器，执行完后，清空列表
     this.interceList.forEach((item) => item());
     this.interceList = [];
   }

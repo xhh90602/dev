@@ -1,0 +1,12 @@
+.index {
+  width: 200px;
+  height: 100px;
+  background: red;
+  color: #fff;
+}
+
+.main {
+  width: 100px;
+  height: 100px;
+  background: blue;
+}
