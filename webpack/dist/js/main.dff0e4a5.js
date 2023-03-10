@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkdev=self.webpackChunkdev||[]).push([[179],{33:(e,a,d)=>{var n=d(486),c=document.createElement("div");c.innerHTML="Hello World".concat((0,n.add)(1,2)),c.className="main",document.body.appendChild(c)}},e=>{e.O(0,[216],(()=>{return a=33,e(e.s=a);var a}));e.O()}]);

@@ -1,13 +1,21 @@
-/* eslint-disable max-len */
 /* eslint-disable import/no-extraneous-dependencies */
+/* eslint-disable import/no-unresolved */
+/* eslint-disable max-len */
 const path = require('path');
 const glob = require('glob');
 const yaml = require('yaml');
+// 用于生成html文件
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+// 用于提取css文件
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+// 用于压缩css文件
 const CssMinimizerPlugin = require('css-minimizer-webpack-plugin');
+// 用于压缩js文件
 const TerserPlugin = require('terser-webpack-plugin');
+// 用于ESLint检查
 const ESLintPlugin = require('eslint-webpack-plugin');
+// 用于gzip压缩
+const CompressionPlugin = require('compression-webpack-plugin');
 
 /**
  * 获取当前目录下所有的entry.js文件
@@ -19,7 +27,7 @@ const ESLintPlugin = require('eslint-webpack-plugin');
 */
 const getEntryList = () => {
   const entryList = {};
-  glob.sync(path.resolve(__dirname, './**/**.entry.js')).forEach((entry) => {
+  glob.sync(path.join(__dirname, './**/**.entry.js')).forEach((entry) => {
     console.log('🚀 ~ file: webpack.config.js:11 ~ glob.sync ~ entry:', entry);
     const entryName = entry.split('/')[entry.split('/').length - 1].split('.')[0];
     entryList[entryName] = entry;
@@ -35,18 +43,18 @@ module.exports = {
     ...Object.keys(entryList).reduce((acc, cur) => {
       const obj = {
         import: entryList[cur], // 入口文件
-        // dependOn: 'shared', // 依赖shared模块
+        // dependOn: 'shared', // 依赖shared模块, 将公共代码提取到shared模块中
       };
       acc[cur] = obj;
       return acc;
     }, {}),
-    // shared: ['lodash-es'], // 公共模块, 用于提取公共代码
+    // shared: ['lodash-es'], // 公共模块, 包含的模块会被提取到shared模块中
   }, // 入口文件
   output: {
-    clean: true, // 删除上一次打包的文件
+    clean: true, // 删除上一次打包的文件，webpack5新增的配置，替代了clean-webpack-plugin
     path: path.join(__dirname, 'dist'), // 输出路径, 必须是绝对路径
-    filename: 'js/[name].[contenthash:8].js', // 输出文件名, name为entry的key值, contenthash:8为文件内容的hash值, 8位
-    assetModuleFilename: 'images/[name].[contenthash:8][ext]', // 用于打包图片文件, [ext]为文件后缀名
+    filename: 'js/[name]_[contenthash:8].js', // 输出文件名, name为entry的key值, contenthash:8为文件内容的hash值, 8位
+    assetModuleFilename: 'images/[name]_[contenthash:8][ext]', // 用于打包图片文件, [ext]为文件后缀名
   },
   // 设置环境变量, 用于区分生产环境和开发环境, 默认为production, 可以通过cross-env设置环境变量, 也可以通过webpack的--mode参数设置环境变量
   mode: process.env.production ? 'production' : 'development',
@@ -95,7 +103,7 @@ module.exports = {
         ],
       },
       {
-        test: /\.css$/i, // 匹配css文件
+        test: /\.css$/, // 匹配css文件
         use: [MiniCssExtractPlugin.loader, 'css-loader'], // 使用MiniCssExtractPlugin.loader, 用于将css文件单独打包, 使用css-loader, 用于解析css文件
       },
       // {
@@ -154,10 +162,15 @@ module.exports = {
     ],
   },
   plugins: [
+    new ESLintPlugin({
+      extensions: ['js'], // 指定需要检查的文件后缀名
+      exclude: 'node_modules', // 指定不需要检查的文件夹
+      // fix: true, // 自动修复
+    }),
     // 将css文件单独打包, 配合MiniCssExtractPlugin.loader使用
     new MiniCssExtractPlugin({
-      filename: 'css/[name].[contenthash:8].css', // 输出文件名, name为entry的key值, contenthash:8为文件内容的hash值, 8位
-      chunkFilename: 'css/[id].[contenthash:8].css', // 用于按需加载的css文件名
+      filename: 'css/[name]_[contenthash:8].css', // 输出文件名, name为entry的key值, contenthash:8为文件内容的hash值, 8位
+      chunkFilename: 'css/[id]_[contenthash:8].css', // 用于按需加载的css文件名
     }),
     ...Object.keys(entryList).map((name) => new HtmlWebpackPlugin({
       inject: 'body', // 将js文件插入到body底部
@@ -182,22 +195,18 @@ module.exports = {
     runtimeChunk: 'single', // 将runtime代码单独打包, 用于加快打包速度, 例如: runtime~main_1b2c3d4e.js
     // 将node_modules中的代码单独打包, 用于加快打包速度
     splitChunks: {
-      // chunks: 'all', // 将所有的chunks代码单独打包
+      // chunks: 'all', // 将所有的chunks代码单独打包, es6按需加载的代码不会被打包
       cacheGroups: { // 缓存组, 用于将多个chunks中的公共代码单独打包，并缓存起来供后面使用
         // 将node_modules中的代码单独打包
         vendor: {
           test: /[\\/]node_modules[\\/]/,
-          name: 'vendors',
+          name: 'vendors', // 打包后的文件名, 例如: vendors_1b2c3d4e.js
           chunks: 'all', // 将所有的chunks代码单独打包
+          // minSize: 0, // 用于控制代码块的最小大小, 0表示无限制, 默认值是30kb
         },
       },
     },
     minimizer: [
-      new ESLintPlugin({
-        extensions: ['js'], // 指定需要检查的文件后缀名
-        exclude: 'node_modules', // 指定不需要检查的文件夹
-        // fix: true, // 自动修复
-      }),
       // 压缩css文件
       new CssMinimizerPlugin({
         // parallel: true, // 使用多进程并行运行来提高构建速度, 默认是os.cpus().length - 1, 也可以设置为数字
@@ -218,6 +227,15 @@ module.exports = {
             drop_console: true, // 删除所有的console语句
           },
         },
+      }),
+      // 开启gzip压缩
+      new CompressionPlugin({
+        test: /\.(js|css|html|svg)$/, // 匹配文件名
+        filename: '[path][base].gz', // 输出文件名
+        // exclude: /\.(png|jpe?g|gif|webp|woff2?|eot|ttf|otf)$/i, // 排除文件名
+        algorithm: 'gzip', // 使用gzip压缩
+        threshold: 10240, // 只处理比这个值大的资源。按字节计算
+        minRatio: 0.8, // 只有压缩率比这个值小的资源才会被处理
       }),
     ],
   },

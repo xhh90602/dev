@@ -1,5 +1,5 @@
 import './index.css';
-import { add } from 'lodash';
+import { add } from 'lodash-es';
 
 const box = document.createElement('div');
 

@@ -1,5 +1,5 @@
 /* eslint-disable no-param-reassign */
-import { add } from 'lodash';
+import { add } from 'lodash-es';
 import './index.css';
 
 const box = document.createElement('div');
