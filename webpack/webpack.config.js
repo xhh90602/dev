@@ -1,6 +1,7 @@
 /* eslint-disable import/no-extraneous-dependencies */
 /* eslint-disable import/no-unresolved */
 /* eslint-disable max-len */
+const webpack = require('webpack');
 const path = require('path');
 const glob = require('glob');
 const yaml = require('yaml');
@@ -62,8 +63,8 @@ module.exports = {
   devServer: {
     compress: true, // 开启gzip压缩
     port: 8080, // 设置端口号为8080
-    hot: true, // 热加载
-    host: '127.0.0.1', // 设置域名
+    hot: true, // 热替换
+    host: '0.0.0.0', // 设置域名
     historyApiFallback: {
       disableDotRule: true, // 用于解决单页面应用路由刷新404的问题
     },
@@ -71,9 +72,17 @@ module.exports = {
   module: {
     rules: [
       {
+        test: /\.ts$/, // 匹配ts文件
+        exclude: /node_modules/, // 排除node_modules文件夹
+        include: path.join(__dirname, 'src'), // 只匹配src文件夹, 可以提高打包速度
+        use: [
+          'ts-loader', // 使用ts-loader, 用于将ts转换为js
+        ],
+      },
+      {
         test: /\.js$/, // 匹配js文件
         exclude: /node_modules/, // 排除node_modules文件夹
-        include: path.join(__dirname, 'src'), // 只匹配src文件夹
+        // include: path.join(__dirname, 'src'), // 只匹配src文件夹
         use: [
           // 缓存打包结果, 用于加快打包速度, 不兼容webpack5, 需要安装@2版本, 或者使用webpack5的cache: { type: 'filesystem' }
           // 'cache-loader',
@@ -81,10 +90,21 @@ module.exports = {
             loader: 'babel-loader', // 使用babel-loader, 用于将es6转换为es5
             options: {
               // 使用@babel/preset-env, 这是babel7的默认预设, 用于将es6转换为es5, 需要安装@babel/core和@babel/preset-env，配合@babel/plugin-transform-runtime使用
-              presets: ['@babel/preset-env'],
+              presets: [
+                [
+                  '@babel/preset-env',
+                  {
+                    corejs: 3, // 指定core-js版本，需要安装core-js@3
+                    useBuiltIns: 'usage', // 按需引入polyfill
+                    targets: [
+                      'last 1 versions', // 兼容最近的1个版本
+                      '> 1%', // 兼容市场份额大于1%的浏览器
+                    ],
+                  },
+                ],
+              ],
               plugins: [
                 ['@babel/plugin-transform-runtime', { // 使用@babel/plugin-transform-runtime, 用于减少打包后的文件体积
-                  corejs: 3, // 使用corejs3
                 }],
               ],
             },
@@ -104,7 +124,29 @@ module.exports = {
       },
       {
         test: /\.css$/, // 匹配css文件
-        use: [MiniCssExtractPlugin.loader, 'css-loader'], // 使用MiniCssExtractPlugin.loader, 用于将css文件单独打包, 使用css-loader, 用于解析css文件
+        use: [
+          MiniCssExtractPlugin.loader, // // 使用MiniCssExtractPlugin.loader, 用于将css文件单独打包
+          // 'style-loader', // 使用style-loader, 用于将css文件插入到html中
+          {
+            loader: 'css-loader', // 使用css-loader, 用于解析css文件
+            options: {
+              modules: {
+                // 开启css模块化, 用于解决css样式冲突的问题
+                localIdentName: '[name]_[local]_[hash:base64:5]', // 指定css模块化的类名格式, [name]为文件名, [local]为类名, [hash:base64:5]为文件内容的hash值, 5位
+              },
+            },
+          },
+          {
+            loader: 'postcss-loader', // 使用postcss-loader, 兼容浏览器，自动添加前缀
+            options: {
+              postcssOptions: {
+                plugins: [
+                  'autoprefixer', // 使用autoprefixer, 用于自动添加浏览器前缀
+                ],
+              },
+            },
+          },
+        ],
       },
       // {
       //   test: /\.vue$/i, // 匹配vue文件
@@ -162,6 +204,14 @@ module.exports = {
     ],
   },
   plugins: [
+    new webpack.DefinePlugin({
+      // 使用DefinePlugin, 用于定义全局变量
+      BASE_URL: JSON.stringify('http://localhost:8080'),
+    }),
+    new webpack.ProvidePlugin({
+      // 使用ProvidePlugin, 用于在每个模块中注入变量
+      $: 'jquery', // $为变量名, jquery为模块名, 用于在每个模块中注入jquery模块, 无需在每个模块中import jquery模块
+    }),
     new ESLintPlugin({
       extensions: ['js'], // 指定需要检查的文件后缀名
       exclude: 'node_modules', // 指定不需要检查的文件夹
@@ -169,8 +219,8 @@ module.exports = {
     }),
     // 将css文件单独打包, 配合MiniCssExtractPlugin.loader使用
     new MiniCssExtractPlugin({
-      filename: 'css/[name]_[contenthash:8].css', // 输出文件名, name为entry的key值, contenthash:8为文件内容的hash值, 8位
-      chunkFilename: 'css/[id]_[contenthash:8].css', // 用于按需加载的css文件名
+      filename: 'css/[name].css', // 输出文件名, name为entry的key值, contenthash:8为文件内容的hash值, 8位
+      chunkFilename: 'css/[id].css', // 用于按需加载的css文件名
     }),
     ...Object.keys(entryList).map((name) => new HtmlWebpackPlugin({
       inject: 'body', // 将js文件插入到body底部
@@ -178,7 +228,7 @@ module.exports = {
       template: path.join(__dirname, 'src/template.html'), // 模板文件
       filename: `${name}.html`, // 输出文件名
       title: `这是${name}页面`, // 传递给模板文件的参数, 通过htmlWebpackPlugin.options.title获取, 例如: <%= htmlWebpackPlugin.options.title %>
-      hash: true, // 为静态资源生成hash值, 例如: <script src="main_1b2c3d4e.js"></script>
+      hash: true, // 为静态资源url后面添加hash值, 例如: main_1b2c3d4e.js?123123123123
       // minify: {
       //   removeComments: true, // 删除注释
       //   collapseWhitespace: true, // 删除空格
@@ -192,6 +242,8 @@ module.exports = {
     type: 'filesystem', // 使用文件系统缓存, 用于加快打包速度
   },
   optimization: {
+    usedExports: true, // 用于标记未使用的导出, 用于tree shaking, 例如: import { a } from './a.js', 如果a.js中没有导出a, 则会被标记为未使用, 但是a.js中可能有副作用, 所以需要将a.js加入到sideEffects中, production模式下默认为true
+    sideEffects: true, // 用于标记副作用, 用于tree shaking, 例如: import './a.js', 如果a.js中有副作用, 则会被标记为有副作用, 例如: import './a.js', 如果a.js中没有副作用, 则会被标记为没有副作用, 例如: import { a } from './a.js', 如果a.js中没有导出a, 则会被标记为未使用, 但是a.js中可能有副作用, 所以需要将a.js加入到sideEffects中, production模式下默认为true
     runtimeChunk: 'single', // 将runtime代码单独打包, 用于加快打包速度, 例如: runtime~main_1b2c3d4e.js
     // 将node_modules中的代码单独打包, 用于加快打包速度
     splitChunks: {
@@ -238,5 +290,14 @@ module.exports = {
         minRatio: 0.8, // 只有压缩率比这个值小的资源才会被处理
       }),
     ],
+  },
+  resolve: {
+    extensions: ['.ts', '.js', '.json'], // 自动解析确定的扩展, 例如: import 'index'会自动解析为import 'index.js', 尽量减少条目，会增加搜索步骤，增加解析时间
+    alias: {
+      '@': path.resolve(__dirname, 'src'), // 设置别名, 例如: import 'index'会自动解析为import '@/index'
+    },
+  },
+  externals: {
+    jquery: 'jQuery', // 将jquery作为外部依赖, 例如: import $ from 'jquery'会自动解析为import $ from 'jQuery', 不需要安装jquery，但是需要在html中通过cdn引入jquery, 且不会打包到dist目录下
   },
 };
