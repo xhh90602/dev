@@ -1,9 +1,10 @@
 .index {
-  width: 200px;
+  width: 90vw;
   height: 200px;
   background: red;
   color: #fff;
   display: flex;
+  font-size: 32px;
 }
 
 .main {

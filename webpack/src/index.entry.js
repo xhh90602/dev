@@ -27,6 +27,7 @@ button.onclick = () => {
 document.body.appendChild(button);
 document.body.appendChild(box);
 
-console.log([...Array(100).keys()]);
-console.log(Array.from(Array(100).keys()));
-console.log(Array.from(Array(100), (v, i) => i + 1));
+// console.log([...Array(100).keys()]);
+// console.log(Array.from(Array(100).keys()));
+// console.log(Array.from(Array(100), (v, i) => i + 1));
+// console.log(Array.from(Array(100).entries(), (v) => v[0] + 1));

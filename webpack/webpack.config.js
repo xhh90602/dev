@@ -17,6 +17,9 @@ const TerserPlugin = require('terser-webpack-plugin');
 const ESLintPlugin = require('eslint-webpack-plugin');
 // 用于gzip压缩
 const CompressionPlugin = require('compression-webpack-plugin');
+const ImageMinimizerPlugin = require('image-minimizer-webpack-plugin');
+
+const isDev = process.env.NODE_ENV === 'development';
 
 /**
  * 获取当前目录下所有的entry.js文件
@@ -58,7 +61,7 @@ module.exports = {
     assetModuleFilename: 'images/[name]_[contenthash:8][ext]', // 用于打包图片文件, [ext]为文件后缀名
   },
   // 设置环境变量, 用于区分生产环境和开发环境, 默认为production, 可以通过cross-env设置环境变量, 也可以通过webpack的--mode参数设置环境变量
-  mode: process.env.production ? 'production' : 'development',
+  mode: isDev ? 'development' : 'production',
   devtool: 'cheap-source-map', // 生成source-map文件, 用于调试, 会影响打包速度
   devServer: {
     compress: true, // 开启gzip压缩
@@ -132,6 +135,8 @@ module.exports = {
             options: {
               modules: {
                 // 开启css模块化, 用于解决css样式冲突的问题
+                // namedExport: true, // 开启css模块化的命名导出, 解决css模块化后无法使用:export{}导出样式的问题
+                // localIdentContext: path.resolve(__dirname, 'src'), // 指定css模块化的上下文, 用于解决css模块化后无法使用:export{}导出样式的问题, 需要和css-loader的modules.namedExport一起使用
                 localIdentName: '[name]_[local]_[hash:base64:5]', // 指定css模块化的类名格式, [name]为文件名, [local]为类名, [hash:base64:5]为文件内容的hash值, 5位
               },
             },
@@ -142,33 +147,19 @@ module.exports = {
               postcssOptions: {
                 plugins: [
                   'autoprefixer', // 使用autoprefixer, 用于自动添加浏览器前缀
+                  [
+                    'postcss-pxtorem', // 使用postcss-pxtorem, 用于将px转换为rem
+                    {
+                      rootValue: 100, // 指定根元素的字体大小, 用于计算rem值
+                      propList: ['*'], // 指定需要转换的属性, *表示所有属性
+                    },
+                  ],
                 ],
               },
             },
           },
         ],
       },
-      // {
-      //   test: /\.vue$/i, // 匹配vue文件
-      //   use: [
-      //     {
-      //       loader: 'vue-loader', // 使用vue-loader, 用于解析vue文件
-      //       plugins: [
-      //         {
-      //           postTransformNode: (astEl) => {
-      //             // 用于解决vue文件中的img标签src属性不生效的问题
-      //             astEl.attrsList = astEl.attrsList.filter((attr) => attr.name !== 'src');
-      //           },
-      //         },
-      //       ],
-      //       options: {
-      //         compilerOptions: {
-      //           whitespace: 'condense', // 去除vue文件中的空格
-      //         },
-      //       },
-      //     },
-      //   ],
-      // },
       {
         test: /\.(png|jpg|gif)$/i, // 匹配png/jpg文件
         type: 'asset', // 使用asset, 用于将图片文件打包到dist目录下, 自动根据文件大小选择使用asset/resource或asset/inline
@@ -222,6 +213,7 @@ module.exports = {
       filename: 'css/[name].css', // 输出文件名, name为entry的key值, contenthash:8为文件内容的hash值, 8位
       chunkFilename: 'css/[id].css', // 用于按需加载的css文件名
     }),
+
     ...Object.keys(entryList).map((name) => new HtmlWebpackPlugin({
       inject: 'body', // 将js文件插入到body底部
       chunks: [name], // 与entry的key值对应, 用于多页面应用, 一个页面对应一个entry, 一个entry对应一个chunk, 一个chunk对应一个js文件, 一个js文件对应一个html文件
@@ -259,6 +251,42 @@ module.exports = {
       },
     },
     minimizer: [
+      new ImageMinimizerPlugin({
+        test: /\.(jpe?g|png|gif|svg)$/i, // 匹配图片文件
+        include: /images/, // 指定需要压缩的文件夹
+        exclude: /node_modules/, // 指定不需要压缩的文件夹
+        minimizer: {
+          options: {
+            plugins: [
+              ['gifsicle', { interlaced: true }], // 压缩gif图片, interlaced为隔行扫描
+              ['jpegtran', { progressive: true }], // 压缩jpg图片, progressive为渐进式
+              ['optipng', { optimizationLevel: 5 }], // 压缩png图片, optimizationLevel为优化等级, 0-7, 7为最高
+              ['svgo', { // 压缩svg图片
+                plugins: [ // 使用svgo的插件
+                  {
+                    name: 'removeViewBox', // 使用removeViewBox插件, 用于移除svg的viewbox属性
+                    active: false, // 是否启用该插件
+                  },
+                  {
+                    name: 'addAttributesToSVGElement', // 使用addAttributesToSVGElement插件, 用于给svg标签添加属性
+                    params: {
+                      attributes: [{ xmlns: 'http://www.w3.org/2000/svg' }], // 给svg标签添加xmlns属性
+                    },
+                  },
+                ],
+              },
+              ],
+            ],
+          },
+        },
+        severityError: 'warning', // 将错误转换为警告
+        deleteOriginalAssets: true, // 删除原始图片
+        // concurrency: 4, // 使用多进程并行运行来提高构建速度, 默认是os.cpus().length - 1, 也可以设置为数字
+        // loader: false, // 不使用loader, 而是使用插件
+        // generator: { // 用于生成文件名
+        //   filename: '[path][name][ext]', // 生成的文件名, 例如: images/1_1b2c3d4e.jpg
+        // },
+      }),
       // 压缩css文件
       new CssMinimizerPlugin({
         // parallel: true, // 使用多进程并行运行来提高构建速度, 默认是os.cpus().length - 1, 也可以设置为数字

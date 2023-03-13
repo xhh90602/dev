@@ -1,11 +1,11 @@
 /* eslint-disable no-console */
-import objb from './b';
+import objb, { c } from './b';
 
 const obja = require('./a');
 
 setTimeout(() => {
-  console.log('a.a', obja);
-  // console.log('a.b', obja.b);
+  console.log('b.c', c);
+  console.log('a.b', obja);
   console.log('b.a', objb.a);
   console.log('b.b', objb.b);
 }, 1000);
