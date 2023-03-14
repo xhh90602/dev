@@ -1,13 +1,17 @@
 /* eslint-disable no-console */
-import objb, { c } from './b';
+// import objb, { c } from './b';
 
 const obja = require('./a');
+const objc = require('./c');
 
 setTimeout(() => {
-  console.log('b.c', c);
+  console.log('c.c', objc);
   console.log('a.b', obja);
-  console.log('b.a', objb.a);
-  console.log('b.b', objb.b);
+  console.log('c.c', objc);
+  console.log('a.b', obja);
+  // console.log('b.c', c);
+  // console.log('b.a', objb.a);
+  // console.log('b.b', objb.b);
 }, 1000);
 
 // obja.a = 3;
