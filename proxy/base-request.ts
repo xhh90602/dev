@@ -5,7 +5,7 @@ class RequestProxyManager {
   private proxyList: Record<string, any[]> = {};
 
   // 添加代理实例
-  addProxy(proxy: BaseRequest, key) {
+  addProxy(proxy: BaseRequest, key: string) {
     if (!this.proxyList[key]) {
       this.proxyList[key] = [];
     }
@@ -57,7 +57,7 @@ class BaseRequest {
 
           // 将resolve方法保存到拦截器列表中
           this.interceList.push(() => {
-            // 拦截器执行时，调用resolve方法，返回请求结果
+            // 拦截器执行时，调用resolve方法，返回请求结果 axios.post(...args)
             finalResolve(target[prop](...finalArgs));
             // 清空保存的方法和参数
             finalResolve = null;
