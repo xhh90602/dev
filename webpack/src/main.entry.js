@@ -1,3 +1,4 @@
+/* eslint-disable no-param-reassign */
 import './index.css';
 import { add } from 'lodash-es';
 
@@ -8,33 +9,17 @@ box.className = 'main';
 
 document.body.appendChild(box);
 
-let reso;
-let preArgs = [];
+const arrproxy = new Proxy([1, 2, 3], {
+  get(target, key) {
+    console.log('get', target, key);
+    return target[key];
+  },
+  set(target, key, value) {
+    console.log('set', target, key, value);
+    return Reflect.set(target, key, value);
+  },
+});
 
-const obj = {
-  post: () => new Promise((resolve) => {
-    resolve(123);
-  }),
-};
+arrproxy.push(41);
 
-const pre = () => {
-  const promise = new Promise((resolve) => {
-    resolve(new Promise((r) => {
-      r(123);
-    }));
-  });
-
-  return (...args) => {
-    preArgs = args;
-    return promise.then((res) => {
-      console.log('🚀 ~ file: main.entry.js:26 ~ pre ~ res:', res);
-      res();
-    });
-  };
-};
-
-pre()(1);
-setTimeout(() => {
-  reso(obj.post());
-}, 1000);
-console.log(preArgs);
+console.log(arrproxy.indexOf(2));
