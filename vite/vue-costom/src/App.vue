@@ -1,6 +1,23 @@
 <script setup lang="ts">
-import { RouterLink, RouterView } from 'vue-router'
-import HelloWorld from './components/HelloWorld.vue'
+import { RouterLink, RouterView, useRoute, useRouter } from 'vue-router'
+import HelloWorld from '@/components/HelloWorld.vue'
+import { toRaw, watch } from 'vue';
+
+const router = useRouter()
+const route = useRoute()
+console.log(
+  'VITE_TEST_TEXT:', import.meta.env.VITE_TEST_TEXT
+);
+
+watch(
+  () => route,
+  (route) => {
+    console.log(toRaw(route));
+
+  },
+  { immediate: true, deep: true }
+)
+
 </script>
 
 <template>
