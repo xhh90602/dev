@@ -1,0 +1,81 @@
+.container {
+  height: 100vh;
+  overflow: hidden;
+
+  :global {
+    .swiper {
+      height: 100%;
+    }
+
+    .adm-capsule-tabs-header {
+      background-color: var(--bold-bg);
+      border-radius: .24rem;
+    }
+
+    .adm-capsule-tabs-tab-active {
+      font-weight: bold !important;
+    }
+
+    .adm-capsule-tabs-tab {
+      text-align: center;
+      padding: 10px;
+      font-size: 26px;
+      font-weight: 400;
+    }
+
+    .center-tab {
+      text-align: center;
+
+      .adm-capsule-tabs-tab {
+        padding: 10px 32px;
+      }
+
+      .adm-capsule-tabs-header {
+        display: inline-block;
+      }
+
+      .adm-capsule-tabs-tab-wrapper {
+        flex: none;
+      }
+    }
+  }
+}
+
+.tab-nav {
+  display: flex;
+  justify-content: space-between;
+  color: #717686;
+  font-size: 32px;
+  font-weight: 400;
+  height: 88px;
+  align-items: center;
+  padding: 24px 60px;
+
+  > div.active {
+    color: var(--text-color);
+    font-size: 36px;
+    font-weight: 700;
+    position: relative;
+
+    &:after {
+      content: '';
+      display: block;
+      position: absolute;
+      bottom: -10px;
+      left: calc(50% - 5px);
+      width: 10px;
+      height: 10px;
+      background-color: var(--orange-color);
+      border-radius: 50%;
+    }
+  }
+}
+
+.content {
+  height: calc(100vh - 88px);
+  overflow: auto;
+}
+
+.basic-card {
+  padding: 10px;
+}

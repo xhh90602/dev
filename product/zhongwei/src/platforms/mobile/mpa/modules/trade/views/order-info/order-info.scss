@@ -1,0 +1,298 @@
+.buy-text {
+  color: #fa6d16 !important;
+}
+
+.sell-text {
+  color: #2f9bfa !important;
+}
+
+.font-bold {
+  font-weight: 700;
+}
+
+.order-detail-box {
+  height: 100%;
+  overflow: auto;
+  padding: 20px 16px;
+
+  :global {
+    .adm-list-item-content-main {
+      padding: 0 !important;
+    }
+
+    .adm-list-item-content-arrow img {
+      width: 23px;
+      height: 13px;
+      margin-right: 10px;
+    }
+  }
+}
+
+.basis-box {
+  margin-bottom: 16px;
+  border-radius: 24px;
+  background-color: #fff;
+}
+
+.combination-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 42px 0 30px;
+  height: 145px;
+  color: #8f95a8;
+  font-size: 24px;
+
+  &:after {
+    display: inline-block;
+    content: '';
+    width: 13px;
+    height: 23px;
+    background-image: url('@mobile/images/icon_zh_more.svg');
+    background-size: 100% 100%;
+  }
+
+  .combination-name {
+    margin-bottom: 8px;
+    color: #011628;
+    font-size: 32px;
+    font-weight: 700;
+  }
+}
+
+.order-status-box {
+  padding: 30px 32px;
+
+  .order-no {
+    color: #b5bbcf;
+    font-size: 22px;
+    line-height: 31px;
+  }
+
+  .order-no-label {
+    margin-right: 14px;
+  }
+
+  .order-status {
+    margin: 15px 0;
+    color: #011628;
+    font-size: 48px;
+    font-weight: 700;
+  }
+
+  .order-time {
+    color: #011628;
+    font-size: 26px;
+  }
+
+  .order-time-label {
+    margin-right: 20px;
+    color: #717686;
+  }
+}
+
+.info-item {
+  display: flex;
+  justify-content: space-between;
+  font-size: 28px;
+  line-height: 38px;
+
+  .label {
+    color: #717686;
+  }
+
+  .content {
+    color: #011628;
+  }
+}
+
+.order-info-box {
+  padding: 40px 32px;
+
+  .info-item + .info-item {
+    margin-top: 35px;
+  }
+}
+
+.arrow-right {
+  display: flex;
+  align-items: center;
+}
+
+.arrow-right:after {
+  display: inline-block;
+  content: '';
+  width: 13px;
+  height: 22px;
+  margin-left: 15px;
+  background-image: url('@mobile/images/icon_zh_more_right.svg');
+  background-size: 100% 100%;
+}
+
+.conditions-box {
+  position: relative;
+  margin: 18px 0;
+  padding: 40px 35px;
+  border-radius: 20px;
+  background-color: #f7f8fc;
+
+  &:after {
+    position: absolute;
+    right: 40px;
+    top: -20px;
+    display: inline-block;
+    content: '';
+    width: 0;
+    height: 0;
+    border: 10px solid;
+    border-color: transparent transparent #f7f8fc;
+  }
+
+  .info-item:not(:last-child) {
+    margin-bottom: 25px;
+  }
+
+  .label {
+    font-size: 26px;
+  }
+}
+
+.collapse-transaction-title,
+.collapse-fee-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.collapse-transaction-title {
+  height: 98px;
+  color: #1f2d56;
+  font-size: 28px;
+}
+
+.collapse-fee-title {
+  height: 106px;
+  color: #011628;
+  font-size: 28px;
+}
+
+.clinch-deal-box {
+  padding: 36px 32px 0;
+
+  :global {
+    .adm-collapse {
+      border-top: 1px solid #f2f5ff;
+    }
+  }
+
+  .transaction-detail {
+    margin: 24px 0 0;
+  }
+
+  .detail-table {
+    padding: 34px 0 27px;
+    border-top: 1px solid #f2f5ff;
+
+    thead th {
+      border: none;
+      padding-bottom: 8px;
+      line-height: 36px;
+    }
+
+    tbody td > div {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      height: 100px !important;
+      padding-top: 16px;
+    }
+
+    table:last-child td {
+      border: none;
+    }
+  }
+}
+
+.clinch-deal-box .info-item:not(:first-child) {
+  margin-top: 30px;
+}
+
+.fee-box {
+  padding: 0 32px;
+
+  .info-item + .info-item {
+    margin-top: 20px;
+  }
+
+  .fee-item .label {
+    font-size: 24px;
+  }
+
+  .fee-item .content {
+    font-size: 26px;
+  }
+
+  .exchange-fee-box {
+    margin: 38px 0 33px;
+  }
+
+  .fee-total-box {
+    align-items: center;
+    height: 120px;
+    border-top: 1px solid #f2f5ff;
+  }
+
+  .fee-total-box .label {
+    font-size: 26px;
+  }
+
+  .fee-total-box .content {
+    font-size: 36px;
+  }
+
+  .fee-item .info-item:first-child {
+    margin-bottom: 30px;
+  }
+
+  .fee-item .info-item:first-child .label {
+    color: #011628;
+    font-size: 26px;
+  }
+}
+
+.btn-box {
+  padding: 20px 40px 0;
+
+  .orders-btn,
+  .revoke-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 638px;
+    height: 88px;
+    border: none;
+    border-radius: 83px;
+    font-size: 32px;
+    line-height: 45px;
+  }
+
+  .orders-btn {
+    background-color: #fff;
+    color: #fa6d16;
+  }
+
+  .revoke-btn {
+    background-color: #fa6d16;
+    color: #fff;
+  }
+}
+
+.revoke-box {
+  .revoke-item + .revoke-item {
+    margin-top: 40px;
+  }
+
+  .revoke-item .content {
+    font-size: 30px;
+  }
+}

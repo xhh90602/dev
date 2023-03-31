@@ -1,0 +1,56 @@
+.table-expand-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 112px;
+  border-radius: 24px;
+  background-color: #f6f8ff;
+
+  .table-expand-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    padding: 0 30px;
+  }
+
+  .table-expand-item:before {
+    display: inline-block;
+    content: '';
+    width: 42px;
+    height: 42px;
+    margin-bottom: 6px;
+  }
+
+  .table-expand-item.buy:before {
+    background-image: url('@mobile/images/order-buy-icon.svg');
+    background-size: 100% 100%;
+  }
+
+  .table-expand-item.sell:before {
+    background-image: url('@mobile/images/order-sell-icon.svg');
+    background-size: 100% 100%;
+  }
+
+  .table-expand-item.warehouse:before {
+    background-image: url('@mobile/images/order-warehouse-record-icon.svg');
+    background-size: 100% 100%;
+  }
+
+  .table-expand-item.cancellations:before {
+    background-image: url('@mobile/images/order-cancellations-icon.svg');
+    background-size: 100% 100%;
+  }
+
+  .table-expand-item.detail:before {
+    background-image: url('@mobile/images/order-detail-icon.svg');
+    background-size: 100% 100%;
+  }
+
+  .table-expand-item-text {
+    color: #717686;
+    font-size: 22px;
+    line-height: 31px;
+  }
+}

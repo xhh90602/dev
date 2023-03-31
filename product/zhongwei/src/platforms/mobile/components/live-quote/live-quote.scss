@@ -1,0 +1,32 @@
+.live-info {
+  color: var(--desc-color);
+
+  :global {
+    .none-stock-info {
+      color: var(--text-color);
+    }
+  }
+
+  & > span {
+    margin-left: 24px;
+
+    span {
+      margin-right: 40px;
+      font-weight: bold;
+    }
+  }
+}
+
+.chart-box {
+  display: flex;
+  position: relative;
+}
+
+:global {
+  .adm-list-item-content-arrow {
+    svg {
+      width: 38px;
+      height: 38px;
+    }
+  }
+}

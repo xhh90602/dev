@@ -1,0 +1,25 @@
+<svg fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 750 500" class="design-iconfont">
+  <mask id="ujyjw8win__5xrpn1maca" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="750" height="500">
+    <path fill="#fff" d="M0 0H750V500H0z"/>
+  </mask>
+  <g mask="url(#ujyjw8win__5xrpn1maca)">
+    <g opacity=".3" filter="url(#ujyjw8win__filter0_f_6915_39116)">
+      <path fill="#BBBAED" fill-opacity=".8" d="M496 -126.99999999999997A337 311.989 0 1 0 496 496.97799999999995A337 311.989 0 1 0 496 -126.99999999999997Z"/>
+    </g>
+    <g opacity=".3" filter="url(#ujyjw8win__filter1_f_6915_39116)">
+      <path fill="#FB6E17" fill-opacity=".3" d="M125 -86.26499999999999A225 208.301 0 1 0 125 330.337A225 208.301 0 1 0 125 -86.26499999999999Z"/>
+    </g>
+  </g>
+  <defs>
+    <filter id="ujyjw8win__filter0_f_6915_39116" x="48" y="-238" width="896" height="845.978" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+      <feBlend in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+      <feGaussianBlur stdDeviation="55.5" result="effect1_foregroundBlur_6915_39116"/>
+    </filter>
+    <filter id="ujyjw8win__filter1_f_6915_39116" x="-211" y="-197.265" width="672" height="638.602" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+      <feBlend in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+      <feGaussianBlur stdDeviation="55.5" result="effect1_foregroundBlur_6915_39116"/>
+    </filter>
+  </defs>
+</svg>

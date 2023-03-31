@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 42 42" fill="none">
+  <circle cx="21" cy="21" r="19" transform="rotate(-180 21 21)" stroke="currentColor" stroke-width="4"></circle>
+  <line x1="20.75" y1="27.75" x2="20.75" y2="16" stroke="currentColor" stroke-width="4" stroke-linecap="round"></line>
+  <path d="M15.3784 18.8784L20.3899 13.8669C20.7805 13.4764 21.4136 13.4764 21.8042 13.8669L26.8157 18.8784" stroke="currentColor" stroke-width="4" stroke-linecap="round"></path>
+</svg>

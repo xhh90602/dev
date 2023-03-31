@@ -1,0 +1,290 @@
+/* stylelint-disable no-descending-specificity */
+/* stylelint-disable selector-class-pattern */
+/* stylelint-disable no-duplicate-selectors */
+
+html:global.white {
+  --main-page-background: #fff;
+  --tabs-item-background: #f5f5f5;
+  --tabs-item-color: var(--main-content-color);
+  --tabs-item-active-background: #fff;
+  --tabs-item-active-color: #3084ff;
+  --tabs-item-active-shadow-color: #d8d8d8;
+  --money-distribution-item-color: var(--main-title-color);
+  --money-distribution-type-color: var(--main-tip-color);
+  --interactive-canvas-border-color: #efefef;
+}
+
+html:global.black {
+  --main-page-background: #11151e;
+  --tabs-item-background: #06090f;
+  --tabs-item-color: var(--main-content-color);
+  --tabs-item-active-background: #222f3f;
+  --tabs-item-active-color: #3084ff;
+  --tabs-item-active-shadow-color: rgba(0, 0, 0, 30%);
+  --money-distribution-item-color: var(--main-title-color);
+  --money-distribution-type-color: var(--main-tip-color);
+  --interactive-canvas-border-color: #32394b;
+}
+
+.wrap {
+  width: 100%;
+  padding: 0 16px 30px;
+
+  .wrap-item {
+    border-radius: 24px;
+    opacity: 1;
+    background: #fff;
+    padding: 36px 27px 43px;
+  }
+}
+
+.pie-chart {
+  margin: 0 auto;
+  width: 244px;
+  height: 250px;
+}
+
+.money-distribution-block {
+  // width: 486px;
+  width: 100%;
+  display: flex;
+  // overflow: hidden;
+  box-sizing: border-box;
+  justify-content: space-around;
+
+  .average {
+    // width: 40%;
+    // width: 50%;
+    flex: 1;
+  }
+
+  // height: 100%;
+}
+
+.no-more {
+  padding-top: 20px;
+  font-size: 20px;
+  text-align: center;
+  line-height: 80px;
+  color: var(--main-content-color);
+}
+
+.page {
+  --padding-left-right: 24px;
+
+  height: 100%;
+  color: var(--main-content-color);
+  box-sizing: border-box;
+  overflow: auto;
+  padding: 22px var(--padding-left-right);
+  background-color: var(--main-page-background);
+}
+
+.tabs {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  padding: 4px;
+  background-color: var(--tabs-item-background);
+}
+
+.tabs-item {
+  padding: 6px 0;
+  flex: 1;
+  text-align: center;
+  color: var(--tabs-item-color);
+  background-color: var(--tabs-item-background);
+
+  &.tabs-item--active {
+    background-color: var(--tabs-item-active-background);
+    border-radius: 4px;
+    box-shadow: 0 0 8px 0 var(--tabs-item-active-shadow-color);
+    transition: all .1s;
+    color: var(--link-color);
+  }
+}
+
+.caption {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 30px;
+  margin-bottom: 40px;
+
+  >h2 {
+    color: var(--main-title-color);
+    font-size: 30px;
+  }
+
+  .caption-update-time {
+    font-size: 24px;
+    color: var(--main-tip-color);
+  }
+}
+
+.title {
+  margin-bottom: 13px;
+  font-size: 28px;
+  color: var(--main-title-color);
+}
+
+section {
+  margin-top: 20px;
+}
+
+.pie-chart {
+  width: 244px;
+  height: 250px;
+}
+
+.today-money-distribution {
+  width: 100%;
+}
+
+.money-distribution-type {
+  width: 82px;
+  // color: var(--money-distribution-type-color);
+}
+
+.content {
+  margin-top: 42px;
+  width: 98px;
+  font-size: 24px;
+  color: #8f95a8;
+  text-align: center;
+
+  .content-item {
+    color: #8f95a8;
+    margin-bottom: 12px;
+  }
+}
+
+.money-distribution-bar-x,
+.money-distribution-bar-y {
+  width: 100px;
+  height: 24px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.money-distribution-bar-y {
+  justify-content: flex-start;
+}
+
+.money-distribution-bar {
+  height: 100%;
+  transition: all .3s;
+  min-width: 1px;
+}
+
+.money-distribution-volume {
+  // flex: 1;
+  // margin-left: 10px;
+  // margin-right: 10px;
+  width: 120px;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.money-distribution-ratio {
+  flex: 1;
+  text-align: right;
+  color: #8f95a8;
+  font-size: 20px;
+}
+
+.money-distribution-volume {
+  color: #06b899;
+}
+
+.money-distribution-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  font-size: 24px;
+  color: var(--money-distribution-item-color);
+}
+
+.left {
+  .money-distribution-ratio {
+    text-align: left;
+  }
+
+  .money-distribution-volume {
+    color: #da070e;
+  }
+}
+
+.line-chart {
+  width: 100%;
+  height: 300px;
+}
+
+.bar-chart {
+  height: 200px;
+}
+
+.trend-legend {
+  display: flex;
+  justify-content: center;
+}
+
+.trend-legend-item {
+  display: flex;
+  align-items: center;
+  margin-right: 30px;
+
+  >i {
+    display: inline-block;
+    width: 20px;
+    height: 4px;
+    margin-right: 8px;
+  }
+}
+
+.money-distribution-caption {
+  // --caption-font-color: #029a01;
+  text-align: right;
+  // display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  font-size: 30px;
+  color: var(--caption-font-color);
+  font-weight: 700;
+
+  .money-distribution-type {
+    margin-right: 10px;
+    // color: var(--caption-font-color);
+  }
+}
+
+.legend {
+  margin-left: 60px;
+  margin-top: 16px;
+}
+
+.money-distribution-caption--outer {
+  // --caption-font-color: #ef5a3c;
+  text-align: left;
+  font-weight: 700;
+  font-size: 30px;
+
+  .money-distribution-type {
+    margin-right: 10px;
+    // color: var(--caption-font-color);
+  }
+}
+
+:global {
+  .qc__container--main .qc__interactive-canvas {
+    // border: 1px solid #efefef;
+    border: 1px solid var(--interactive-canvas-border-color);
+    border-top: 0;
+    border-bottom: 0;
+  }
+
+  .echarts-for-react2 {
+    width: 100% !important;
+    height: 100% !important;
+  }
+}

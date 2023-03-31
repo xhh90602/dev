@@ -1,0 +1,27 @@
+.modal-container {
+  padding: 0 6px 50px;
+
+  .modal-title {
+    font-size: 34px;
+    font-weight: 500;
+    color: var(--text-color);
+  }
+
+  .modal-content {
+    font-size: 30px;
+    font-weight: 400;
+    color: #717686;
+    padding: 50px 0;
+  }
+
+  .modal-confirm-btn {
+    width: 352px;
+    height: 80px;
+    line-height: 80px;
+    border-radius: 40px;
+    background-color: var(--orange-color);
+    color: #fff;
+    text-align: center;
+    margin: 0 auto;
+  }
+}

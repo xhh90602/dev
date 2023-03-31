@@ -1,0 +1,90 @@
+.title-card {
+  .title-card-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .left {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+    }
+
+    .title {
+      font-size: 26px;
+      color: #1f2d56;
+      font-weight: 700;
+      margin-right: 26px;
+    }
+
+    .select-box {
+      display: flex;
+      justify-content: flex-start;
+      align-content: center;
+      font-size: 24px;
+      font-weight: 400;
+      color: #717686;
+
+      img {
+        width: 12px;
+        height: auto;
+        display: inline-block;
+        margin-left: 10px;
+      }
+    }
+
+    .right {
+      display: flex;
+      justify-content: flex-start;
+      align-content: center;
+
+      .text {
+        font-size: 26px;
+        font-weight: 400;
+        color: #b5bbcf;
+      }
+
+      img {
+        width: 24px;
+        height: auto;
+        display: inline-block;
+        padding: 10px 0;
+        margin-left: 20px;
+        box-sizing: content-box;
+      }
+    }
+  }
+
+  .tool-popover-bar {
+    :global {
+      .adm-popover-inner-content {
+        padding: 0;
+      }
+
+      .adm-popover-menu-list {
+        min-width: 180px;
+      }
+
+      .popover-box {
+        font-size: 10px;
+      }
+
+      .popover-item {
+        border-bottom: 1px solid #f2f5ff;
+        padding: 16px 0;
+        font-size: 26px;
+        font-weight: 400;
+        color: #011628;
+        text-align: center;
+      }
+
+      .popover-item:last-child {
+        border: none;
+      }
+    }
+  }
+
+  .rotate {
+    transform: rotate(180deg);
+  }
+}

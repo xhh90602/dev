@@ -1,0 +1,279 @@
+/* stylelint-disable media-feature-name-no-vendor-prefix */
+/* stylelint-disable no-invalid-position-at-import-rule */
+:global {
+  @import './var';
+  @import './distance';
+  @import './icon';
+  @import './antd-mobile';
+  @import './custom-class';
+  @import './quote-chart';
+
+  * {
+    user-select: none;
+    box-sizing: border-box;
+    -webkit-touch-callout: none;
+
+    ::-webkit-scrollbar {
+      display: none;
+    }
+  }
+
+  input,
+  textarea {
+    user-select: text;
+  }
+
+  input::placeholder,
+  textarea::placeholder {
+    color: #b5bbcf;
+  }
+
+  button {
+    border: 0;
+    outline: 0;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0%);
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  button[disabled]:not(.adm-button-loading) {
+    background-color: #ced1dd !important;
+  }
+
+  @font-face {
+    font-family: opensans;
+    // src: url('file:///android_asset/PingFang-HK-Regular-2.otf');
+  }
+
+  html body {
+    color: var(--text-color);
+    background-color: var(--contain-bg);
+    font-size: 26px;
+    width: 100%;
+    overflow-x: hidden;
+    font-family:
+      'PingFang HK',
+      -apple-system,
+      blinkmacsystemfont,
+      'Helvetica Neue',
+      helvetica,
+      'segoe ui',
+      arial,
+      roboto,
+      'PingFang SC',
+      miui,
+      'Hiragino Sans GB',
+      'Microsoft Yahei',
+      sans-serif !important;
+  }
+
+  div {
+    box-sizing: border-box;
+  }
+
+  /* stylelint-disable-next-line selector-max-id */
+  #root,
+  .contain,
+  .page {
+    width: 100%;
+    height: 100%;
+  }
+
+  .num-font {
+    font-family: DIN, sans-serif;
+  }
+
+  .trade {
+    padding: 18px 16px;
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+  }
+
+  .line {
+    height: 1px;
+    width: 100%;
+    background-color: var(--line-desc-color);
+  }
+
+  .flex-between-center {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .padding-column {
+    padding: 12px 0;
+  }
+
+  td.padding-column {
+    border-bottom-color: transparent;
+  }
+
+  .padding-th-column {
+    padding: 18px 0;
+  }
+
+  .price-raise {
+    color: var(--rise-color) !important;
+  }
+
+  .price-decline {
+    color: var(--fall-color) !important;
+  }
+
+  .rise-bg {
+    background: var(--rise-bg-color) !important;
+  }
+
+  .fall-bg {
+    background: var(--fall-bg-color) !important;
+  }
+
+  .equal-bg {
+    background: var(--equal-bg-color) !important;
+  }
+
+  .dialog-rise-bg {
+    background: var(--dialog-rise-bg) !important;
+
+    .stock-title {
+      font-size: 32px;
+      color: var(--dialog-rise-color) !important;
+      font-weight: 700;
+      margin-bottom: 10px;
+    }
+
+    .fxs-title {
+      font-size: 32px;
+      color: var(--dialog-rise-color) !important;
+      font-weight: 700;
+      margin-bottom: 10px;
+    }
+  }
+
+  .dialog-fall-bg {
+    background: var(--dialog-fall-bg) !important;
+
+    .stock-title {
+      font-size: 32px;
+      color: var(--dialog-fall-color) !important;
+      font-weight: 700;
+      margin-bottom: 10px;
+    }
+
+    .fxs-title {
+      font-size: 32px;
+      color: var(--dialog-fall-color) !important;
+      font-weight: 700;
+      margin-bottom: 10px;
+    }
+  }
+
+  .blue-color {
+    color: var(--blue-color);
+  }
+
+  .orange-color {
+    color: var(--orange-color);
+  }
+
+  .orange-low-bg {
+    background-color: var(--orange-low-bg) !important;
+  }
+
+  .bold-bg {
+    background-color: var(--bold-bg) !important;
+  }
+
+  .gradient-bg {
+    background: linear-gradient(180deg, rgba(208, 216, 233, 100%) 0%, rgba(255, 255, 255, 0%) 50%);
+  }
+
+  .border-1px,
+  .border-y-1px,
+  .border-x-1px,
+  .border-t-1px,
+  .border-b-1px,
+  .border-l-1px,
+  .border-r-1px {
+    position: relative;
+  }
+
+  .border-1px:after,
+  .border-y-1px:after,
+  .border-x-1px:after,
+  .border-t-1px:after,
+  .border-b-1px:after,
+  .border-l-1px:after,
+  .border-r-1px:after {
+    position: absolute;
+    content: '';
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    border: 0 var(--border-style) var(--border-color);
+    border-radius: var(--border-radius, 0);
+    transform-origin: top left;
+    box-sizing: border-box;
+    pointer-events: none;
+  }
+
+  .border-1px:after {
+    border-width: 1px;
+  }
+
+  .border-y-1px:after {
+    border-width: 1px 0;
+  }
+
+  .border-x-1px:after {
+    border-width: 0 1px;
+  }
+
+  .border-t-1px:after {
+    border-top-width: 1px;
+  }
+
+  .border-b-1px:after {
+    border-bottom-width: 1px;
+  }
+
+  .border-l-1px:after {
+    border-left-width: 1px;
+  }
+
+  .border-r-1px:after {
+    border-right-width: 1px;
+  }
+
+  @media screen and (-webkit-min-device-pixel-ratio: 2) {
+    .border-1px:after,
+    .border-y-1px:after,
+    .border-x-1px:after,
+    .border-t-1px:after,
+    .border-b-1px:after,
+    .border-l-1px:after,
+    .border-r-1px:after {
+      width: 200%;
+      height: 200%;
+      border-radius: calc(var(--border-radius, 0) * 2);
+      transform: scale(.5);
+    }
+  }
+
+  @media screen and (-webkit-min-device-pixel-ratio: 3) {
+    .border-1px:after,
+    .border-y-1px:after,
+    .border-x-1px:after,
+    .border-t-1px:after,
+    .border-b-1px:after,
+    .border-l-1px:after,
+    .border-r-1px:after {
+      width: 300%;
+      height: 300%;
+      border-radius: calc(var(--border-radius, 0) * 3);
+      transform: scale(.333);
+    }
+  }
+}

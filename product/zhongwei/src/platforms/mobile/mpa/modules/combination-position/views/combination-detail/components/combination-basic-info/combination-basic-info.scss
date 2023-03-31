@@ -1,0 +1,84 @@
+.combination-basic-info {
+  position: relative;
+  width: 351px;
+  padding: 32px 28px;
+  border-radius: 24px;
+  background-color: #fff;
+}
+
+.icon-firm-offer,
+.icon-simulation {
+  position: absolute;
+  top: 0;
+  right: -2px;
+  width: 92px;
+  height: 50px;
+  padding: 4px 0;
+  color: #fff;
+  font-size: 24px;
+  text-align: center;
+}
+
+.icon-firm-offer {
+  background-image: url('@mobile/images/firm-offer-icon.svg');
+  background-size: 100% 100%;
+}
+
+.icon-simulation {
+  background-image: url('@mobile/images/simulation-icon.svg');
+  background-size: 100% 100%;
+}
+
+.combination-card-name {
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.combination-card-name,
+.earnings-value,
+.card-item-content {
+  color: #011628;
+}
+
+.combination-card-earnings {
+  margin: 20px 0 22px;
+}
+
+.earnings-label {
+  font-size: 24px;
+}
+
+.earnings-value {
+  font-size: 42px;
+  font-weight: 700;
+}
+
+.earnings-label,
+.card-item-label {
+  color: #8f95a8;
+}
+
+.card-item {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.card-item:not(:last-child) {
+  margin-bottom: 30px;
+}
+
+.card-item-label {
+  font-size: 22px;
+}
+
+.card-item-content {
+  font-size: 26px;
+  font-weight: 700;
+}
+
+.atest-net {
+  padding-bottom: 18px;
+  border-bottom: 1px solid #f2f5ff;
+}

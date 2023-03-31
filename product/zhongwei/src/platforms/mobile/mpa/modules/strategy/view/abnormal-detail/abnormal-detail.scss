@@ -1,0 +1,347 @@
+.abnormal-detail {
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+
+  .sticky {
+    position: sticky;
+    top: 0;
+    background-color: #f7f8fc;
+    z-index: 999;
+  }
+
+  :global {
+    .adm-switch-checkbox:before {
+      background-color: #ebedf5ff;
+    }
+
+    .adm-switch.adm-switch-checked .adm-switch-checkbox {
+      background-color: #fa6d16;
+    }
+
+    .adm-popover {
+      z-index: 9999;
+    }
+
+    .adm-popover-menu-list {
+      min-width: 284px;
+    }
+
+    .adm-popover-menu-item-text {
+      padding-top: 27px;
+      padding-bottom: 29px;
+      color: #8f95a8;
+      font-size: 26px;
+    }
+  }
+
+  .full-content {
+    display: block;
+    background-color: #f7f8fc;
+
+    .head-top {
+      width: 100%;
+      display: flex;
+      justify-content: flex-start;
+      padding-bottom: 20px;
+      margin-top: 20px;
+
+      .back-img {
+        height: auto;
+        display: inline-block;
+        padding-left: 30px;
+        flex-shrink: 1;
+      }
+
+      .title {
+        font-size: 34px;
+        font-weight: 700;
+        color: #011628;
+        flex-grow: 1;
+        margin-left: 255px;
+        margin-right: 134px;
+      }
+    }
+  }
+}
+
+.abnormal-type-con {
+  padding-top: 10px;
+  font-size: 26px;
+  color: #011628;
+  margin-right: 33px;
+
+  .filter-img {
+    height: 26px;
+    display: inline-block;
+    padding-right: 10px;
+    flex-shrink: 1;
+    vertical-align: middle;
+  }
+
+  .abnormal-type-name {
+    font-size: 26px;
+    color: #011628;
+    vertical-align: middle;
+  }
+}
+
+.filter-criteria {
+  padding: 17px 33px 30px 36px;
+  background-color: #f7f8fc;
+  display: flex;
+
+  .day-style {
+    width: 70px;
+    height: 70px;
+    line-height: 70px;
+    opacity: 1;
+    font-size: 46px;
+    color: #011628;
+    font-weight: 700;
+    text-align: center;
+    background: url('../../../../../images/date-bg.png');
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+  }
+
+  .month-style {
+    height: 70px;
+    line-height: 70px;
+    font-size: 46px;
+    color: #011628;
+    font-weight: 700;
+    margin-right: 14px;
+
+    .slash-style {
+      margin-left: -3px;
+    }
+  }
+
+  .year-style {
+    font-size: 26px;
+    color: #8f95a8ff;
+    font-weight: 700;
+    margin-right: 20px;
+    height: 70px;
+    line-height: 84px;
+  }
+
+  .today-style {
+    width: 180px;
+    height: 70px;
+    line-height: 82px;
+    font-size: 24px;
+    color: #8f95a8ff;
+  }
+
+  .filter-minutes {
+    font-size: 28px;
+    color: #8f95a8ff;
+    width: 210px;
+    height: 70px;
+    line-height: 79px;
+  }
+}
+
+.popover-box {
+  .popover-all-item {
+    border-bottom: 1px solid #f2f5ff;
+    padding: 32px 0;
+    font-size: 26px;
+    font-weight: 400;
+    color: #011628ff;
+    text-align: center;
+  }
+
+  .popover-item {
+    border-bottom: 1px solid #f2f5ff;
+    padding: 32px 0;
+    font-size: 26px;
+    font-weight: 400;
+    color: #8f95a8ff;
+    text-align: center;
+  }
+
+  .popover-item:last-child {
+    border: none;
+  }
+}
+
+.onlyself-selected-shares {
+  padding: 35px 0 30px 40px;
+  border-bottom: 1px solid #f2f5ffff;
+  background-color: #fff;
+  border-radius: 24px 24px 0 0;
+
+  .onlyself-style {
+    width: 210px;
+    color: #8f95a8ff;
+    font-size: 28px;
+
+    .checked-icon {
+      width: 36px;
+      height: 36px;
+      vertical-align: middle;
+    }
+
+    .text-content {
+      vertical-align: -1px;
+      margin-left: 10px;
+    }
+  }
+}
+
+.table-container {
+  height: 100%;
+  padding: 0 32px;
+  overflow: hidden;
+
+  .inner-table {
+    height: 100%;
+
+    :global {
+      th,
+      td {
+        border: 0;
+        color: #8f95a8;
+        font-size: 26px;
+      }
+    }
+  }
+}
+
+.text-tip {
+  width: 100%;
+  font-size: 22px;
+  color: #b5bbcf;
+  font-weight: 400;
+  padding: 20px 32px 36px;
+  text-align: center;
+  background-color: #fff;
+}
+
+.selected-active-style {
+  color: #011628;
+}
+
+.content {
+  background-color: #fff;
+  border-radius: 24px 24px 0 0;
+  padding: 30px 0 0;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+
+  .header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 22px;
+
+    .item {
+      font-size: 24px;
+      color: #717686;
+      font-weight: 400;
+    }
+  }
+
+  .box {
+    height: 100%;
+    flex-grow: 2;
+    overflow: auto;
+
+    .item-box {
+      .loading {
+        padding-top: 150px;
+      }
+    }
+
+    .item {
+      display: flex;
+      align-items: flex-start;
+      padding: 11px 0;
+    }
+
+    .stock-info {
+      width: 235px;
+      overflow: hidden;
+    }
+
+    .name {
+      width: 95%;
+      font-size: 28px;
+      font-weight: 700;
+      color: #011628;
+      margin-bottom: 4px;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      overflow: hidden;
+    }
+
+    .market-code {
+      display: flex;
+      align-items: center;
+    }
+
+    .market {
+      width: 28px;
+      height: auto;
+      margin-right: 8px;
+    }
+
+    .code {
+      font-size: 26px;
+      color: #8f95a8;
+      font-weight: 400;
+    }
+
+    .value {
+      font-size: 30px;
+      color: #011628;
+      font-weight: 700;
+    }
+
+    .date {
+      font-weight: 400;
+      font-size: 30px;
+    }
+  }
+
+  .c1 {
+    width: 100%;
+    flex-grow: 0;
+    flex-shrink: 10;
+  }
+
+  .c2 {
+    width: 120px;
+    text-align: right;
+    flex-shrink: 0;
+    flex-grow: 0;
+  }
+
+  .c3 {
+    width: 165px;
+    text-align: right;
+    flex-shrink: 0;
+    flex-grow: 0;
+  }
+
+  .c4 {
+    width: 165px;
+    text-align: right;
+    font-size: 28px !important;
+    font-weight: 400 !important;
+    flex-shrink: 0;
+    flex-grow: 0;
+  }
+}
+
+.empty-box {
+  width: 100%;
+  padding-top: 150px;
+  margin: 0 auto;
+}

@@ -1,0 +1,21 @@
+.trade-table {
+  --background: var(--basic-bg);
+
+  padding: 30px 20px;
+  background: var(--background);
+  overflow: hidden;
+  min-height: 556px;
+}
+
+.table-tabs {
+  :global {
+    .adm-capsule-tabs-header {
+      background-color: var(--bold-bg);
+      border-radius: 24px;
+    }
+
+    .adm-capsule-tabs-content {
+      padding-top: 30px;
+    }
+  }
+}

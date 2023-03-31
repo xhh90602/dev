@@ -1,0 +1,66 @@
+/* stylelint-disable selector-class-pattern */
+/* stylelint-disable number-leading-zero */
+.data-graph {
+  .data-graph-box {
+    background-color: #fff;
+    margin: 0 16px;
+    border-radius: 24px;
+  }
+
+  .graph-box {
+    padding: 30px;
+  }
+
+  .title-box {
+    padding: 0;
+  }
+
+  .switch-condition {
+    margin-top: 15px;
+
+    .hs-tabs {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 3px;
+      border-radius: 24px;
+      background: #f4f6fd;
+      white-space: nowrap;
+      box-sizing: border-box;
+      height: 64px;
+      line-height: 64px;
+      overflow: hidden;
+    }
+
+    .hs-tabs-item {
+      flex: 1;
+      box-sizing: border-box;
+      height: 56px;
+      border-radius: 20px;
+      line-height: 56px;
+      text-align: center;
+      color: #8f95a8;
+      background: #f4f6fd;
+      font-size: 24px;
+    }
+
+    .hs-tabs-item--active {
+      background: #fff;
+      border-radius: 20px;
+      transition: all 0.1s;
+      color: #1f2d56;
+      font-weight: 700;
+    }
+  }
+
+  .loading {
+    padding: 140px 0;
+  }
+
+  .empty-box {
+    padding: 50px 0;
+    margin: 0 16px;
+    border-radius: 24px;
+    background-color: #fff;
+  }
+}

@@ -1,0 +1,56 @@
+.page-wrapper {
+  height: 100%;
+  width: 100%;
+  // overflow: hidden;
+  background-color: #f7f8fc;
+}
+
+.page-top-box {
+  padding: 0 27px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 32px;
+  margin-top: 32px;
+
+  .page-title {
+    color: #011628;
+    font-size: 34px;
+    font-weight: 700;
+    margin-right: 23px;
+  }
+
+  .page-date {
+    color: #8f95a8;
+    font-size: 26px;
+    font-weight: 400;
+  }
+
+  .page-unit {
+    color: #8f95a8;
+    font-size: 26px;
+    font-weight: 400;
+  }
+}
+
+.tab-box {
+  padding: 0 32px;
+  margin-bottom: 24px;
+}
+
+.main-box {
+  padding: 0 16px;
+
+  .money-distribute,
+  .real-time-trend {
+    border-radius: 24px;
+    background-color: #fff;
+    margin-bottom: 20px;
+  }
+
+  .net-asset {
+    border-radius: 24px;
+    background-color: #fff;
+    margin-bottom: 31px;
+  }
+}

@@ -1,0 +1,17 @@
+.share-holding {
+  color: #06b899;
+}
+
+.loading {
+  position: relative;
+  height: 200px;
+}
+
+.nodata {
+  text-align: center;
+  padding-bottom: 50px;
+  font-size: 24px;
+  color: var(--main-nodata-color);
+  margin-bottom: 27px;
+  border-bottom: 1px solid var(--main-border-line);
+}

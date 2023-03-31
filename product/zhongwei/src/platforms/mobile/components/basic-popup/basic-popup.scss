@@ -1,0 +1,15 @@
+.basic-popup {
+  :global {
+    .adm-popup-body-position-bottom .adm-popup-close-icon {
+      top: 20px;
+      right: 20px;
+      padding: 5px;
+      color: #8f95a8;
+      font-size: 38px;
+    }
+
+    .adm-popup-body {
+      padding: 60px 40px 40px;
+    }
+  }
+}

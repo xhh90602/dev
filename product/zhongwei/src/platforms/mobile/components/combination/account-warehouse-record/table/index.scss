@@ -1,0 +1,165 @@
+.table {
+  .title {
+    display: flex;
+    justify-self: flex-start;
+    align-items: center;
+    margin-bottom: 32px;
+
+    .title-item {
+      flex: 1;
+      font-size: 24px;
+      color: #717686;
+
+      &.d1 {
+        text-align: left;
+        font-weight: 400;
+        font-size: 24px;
+      }
+
+      &.d2 {
+        text-align: right;
+        font-weight: 400;
+        font-size: 24px;
+      }
+
+      &.d3 {
+        text-align: right;
+        font-weight: 400;
+        font-size: 24px;
+      }
+    }
+  }
+
+  .table-list {
+    .content {
+      display: flex;
+      align-items: center;
+      color: #212121;
+      font-size: 28px;
+    }
+
+    .item {
+      width: 100%;
+      display: flex;
+      border-top: 1px solid #f2f5ff;
+      padding: 20px 0;
+    }
+
+    .h-name {
+      font-size: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      padding: 5px 0 5px 10px;
+
+      .business {
+        position: absolute;
+        left: -20px;
+        width: 24px;
+        height: 24px;
+        line-height: 24px;
+        display: inline-block;
+        margin-right: 8px;
+        text-align: center;
+        font-size: 18px;
+        font-weight: 400;
+        border-radius: 4px;
+      }
+
+      .buy {
+        color: #fa6d16;
+        background-color: #fff5e8;
+      }
+
+      .sell {
+        color: #2f9bfa;
+        background-color: #e8f2ff;
+      }
+
+      .stock-name {
+        font-size: 24px;
+        font-weight: 500;
+        color: #011628;
+      }
+    }
+
+    .market {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      padding-left: 10px;
+
+      &.ml40 {
+        margin-left: 40px;
+      }
+
+      img {
+        width: 28px;
+        height: auto;
+        display: inline-block;
+        margin-right: 8px;
+      }
+
+      .code {
+        color: #8f95a8;
+        font-size: 22px;
+        font-weight: 400;
+      }
+    }
+
+    .proportion {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+
+      .s {
+        font-size: 28px;
+        font-weight: 400;
+        color: #011628;
+      }
+
+      img {
+        width: 28px;
+        height: auto;
+        display: inline-block;
+        margin: 0 15px;
+      }
+    }
+
+    .refer-to {
+      font-size: 22px;
+      color: #8f95a8;
+      font-weight: 400;
+
+      span {
+        margin-left: 8px;
+      }
+    }
+
+    .d1 {
+      flex: 1;
+      text-align: left;
+    }
+
+    .d2 {
+      flex: 1;
+      text-align: right;
+    }
+
+    .d3 {
+      flex: 1;
+      color: #011628;
+      font-weight: 400;
+      font-size: 28px;
+      text-align: right;
+    }
+  }
+}
+
+.more {
+  text-align: center;
+  color: #262d56;
+  height: 89px;
+  line-height: 89px;
+  font-size: 24px;
+}

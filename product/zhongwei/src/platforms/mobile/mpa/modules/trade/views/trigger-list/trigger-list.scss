@@ -1,0 +1,18 @@
+.contain {
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.tab {
+  margin: 20px;
+}
+
+.list {
+  flex: 1;
+  padding: 0 20px;
+  overflow: auto;
+}

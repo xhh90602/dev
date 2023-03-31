@@ -1,0 +1,44 @@
+.nav-bar {
+  --nav-bg: transparent;
+
+  width: 100vw;
+  position: fixed;
+  top: var(--safe-area-top);
+  left: 0;
+  height: 102px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 32px;
+  color: var(--text-color);
+  background: var(--nav-bg);
+}
+
+.back {
+  font-size: 50px;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  flex: 1 1;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.title {
+  font-size: 34px;
+  font-weight: 700;
+  flex: auto;
+  text-align: center;
+  padding: 0 20px;
+  white-space: nowrap;
+}
+
+.right {
+  font-size: 26px;
+  font-weight: 400;
+  flex: 1 1;
+  text-align: right;
+  display: flex;
+  justify-content: flex-end;
+  color: #717686;
+}

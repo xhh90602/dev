@@ -1,0 +1,78 @@
+:global {
+  .indicator-setting {
+    .ant-modal-content {
+      border-radius: 10px;
+    }
+
+    .ant-modal-body {
+      padding: 0;
+      border-radius: 10px;
+    }
+  }
+}
+
+.indicator-setting {
+  cursor: pointer;
+  color: #ff7600;
+  font-size: 12px;
+  margin-left: auto;
+}
+
+.indicator-title {
+  padding: 20px 0;
+  color: var(--thrid-text-color);
+  font-weight: 500;
+  font-size: 18px;
+  text-align: center;
+  border-bottom: 1px solid var(--main-split-line-color);
+}
+
+.indicator-footer {
+  display: flex;
+  justify-content: center;
+  padding: 20px 0;
+  border-top: 1px solid var(--main-split-line-color);
+}
+
+.reset-btn,
+.confirm-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 6px 24px;
+  border-radius: 6px;
+}
+
+.reset-btn {
+  color: var(--theme-text-color);
+  background: transparent;
+  border: 1px solid var(--theme-text-color);
+}
+
+.confirm-btn {
+  margin-left: 40px;
+  color: #fff;
+  background: var(--theme-text-color);
+}
+
+.indicator-body {
+  display: flex;
+  height: 320px;
+}
+
+.tab-list {
+  position: relative;
+  width: 120px;
+  height: 100%;
+  background: #15151a;
+}
+
+.tab-item {
+  padding: 6px 39px;
+  color: #666;
+}
+
+.tab-item-active {
+  color: var(--theme-text-color);
+  background: #392c23;
+}

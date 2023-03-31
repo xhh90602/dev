@@ -1,0 +1,258 @@
+.dialog {
+  width: 100%;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  z-index: 99999;
+
+  .mask {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 1;
+    background: rgba(0, 0, 0, 50%);
+  }
+
+  .dialog-box {
+    width: 100%;
+    position: relative;
+    left: 0;
+    bottom: 0;
+    border-top-left-radius: 24px;
+    border-top-right-radius: 24px;
+    z-index: 10;
+    padding: 32px;
+  }
+
+  .icon-money {
+    width: 100px;
+    height: auto;
+    display: block;
+    position: absolute;
+    left: 60px;
+    top: -88px;
+  }
+
+  .icon-close-box {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  .icon-close {
+    width: 40px;
+    height: auto;
+    display: block;
+  }
+
+  .bg-rise {
+    background: linear-gradient(180deg, rgba(96, 198, 180, 100%) 0%, rgba(255, 255, 255, 100%) 100%);
+
+    .stock-title {
+      font-size: 32px;
+      color: #0c6d5c;
+      font-weight: 700;
+      margin-bottom: 10px;
+    }
+
+    .fxs-title {
+      font-size: 32px;
+      color: #0c6d5c;
+      font-weight: 700;
+      margin-bottom: 10px;
+    }
+  }
+
+  .bg-fall {
+    background: linear-gradient(180deg, rgba(230, 150, 150, 100%) 0%, rgba(255, 255, 255, 100%) 100%);
+
+    .stock-title {
+      font-size: 32px;
+      color: #a94343;
+      font-weight: 700;
+      margin-bottom: 10px;
+    }
+
+    .fxs-title {
+      font-size: 32px;
+      color: #a94343;
+      font-weight: 700;
+      margin-bottom: 10px;
+    }
+  }
+
+  .stock-box {
+    margin-bottom: 34px;
+  }
+
+  .row {
+    .item {
+      border-radius: 24px;
+      background-color: #fff;
+      padding: 43px 43px 36px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      .stock-name {
+        font-size: 34px;
+        font-weight: 700;
+        color: #011628;
+        margin-bottom: 5px;
+      }
+
+      .stock-info {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        font-size: 26px;
+        color: #8f95a8;
+        font-weight: 400;
+      }
+    }
+
+    .l {
+      img {
+        width: 30px;
+        height: auto;
+        margin-right: 14px;
+      }
+    }
+
+    .r {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+
+      img {
+        width: 35px;
+        height: auto;
+      }
+
+      .box {
+        margin-right: 50px;
+      }
+
+      .ups-and-downs-num {
+        font-size: 40px;
+        color: #06b899;
+        font-weight: 700;
+      }
+
+      .text {
+        color: #8f95a8;
+        font-weight: 400;
+        font-size: 24px;
+        text-align: right;
+        margin-right: 6px;
+      }
+    }
+  }
+
+  .fxs-box {
+    .fxs-row {
+      height: 800px;
+      border-radius: 24px;
+      overflow-y: auto;
+      padding-bottom: 40px;
+    }
+
+    .item {
+      margin-bottom: 16px;
+      background-color: #fff;
+      padding: 28px;
+      border-radius: 24px;
+    }
+
+    .user-box {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+
+    .l {
+      display: flex;
+      align-items: center;
+    }
+
+    .avatar-box {
+      position: relative;
+      margin-right: 24px;
+    }
+
+    img.avatar {
+      width: 80px;
+      height: 80px;
+      display: inline-block;
+    }
+
+    img.avatar-tag {
+      width: 24px;
+      height: 24px;
+      border-radius: 50%;
+      position: absolute;
+      bottom: 8px;
+      right: 2px;
+    }
+
+    .user-info {
+      padding: 0;
+    }
+
+    .name {
+      color: #011628;
+      font-size: 34px;
+      font-weight: 700;
+    }
+
+    .type-text {
+      font-size: 24px;
+      font-weight: 400;
+      color: #8f95a8;
+    }
+
+    .r {
+      text-align: right;
+    }
+
+    .num {
+      color: #1f2d56;
+      font-size: 36px;
+      font-weight: 700;
+    }
+
+    .content-text {
+      font-size: 26px;
+      font-weight: 400;
+      color: #717686;
+      line-height: 39px;
+    }
+
+    .btn {
+      width: 100px;
+      height: 48px;
+      line-height: 48px;
+      border-radius: 34px;
+      text-align: center;
+      font-size: 24px;
+      font-weight: 400;
+      border: 1px solid #fa6d16;
+      color: #fa6d16;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      img {
+        width: 20px;
+      }
+    }
+
+    .active {
+      border: 1px solid #ced1dd;
+      color: #ced1dd;
+    }
+  }
+}

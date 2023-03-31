@@ -1,0 +1,60 @@
+.gain-loss-analysis {
+  height: 100%;
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding: 16px 24px 0;
+
+  > div {
+    margin-top: 24px;
+
+    &:first-child {
+      margin-top: 0;
+    }
+  }
+
+  :global {
+    .basic-card {
+      padding: 32px;
+    }
+
+    .rise-income-card,
+    .fall-income-card {
+      position: relative;
+
+      &:after {
+        content: '';
+        position: absolute;
+        width: 70px;
+        height: 70px;
+        display: block;
+        top: 20px;
+        right: 20px;
+      }
+    }
+
+    .rise-income-card {
+      margin-right: 24px;
+      background: linear-gradient(180deg, rgba(6, 184, 153, 12%) 0%, #fff 40%);
+
+      &:after {
+        background-image: url('@mobile/images/asset/icon_asset_rise.svg');
+      }
+    }
+
+    .fall-income-card {
+      background: linear-gradient(180deg, rgba(218, 7, 14, 14%) 0%, #fff 40%);
+
+      &:after {
+        background-image: url('@mobile/images/asset/icon_asset_fail.svg');
+      }
+    }
+  }
+}
+
+.full-width-bottom-box {
+  width: 100vw;
+  background: #fff;
+  margin: 0 -24px;
+  border-radius: 24px 24px 0 0;
+  padding: 24px;
+}

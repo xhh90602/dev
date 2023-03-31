@@ -1,0 +1,61 @@
+.wrap {
+  .title-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 32px;
+    margin: 34px 0 24px;
+
+    .title {
+      color: #011628;
+      font-size: 32px;
+      font-weight: 700;
+    }
+
+    img {
+      width: 14px;
+      height: auto;
+      display: inline-block;
+    }
+  }
+
+  .selected-portfolio {
+    width: auto;
+    padding: 0 32px;
+    overflow-y: auto;
+    display: flex;
+
+    :global {
+      .combination-card {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-right: 18px;
+        flex-grow: 1;
+      }
+
+      .item {
+        width: 670px;
+        margin-right: 14px;
+        flex-shrink: 0;
+      }
+    }
+  }
+
+  .loading-page {
+    width: 100%;
+    padding: 160px 0;
+    text-align: center;
+    margin: 0 auto;
+    background-color: #fff;
+    border-radius: 24px;
+  }
+
+  .empty-box {
+    width: 100%;
+    padding: 80px 0;
+    margin: 0 auto;
+    border-radius: 24px;
+    background-color: #fff;
+  }
+}

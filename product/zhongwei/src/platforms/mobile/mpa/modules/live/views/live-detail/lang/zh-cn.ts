@@ -1,0 +1,18 @@
+export default {
+  name: '简体名字',
+  people: '人',
+  online: '在线',
+  intro: '简介',
+  member: '成员',
+  chat: '聊天',
+  focus: '关注',
+  placeholder: '一起聊天啦',
+  living: '直播中',
+  wei_friend: '薇友',
+  send_friend: '已关注',
+  focus_success: '关注成功',
+  cancel_focus: '取消关注成功',
+  send_msg: '发消息',
+  already_send: '已发送',
+  error_info: '获取分析师信息失败',
+};

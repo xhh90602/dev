@@ -1,0 +1,262 @@
+.selected-strategy-detail {
+  width: 100%;
+  height: 100%;
+  background-color: #f7f8fc;
+
+  .full-content {
+    height: 100%;
+    display: block;
+    background: url('../../../../../images/bg_05.png');
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-attachment: fixed;
+    padding-top: 214px;
+
+    .head-top {
+      width: 100%;
+      display: flex;
+      justify-content: flex-start;
+      padding: 44px 0;
+      position: fixed;
+      left: 0;
+      z-index: 1;
+
+      .back {
+        width: auto;
+        height: 44px;
+        display: inline-block;
+        padding: 0 30px;
+        flex-shrink: 1;
+        z-index: 2;
+      }
+
+      .title {
+        font-size: 34px;
+        font-weight: 700;
+        color: #fff;
+        flex-grow: 1;
+        text-align: center;
+        margin-left: -60px;
+      }
+    }
+  }
+
+  .content {
+    height: 100%;
+
+    .stock-info {
+      background-color: #fff;
+      padding: 34px 32px;
+      border-radius: 24px;
+      margin: 0 16px;
+      min-height: 248px;
+
+      .title {
+        font-size: 36px;
+        color: #011628;
+        font-weight: 700;
+        margin-bottom: 20px;
+      }
+
+      .text-box {
+        max-height: 108px;
+        overflow-y: auto;
+        position: relative;
+      }
+
+      .text {
+        font-size: 24px;
+        color: #8f95a8;
+        font-weight: 400;
+        line-height: 36px;
+        position: relative;
+      }
+
+      img {
+        width: 24px;
+        height: auto;
+        position: absolute;
+        bottom: 10px;
+        right: 5px;
+      }
+
+      .up {
+        transform: rotate(180deg);
+      }
+    }
+
+    .sotck-box {
+      height: calc(100% - 268px);
+      background-color: #fff;
+      margin-top: 20px;
+      border-top-left-radius: 24px;
+      border-top-right-radius: 24px;
+
+      .relevant-stock {
+        padding: 36px;
+      }
+
+      .title {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 40px;
+      }
+
+      span {
+        color: #8f95a8;
+        font-size: 24px;
+        font-weight: 400;
+        margin-left: 20px;
+      }
+
+      .left {
+        display: flex;
+        align-items: center;
+        font-size: 32px;
+        font-weight: 700;
+        color: #011628;
+      }
+
+      .right {
+        color: #8f95a8;
+        font-size: 24px;
+        font-weight: 400;
+      }
+    }
+  }
+
+  .stock-list {
+    .head {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 6px;
+
+      .item {
+        color: #717686;
+        font-size: 26px;
+        font-weight: 400;
+      }
+
+      img {
+        width: 13px;
+        height: auto;
+        display: inline-block;
+        margin-left: 8px;
+        vertical-align: middle;
+      }
+
+      .t1 {
+        width: 30%;
+        text-align: left;
+      }
+
+      .t2 {
+        width: 15%;
+        text-align: right;
+      }
+
+      .t3 {
+        width: 30%;
+        text-align: right;
+      }
+    }
+
+    .stock-content {
+      .row {
+        display: flex;
+        justify-content: space-between;
+      }
+
+      .item-box {
+        height: 650px;
+        overflow-y: auto;
+      }
+
+      .item {
+        display: flex;
+        justify-content: space-between;
+        padding: 20px 0;
+      }
+
+      .info {
+        width: 30%;
+      }
+
+      .stock-name {
+        font-size: 30px;
+        font-weight: 700;
+        color: #011628;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+      }
+
+      .stock-code {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        font-size: 24px;
+        color: #8f95a8;
+        font-weight: 400;
+      }
+
+      .icon-market {
+        width: 30px;
+        height: auto;
+        display: inline-block;
+        margin-right: 8px;
+      }
+
+      .price {
+        width: 15%;
+        text-align: right;
+        color: #011628;
+        font-weight: 700;
+        font-size: 32px;
+      }
+
+      .rise-and-fall {
+        width: 30%;
+        text-align: right;
+      }
+
+      .day {
+        font-size: 32px;
+        font-weight: 700;
+        color: #011628;
+      }
+
+      .cumulative {
+        font-size: 24px;
+        font-weight: 400;
+        color: #8f95a8;
+      }
+    }
+
+    .optional {
+      img {
+        width: 34px;
+        height: auto;
+        margin-top: 10px;
+      }
+    }
+  }
+
+  .not-more {
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px 0 32px;
+  }
+
+  .loading-page {
+    padding: 30% 0 0;
+  }
+
+  .empty-box {
+    width: 100%;
+    padding-top: 180px;
+    margin: 0 auto;
+  }
+}

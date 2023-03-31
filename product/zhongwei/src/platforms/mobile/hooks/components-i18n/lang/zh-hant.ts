@@ -1,0 +1,18 @@
+export default {
+  cancel: '取消',
+  reset: '重置',
+  confirm: '確定',
+  please_select_start_time: '請選擇開始時間',
+  please_select_end_time: '請選擇結束時間',
+  start_time_cannot_be_later_than_end_time: '開始時間不得大於結束時間',
+  end_time_must_be_no_later_than_start_time: '結束時間不得小於開始時間',
+  quick_time_select: '快捷時間選擇',
+  date_range_select: '日期區間選擇',
+  to: '至',
+  today: '今天',
+  last_5_days: '近5日',
+  last_weeks: '最近一周',
+  last_months: '最近一月',
+  last_three_months: '最近三月',
+  year_to_date: '年初至今',
+};

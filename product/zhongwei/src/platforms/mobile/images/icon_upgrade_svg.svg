@@ -1,0 +1,6 @@
+<svg fill="none" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 25 25" class="design-iconfont">
+  <path stroke="#fff" stroke-width="3" d="M12.5 1.5A11 11 0 1 0 12.5 23.5A11 11 0 1 0 12.5 1.5Z"/>
+  <path stroke="#fff" stroke-width="3" stroke-linecap="round" d="M12.5 16.5L12.5 10.5"/>
+  <path stroke="#fff" stroke-width="3" stroke-linecap="round" d="M16.8787 12L13 8.12132"/>
+  <path transform="matrix(.7071 -.7071 -.7071 -.7071 6 12)" stroke="#fff" stroke-width="3" stroke-linecap="round" d="M1.5 -1.5L6.98528 -1.5"/>
+</svg>

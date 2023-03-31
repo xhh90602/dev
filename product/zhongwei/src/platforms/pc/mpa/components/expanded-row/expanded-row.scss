@@ -1,0 +1,55 @@
+:global {
+  html {
+    --expanded-bg-color: #f4f6f8;
+    --expanded-col-label-color: #999;
+    --expanded-col-value-color: #999;
+  }
+
+  html.black {
+    --expanded-bg-color: #373944;
+    --expanded-col-label-color: #999;
+    --expanded-col-value-color: #d5d5d5;
+  }
+}
+
+.expanded-row {
+  display: flex;
+  align-items: center;
+  height: 60px;
+  padding: 0 20px;
+  background: var(--expanded-bg-color);
+}
+
+.expanded-col:not(.expanded-col:last-child) {
+  margin-right: 40px;
+}
+
+.col-label {
+  color: var(--expanded-col-label-color);
+  margin-bottom: 4px;
+}
+
+.col-value {
+  color: var(--expanded-col-value-color);
+}
+
+.col-label,
+.col-value {
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.total-amount-col {
+  flex: 1;
+}
+
+.agreement-col {
+  .col-label {
+    text-align: center;
+  }
+
+  .col-value {
+    color: var(--text-blue-color);
+    cursor: pointer;
+  }
+}

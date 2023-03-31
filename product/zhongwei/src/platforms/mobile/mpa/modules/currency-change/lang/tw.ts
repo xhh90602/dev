@@ -1,0 +1,18 @@
+export default {
+  all: '全部',
+  stock_trade: '股票交易',
+  money_in_out: '出入金',
+  stock_access: '股票存取',
+  other: '其他',
+  income: '收入',
+  expend: '支出',
+  all_business: '全部業務',
+  in_out_type: '進出類型',
+  all_date: '全部時間',
+  trade_state: '交易狀態',
+  type: '類型',
+  flow_in: '流入',
+  flow_out: '流出',
+  reset: '重置',
+  confirm: '確認',
+};

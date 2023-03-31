@@ -1,0 +1,31 @@
+.tabs-box {
+  width: 100%;
+  overflow: hidden;
+
+  :global {
+    .adm-tabs-header {
+      border-bottom: 1px solid #eaedf7;
+      padding: 20px 80px;
+    }
+
+    .adm-tabs-tab-line {
+      width: 10px !important;
+      height: 10px;
+      border-radius: 50%;
+      background-color: #ff5c00;
+    }
+
+    .adm-tabs-tab {
+      padding: 0 0 10px;
+      color: #717686;
+      font-size: 32px;
+      font-weight: 400;
+    }
+
+    .adm-tabs-tab-active {
+      color: #011628;
+      font-size: 32px;
+      font-weight: 400;
+    }
+  }
+}

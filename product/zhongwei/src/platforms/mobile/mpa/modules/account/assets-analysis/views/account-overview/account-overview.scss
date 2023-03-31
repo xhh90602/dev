@@ -1,0 +1,132 @@
+.account-overview {
+  height: 100%;
+  overflow: auto;
+  padding: 16px 24px;
+
+  :global {
+    .basic-card {
+      margin: 24px 0;
+      padding: 32px;
+
+      &:first-child {
+        margin-top: 0;
+      }
+    }
+  }
+}
+
+.business-stocks-chart-box {
+  height: 300px;
+}
+
+.hs-trend-chart {
+  width: 100%;
+  height: 320px;
+  flex: 1;
+}
+
+.hs-trend-box {
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 24px;
+}
+
+.hs-trend-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 10px;
+  overflow: hidden;
+
+  .hs-trend-list-box {
+    display: flex;
+    flex-direction: column;
+    max-height: 300px;
+    overflow-y: auto;
+    flex-shrink: 0;
+  }
+
+  .item {
+    display: flex;
+    align-items: center;
+    padding: 9px 0;
+  }
+
+  .stock-name-box {
+    width: 180px;
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+
+    .stock-name {
+      font-size: 24px;
+      font-weight: 400;
+      color: #1f2d56;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      overflow: hidden;
+    }
+
+    span {
+      width: 18px;
+      height: 18px;
+      display: inline-block;
+      border-radius: 50%;
+      margin-right: 16px;
+      flex-shrink: 0;
+    }
+  }
+
+  .stock-ratio {
+    width: 100px;
+    color: #717686;
+    font-size: 24px;
+    font-weight: 400;
+    text-align: right;
+    flex-shrink: 0;
+  }
+
+  .stock-value {
+    color: #717686;
+    font-size: 24px;
+    font-weight: 400;
+    text-align: left;
+    margin-left: 30px;
+    flex-shrink: 0;
+    flex-grow: 0;
+  }
+}
+
+.borrowing-balance-charts-box {
+  border-top: 1px solid #f2f5ff;
+  height: 280px;
+  margin-top: 30px;
+}
+
+.borrowing-balance {
+  text-align: center;
+}
+
+.borrowing-balance-hint {
+  padding: 10px 20px;
+  border-radius: 50px;
+  font-size: 22px;
+  color: #8f95a8;
+  background-color: #f7f8fc;
+  position: relative;
+  display: inline-block;
+  margin: 20px auto 0;
+
+  &:after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: -10px;
+    transform: translateX(-50%);
+    border: 10px solid transparent;
+    border-left-width: 10px;
+    border-right-width: 10px;
+    border-bottom-color: #f7f8fc;
+    border-top: 0;
+  }
+}

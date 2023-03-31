@@ -1,0 +1,79 @@
+:global {
+  html {
+    --modal-bg-color: #fff;
+    --modal-title-color: #212121;
+    --modal-close-color: #bcbcbc;
+    --modal-body-color: #666;
+  }
+
+  html.black {
+    --modal-bg-color: #222228;
+    --modal-title-color: #d5d5d5;
+    --modal-close-color: #bcbcbc;
+    --modal-body-color: #999;
+  }
+
+  .base-modal {
+    .ant-modal-content {
+      padding: 40px 0;
+    }
+
+    .ant-modal-content,
+    .ant-modal-header {
+      background-color: var(--modal-bg-color);
+    }
+
+    .ant-modal-header {
+      padding: 0;
+      border-bottom: none;
+    }
+
+    .ant-modal-title {
+      color: var(--modal-title-color);
+      font-size: 20px;
+      font-weight: 500;
+      text-align: center;
+    }
+
+    .ant-modal-body {
+      padding: 30px 60px;
+      color: var(--modal-body-color);
+      font-size: 16px;
+      text-align: center;
+    }
+
+    .ant-modal-footer {
+      padding: 0;
+      border-top: none;
+      text-align: center;
+    }
+
+    .ant-btn {
+      font-size: 16px;
+    }
+
+    .ant-btn.ant-btn-default {
+      width: 178px;
+      height: 44px;
+      border: 1px solid #2780e3;
+      border-radius: 6px;
+      background-color: var(--modal-bg-color);
+      color: #2780e3;
+    }
+
+    .ant-btn.ant-btn-primary {
+      width: 178px;
+      height: 44px;
+      background: #2780e3;
+      border-radius: 6px;
+    }
+
+    .ant-modal-footer .ant-btn + .ant-btn:not(.ant-dropdown-trigger) {
+      margin-left: 20px;
+    }
+
+    .ant-modal-close {
+      color: var(--modal-close-color);
+    }
+  }
+}

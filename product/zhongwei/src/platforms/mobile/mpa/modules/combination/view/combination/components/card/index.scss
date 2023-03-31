@@ -1,0 +1,100 @@
+.infinite-scroll-box {
+  color: #b5bbcf;
+  font-size: 24px;
+  padding: 30px 30px 60px;
+}
+
+.tool-bar-active {
+  padding-bottom: 180px;
+}
+
+.pull-to-refresh-box {
+  padding-bottom: 80px;
+}
+
+.wrap {
+  overflow-y: auto;
+  font-size: 24px;
+
+  .tip-text {
+    text-align: center;
+    font-size: 24px;
+    font-weight: 400;
+    color: #8f95a8;
+
+    span {
+      color: #2f9bfa;
+    }
+  }
+
+  .create-btn {
+    width: 237px;
+    height: 73px;
+    line-height: 73px;
+    color: #717686;
+    font-size: 28px;
+    font-weight: 400;
+    border: 1px solid #b5bbcf;
+    border-radius: 90px;
+    text-align: center;
+    margin: 140px auto 0;
+
+    img {
+      width: 38px;
+      height: auto;
+      margin-right: 10px;
+      vertical-align: sub;
+    }
+  }
+}
+
+.loading-page {
+  padding: 120px 0 0;
+}
+
+.tool-bar {
+  width: 100%;
+  padding: 0 24px 32px;
+
+  &.fixed-bar {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 0;
+  }
+
+  .tool-bar-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 24px;
+    padding: 24px 0;
+    box-shadow: 0 -8px 50px 5px #dbe1ef;
+
+    .item {
+      width: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #1f2d56;
+      font-size: 30px;
+      font-weight: 400;
+
+      img.icon {
+        width: 30px;
+        height: 30px;
+        display: inline-block;
+        margin-right: 24px;
+      }
+    }
+
+    .item:first-child {
+      border-right: 1px solid #f2f5ff;
+    }
+  }
+}
+
+.empty-box {
+  padding: 100px 0 16px;
+}

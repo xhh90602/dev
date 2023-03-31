@@ -1,0 +1,208 @@
+.page {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+}
+
+.page-head {
+  width: 100%;
+  height: 88px;
+  line-height: 88px;
+  padding: 0 20px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  background-color: #fff;
+  font-size: 36px;
+  font-weight: 600;
+}
+
+.page-head img {
+  height: 50px;
+  margin-top: 19px;
+}
+
+.page-main {
+  flex: 1;
+  overflow-y: auto;
+  background: rgba(255, 230, 206, 100%);
+  padding-bottom: 60px;
+  box-sizing: border-box;
+}
+
+.advertising {
+  width: 100%;
+  height: 708px;
+  background: url('./images/beijing.png') no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.advertising-btn {
+  width: 140px;
+  height: 50px;
+  line-height: 50px;
+  border-radius: 31px;
+  opacity: 1;
+  color: #1f2d56;
+  font-size: 24px;
+  background: rgba(255, 255, 255, 100%);
+  position: absolute;
+  top: 40px;
+  right: 40px;
+  text-align: center;
+}
+
+.advertising-title {
+  width: 532px;
+  height: 106px;
+  line-height: 106px;
+  opacity: 1;
+  color: rgba(26, 10, 0, 100%);
+  font-size: 76px;
+  font-weight: 700;
+  position: absolute;
+  top: 100px;
+  right: 50%;
+  margin-right: -266px;
+}
+
+.advertising-time-range {
+  width: 676px;
+  height: 64px;
+  line-height: 64px;
+  text-align: center;
+  color: #fff;
+  background: url('./images/activity-time-bg.png') no-repeat;
+  background-size: cover;
+  position: absolute;
+  bottom: 40px;
+  right: 50%;
+  margin-right: -338px;
+  font-size: 30px;
+  font-weight: 500;
+}
+
+.gift {
+  width: 686px;
+  height: 709px;
+  margin: 0 auto;
+  border-radius: 24px;
+  opacity: 1;
+  background: rgba(255, 255, 255, 100%);
+  box-shadow: 0 4px 18px 0 rgba(215, 122, 32, 7%);
+  padding: 34px;
+  box-sizing: border-box;
+}
+
+.gift-title {
+  width: 204px;
+  height: 48px;
+  opacity: 1;
+  color: rgba(1, 22, 40, 100%);
+  font-size: 34px;
+  font-weight: 700;
+  text-align: left;
+  margin-bottom: 32px;
+  margin-left: 20px;
+}
+
+.gift-option {
+  width: 618px;
+  height: 170px;
+  border-radius: 24px;
+  opacity: 1;
+  // background: rgba(255,246,240,1);
+  display: flex;
+  justify-content: space-between;
+  padding: 28px 38px 30px 34px;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+}
+
+.card {
+  width: 166px;
+  height: 114px;
+  border-radius: 16px;
+  opacity: 1;
+  position: relative;
+}
+
+.card img {
+  width: 100%;
+  height: 100%;
+}
+
+.card-text {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  color: #ffe9e9;
+}
+
+.text {
+  width: 340px;
+  height: 45px;
+  opacity: 1;
+  color: rgba(250, 109, 22, 100%);
+  font-size: 32px;
+  font-weight: 700;
+  text-align: right;
+  margin-top: 15px;
+  margin-bottom: 6px;
+  overflow: auto;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.intro {
+  height: 34px;
+  opacity: 1;
+  color: rgba(143, 149, 168, 100%);
+  font-size: 24px;
+  font-weight: 400;
+  text-align: right;
+}
+
+.describe {
+  height: 29px;
+  opacity: 1;
+  color: rgba(232, 152, 79, 100%);
+  font-size: 22px;
+  font-weight: 400;
+  text-align: center;
+  margin: 20px auto 26px;
+}
+
+.receive {
+  width: 654px;
+  height: 88px;
+  line-height: 88px;
+  border-radius: 85px;
+  opacity: 1;
+  background: rgba(250, 109, 22, 100%);
+  margin: 0 auto;
+  // color: rgba(255, 255, 255, 100%);
+  // font-size: 34px;
+  // font-weight: 700;
+  text-align: center;
+
+  :global {
+    .adm-button {
+      border-radius: 51px;
+      background: rgba(250, 109, 22, 100%);
+      box-shadow: 0 8px 0 0 rgba(227, 100, 22, 100%);
+      border: none;
+      color: rgba(255, 255, 255, 100%);
+      font-size: 34px;
+      font-weight: 700;
+    }
+
+    .adm-button-disabled {
+      background: rgba(206, 209, 221, 100%);
+      box-shadow: 0 8px 0 0 rgba(188, 192, 207, 100%);
+    }
+  }
+}

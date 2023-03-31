@@ -1,0 +1,195 @@
+.index {
+  background-color: var(--contain-bg);
+}
+
+.capital-info {
+  overflow: hidden;
+  border-radius: 24px;
+  line-height: 40px;
+}
+
+.currency-info {
+  padding: 33px 33px 67px;
+  margin-bottom: -40px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: 0 0 24px 24px;
+}
+
+.capital-white-info {
+  background-image: url('@mobile/images/white/trade-background.svg');
+}
+
+.info-list {
+  padding: 26px 32px 0;
+  display: flex;
+  flex-wrap: wrap;
+
+  .info-item {
+    width: 33.33%;
+    flex-shrink: 0;
+    font-size: 30px;
+  }
+
+  .info-item:nth-child(n+4) {
+    margin-top: 33px;
+  }
+
+  .label {
+    font-size: 24px;
+    color: var(--trade-btn-icon-color);
+    margin-bottom: 10px;
+  }
+
+  :global {
+    .risk-tag {
+      margin: 0 10px;
+      height: 28px;
+      padding: 0 10px;
+      border-radius: 14px 14px 14px 0;
+      background-color: #e7f7f4;
+      color: #06b899;
+      font-size: 20px;
+      line-height: 28px;
+    }
+  }
+}
+
+%FLEX {
+  display: flex;
+  justify-content: space-between;
+}
+
+.title {
+  @extend %FLEX;
+
+  font-size: 26px;
+  line-height: 46px;
+  margin-bottom: 10px;
+
+  .title-check {
+    display: flex;
+    flex-shrink: 0;
+
+    .icon {
+      margin-left: 43px;
+    }
+
+    [class*='arrow'] {
+      margin-left: 14px;
+      border-color: var(--trade-btn-icon-color) transparent transparent;
+    }
+  }
+
+  [class*='icon'] {
+    line-height: 48px;
+  }
+}
+
+.title-share {
+  display: flex;
+  font-size: 24px;
+  color: var(--desc-color);
+
+  [class*='icon'] {
+    font-size: 29px;
+    margin-right: 14px;
+  }
+}
+
+.currency-contain {
+  background: #f7f1f1 !important;
+}
+
+.currency-box {
+  padding-bottom: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.high-low {
+  text-align: right;
+
+  & > div {
+    display: block;
+
+    [class*='icon'] {
+      font-size: 30px;
+      vertical-align: -6px;
+      margin-right: 4px;
+    }
+  }
+}
+
+.currency-icon,
+.high-low {
+  & > div:last-child {
+    margin-top: 12px;
+  }
+}
+
+.currency-icon {
+  font-size: 26px;
+  font-weight: 700;
+  color: var(--text-color);
+
+  & > div:last-child {
+    font-size: 32px;
+  }
+}
+
+.title-content {
+  @extend %FLEX;
+
+  font-size: 34px;
+
+  .count {
+    font-weight: bold;
+    font-size: 40px;
+  }
+
+  .rate {
+    font-size: 26px;
+  }
+}
+
+.nav-list {
+  padding: 34px 16px;
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  font-size: 22px;
+  color: var(--basic-color);
+
+  .nav-item {
+    width: 20%;
+    flex-shrink: 0;
+  }
+}
+
+.nav-item:nth-last-child(6n) {
+  & > div:last-child {
+    margin-bottom: 24px;
+  }
+}
+
+.trade-table {
+  --background: var(--basic-bg);
+
+  background: var(--background);
+  overflow: hidden;
+}
+
+.table-tabs {
+  :global {
+    .adm-capsule-tabs-header {
+      background-color: var(--bold-bg);
+      border-radius: 24px;
+    }
+  }
+}
+
+.c-table {
+  margin-bottom: 20px;
+}

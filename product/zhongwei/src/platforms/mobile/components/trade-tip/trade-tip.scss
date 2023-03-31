@@ -1,0 +1,33 @@
+.trade-tip,
+.trade-tip .icon {
+  display: flex;
+  align-items: center;
+}
+
+.trade-tip {
+  justify-content: space-between;
+  background-color: transparent;
+  color: var(--orange-desc-text-color);
+  font-size: 24px;
+  height: 66px;
+
+  :global {
+    .icon-svg {
+      color: var(--orange-desc-text-color);
+      font-size: 24px;
+    }
+  }
+
+  .content {
+    padding: 0 36px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    width: 100%;
+  }
+
+  .icon {
+    height: 100%;
+    padding: 0 32px;
+  }
+}

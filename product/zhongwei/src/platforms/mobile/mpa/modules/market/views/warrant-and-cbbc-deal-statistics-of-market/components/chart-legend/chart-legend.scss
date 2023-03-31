@@ -1,0 +1,32 @@
+.legend {
+  display: flex;
+  justify-content: space-around;
+  color: var(--main-content-color);
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  font-size: 20px;
+
+  > i {
+    display: inline-block;
+    margin-right: 8px;
+
+    &.line {
+      width: 20px;
+      height: 4px;
+    }
+
+    &.bar {
+      width: 16px;
+      height: 16px;
+    }
+
+    &.circle {
+      width: 16px;
+      height: 16px;
+      border-radius: 8px;
+    }
+  }
+}

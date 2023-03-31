@@ -1,0 +1,48 @@
+.message-reminder {
+  display: block;
+  padding: 20px 30px;
+  font-size: 24px;
+}
+
+.message-carousel {
+  position: relative;
+  height: 30px;
+  width: 100%;
+  overflow: hidden;
+}
+
+.message-carousel-inner {
+  position: absolute;
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  transition: top .5s ease-in-out;
+}
+
+.message {
+  height: 30px;
+  line-height: 30px;
+  color: var(--orange-desc-text-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+
+  .content {
+    white-space: nowrap;
+    overflow: hidden;
+    margin-right: 10px;
+  }
+
+  :global {
+    .icon-svg {
+      svg path {
+        stroke: var(--orange-desc-text-color);
+      }
+
+      font-size: 20px;
+      width: 20px;
+      height: 20px;
+    }
+  }
+}

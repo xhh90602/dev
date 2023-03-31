@@ -1,0 +1,18 @@
+export default {
+  name: '繁体名字',
+  people: '人',
+  online: '在線',
+  intro: '簡介',
+  member: '成員',
+  chat: '聊天',
+  focus: '關注',
+  placeholder: '一起聊天啦',
+  living: '直播中',
+  wei_friend: '薇友',
+  send_friend: '已關注',
+  focus_success: '關注成功',
+  cancel_focus: '取消關注成功',
+  send_msg: '發消息',
+  already_send: '已發送',
+  error_info: '獲取分析師信息失敗',
+};

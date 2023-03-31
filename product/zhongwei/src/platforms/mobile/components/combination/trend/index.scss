@@ -1,0 +1,51 @@
+/* stylelint-disable selector-class-pattern */
+.warp {
+  width: 100%;
+  padding: 28px;
+  background-color: #fff;
+  border-radius: 24px;
+  font-size: 24px;
+  margin-bottom: 15px;
+  box-sizing: border-box;
+
+  .title {
+    color: #011628;
+    font-size: 34px;
+    font-weight: 700;
+    margin-bottom: 29px;
+  }
+}
+
+.hs-tabs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3px;
+  border-radius: 24px;
+  background: #f4f6fd;
+  white-space: nowrap;
+  box-sizing: border-box;
+  height: 64px;
+  line-height: 64px;
+  overflow: hidden;
+}
+
+.hs-tabs-item {
+  flex: 1;
+  box-sizing: border-box;
+  height: 56px;
+  border-radius: 20px;
+  line-height: 56px;
+  text-align: center;
+  color: #8f95a8;
+  background: #f4f6fd;
+  font-size: 24px;
+
+  &.hs-tabs-item--active {
+    background: #fff;
+    border-radius: 20px;
+    transition: all .1s;
+    color: #1f2d56;
+    font-weight: 700;
+  }
+}

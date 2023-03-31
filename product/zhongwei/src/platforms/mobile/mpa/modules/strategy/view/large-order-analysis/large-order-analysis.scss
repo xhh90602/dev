@@ -1,0 +1,235 @@
+/* stylelint-disable number-leading-zero */
+.large-order-analysis {
+  display: flex;
+  flex-direction: column;
+  background-color: #f7f8fc;
+  height: 100%;
+
+  .sticky {
+    position: sticky;
+    top: 0;
+    background-color: #f7f8fc;
+  }
+
+  .tabs {
+    margin-bottom: 20px;
+  }
+
+  .select {
+    padding: 0 32px;
+    margin-bottom: 22px;
+
+    .select-box {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #fff;
+      border-radius: 24px;
+      padding: 20px 24px;
+
+      .text {
+        font-size: 34px;
+        font-weight: 400;
+        color: #011628;
+      }
+
+      img {
+        width: 24px;
+        height: auto;
+        display: block;
+      }
+    }
+  }
+
+  .hs-tabs-box {
+    padding: 0 32px;
+    margin-bottom: 16px;
+
+    .hs-tabs {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 3px;
+      border-radius: 24px;
+      background: #ebedf5;
+      white-space: nowrap;
+      box-sizing: border-box;
+      height: 64px;
+      line-height: 64px;
+      overflow: hidden;
+    }
+
+    .hs-tabs-item {
+      flex: 1;
+      box-sizing: border-box;
+      height: 56px;
+      border-radius: 20px;
+      line-height: 56px;
+      text-align: center;
+      color: #8f95a8;
+      background: #ebedf5;
+      font-size: 28px;
+
+      &.hs-tabs-item-active {
+        background: #fff;
+        border-radius: 20px;
+        transition: all 0.1s;
+        color: #1f2d56;
+        font-weight: 700;
+      }
+    }
+  }
+
+  .content {
+    background-color: #fff;
+    border-radius: 24px 24px 0 0;
+    padding: 30px 32px;
+    overflow: hidden;
+    flex-grow: 1;
+
+    .header {
+      display: flex;
+      align-items: center;
+      margin-bottom: 10px;
+
+      .item {
+        font-size: 26px;
+        color: #8f95a8;
+        font-weight: 400;
+      }
+
+      img.sort {
+        width: 12px;
+        height: auto;
+        display: block;
+        margin-left: 10px;
+      }
+    }
+
+    .item-module {
+      height: 100%;
+      overflow: auto;
+      padding-bottom: 30px;
+
+      .item-box {
+        padding: 0;
+      }
+
+      .loading {
+        padding-top: 35%;
+      }
+
+      .item {
+        display: flex;
+        align-items: flex-start;
+        padding: 18px 0;
+      }
+
+      .stock-info {
+        padding: 0;
+      }
+
+      .name {
+        width: 100%;
+        font-size: 30px;
+        font-weight: 700;
+        color: #011628;
+        margin-bottom: 4px;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+      }
+
+      .market-code {
+        display: flex;
+        align-items: center;
+      }
+
+      .market {
+        width: 28px;
+        height: auto;
+        margin-right: 8px;
+      }
+
+      .code {
+        font-size: 24px;
+        color: #8f95a8;
+        font-weight: 400;
+      }
+
+      .price {
+        font-size: 32px;
+        color: #011628;
+      }
+
+      .value {
+        font-size: 32px;
+      }
+    }
+
+    .c1 {
+      width: calc(100% - 180px - 250px);
+      flex-grow: 1;
+    }
+
+    .c2 {
+      width: 180px;
+      text-align: right;
+      padding-right: 30px;
+    }
+
+    .c3 {
+      width: 250px;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+    }
+  }
+
+  .order-content {
+    padding: 0 24px;
+
+    .item-module {
+      padding: 36px;
+      border-radius: 24px;
+      background-color: #fff;
+      margin-bottom: 20px;
+    }
+
+    .title-box {
+      display: flex;
+      justify-content: space-between;
+      align-content: center;
+
+      .title {
+        font-size: 32px;
+        font-weight: 700;
+        color: #1f2d56;
+      }
+
+      img {
+        width: 24px;
+        height: auto;
+        display: inline-block;
+      }
+    }
+
+    .table-box {
+      &.block {
+        display: block;
+      }
+
+      &.hide {
+        display: none;
+      }
+    }
+  }
+
+  .empty-box {
+    width: 100%;
+    padding: 150px 0 0;
+    margin: 0 auto;
+    border-radius: 24px;
+    background-color: #fff;
+  }
+}

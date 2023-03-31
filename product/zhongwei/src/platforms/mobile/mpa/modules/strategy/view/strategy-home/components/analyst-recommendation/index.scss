@@ -1,0 +1,51 @@
+/* stylelint-disable declaration-colon-newline-after */
+.wrap {
+  margin-bottom: 30px;
+
+  .title-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 34px 32px 24px;
+
+    .title {
+      color: #011628;
+      font-size: 32px;
+      font-weight: 700;
+    }
+
+    img {
+      width: 14px;
+      height: auto;
+      display: inline-block;
+    }
+  }
+
+  .analyst-recommendation {
+    width: 100%;
+    display: flex;
+    overflow: auto;
+    padding: 0 32px;
+
+    .item-box {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      padding-right: 17px;
+    }
+
+    :global {
+      .analyst-card-item {
+        margin-right: 15px;
+      }
+    }
+  }
+
+  .empty-box {
+    width: 100%;
+    padding: 80px 0;
+    margin: 0 auto;
+    border-radius: 24px;
+    background-color: #fff;
+  }
+}

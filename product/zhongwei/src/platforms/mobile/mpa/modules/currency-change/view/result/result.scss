@@ -1,0 +1,44 @@
+.page {
+  padding: 120px 32px;
+  text-align: center;
+
+  img {
+    width: 136px;
+    height: 136px;
+    margin-bottom: -96px;
+  }
+}
+
+.card {
+  text-align: center;
+  padding: 136px 49px 50px;
+  font-size: 30px;
+}
+
+.submit-btn {
+  margin-top: 60px;
+  color: #fff;
+  font-size: 34px;
+  background-color: var(--orange-color);
+  line-height: 88px;
+  border-radius: 85px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.tip {
+  text-align: left;
+  margin-top: 60px;
+  font-size: 22px;
+  color: var(--desc-color);
+
+  p {
+    line-height: 38px;
+  }
+}
+
+.desc {
+  margin-top: 23px;
+  margin-bottom: 83px;
+  color: var(--desc-color);
+}

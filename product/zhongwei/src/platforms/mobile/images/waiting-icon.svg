@@ -1,0 +1,10 @@
+<svg fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="design-iconfont">
+  <path stroke="#B5BBCF" stroke-width="2" stroke-linecap="round" d="M12 2L12 7"/>
+  <path stroke="#B5BBCF" stroke-width="2" stroke-linecap="round" d="M12 17L12 22"/>
+  <path stroke="#B5BBCF" stroke-width="2" stroke-linecap="round" d="M18.5566 5.41421L15.0211 8.94975"/>
+  <path stroke="#B5BBCF" stroke-width="2" stroke-linecap="round" d="M7.9502 16.0207L4.41466 19.5562"/>
+  <path transform="matrix(.7071 .7071 .7071 -.7071 5 4)" stroke="#B5BBCF" stroke-width="2" stroke-linecap="round" d="M1 -1L6 -1"/>
+  <path transform="scale(1 -1) rotate(-45 -9.82828145 -26.14178318)" stroke="#B5BBCF" stroke-width="2" stroke-linecap="round" d="M1 -1L6 -1"/>
+  <path stroke="#B5BBCF" stroke-width="2" stroke-linecap="round" d="M22 12L17 12"/>
+  <path stroke="#B5BBCF" stroke-width="2" stroke-linecap="round" d="M7 12L2 12"/>
+</svg>

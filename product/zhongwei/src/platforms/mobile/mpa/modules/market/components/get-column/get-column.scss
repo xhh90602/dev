@@ -1,0 +1,43 @@
+.name-code-info {
+  .name-style {
+    color: rgba(1, 22, 40, 100%);
+    font-size: 28px;
+    font-weight: 700;
+  }
+
+  .tag {
+    display: flex;
+    align-items: center;
+  }
+
+  .market-tag {
+    width: 30px;
+    height: 28.45px;
+  }
+
+  .code-style {
+    color: rgba(143, 149, 168, 100%);
+    font-size: 26px;
+    margin-left: 10px;
+    line-height: 10px;
+  }
+}
+
+:global {
+  th,
+  .table-body-cell {
+    border: none;
+    padding: 20px 0;
+  }
+
+  th:not(:first-child),
+  .table-body-cell:not(:first-child) {
+    text-align: right !important;
+  }
+
+  .content-item {
+    color: rgba(1, 22, 40, 100%);
+    font-size: 30px;
+    text-align: right;
+  }
+}

@@ -1,0 +1,24 @@
+.expand-box {
+  border-radius: 24px;
+  background-color: var(--expand-bg);
+  display: flex;
+  justify-content: space-around;
+  margin: 4px 0;
+
+  & > div {
+    flex: 1;
+    padding: 8px 0;
+    margin: 0 20px;
+    border-radius: 24px;
+    cursor: pointer;
+
+    &:active {
+      background-color: var(--bold-bg);
+    }
+  }
+}
+
+.expand-icon {
+  font-size: 42px;
+  color: #1f2d56;
+}

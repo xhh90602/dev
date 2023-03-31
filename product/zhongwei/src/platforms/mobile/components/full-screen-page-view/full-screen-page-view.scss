@@ -1,0 +1,40 @@
+.container {
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  position: relative;
+
+  &.background-img {
+    background: var(--background-img) no-repeat;
+  }
+
+  &.background-color:before {
+    display: block;
+    content: '';
+    background: var(--background-color);
+    height: 50vh;
+    width: 100vw;
+  }
+
+  &.fixed-safe-arae-bottom:after {
+    position: fixed;
+    display: block;
+    content: '';
+    bottom: 0;
+    left: 0;
+    height: var(--safe-area-bottom);
+    width: 100vw;
+    background-color: var(--contain-bg);
+    z-index: 999;
+  }
+}
+
+.content {
+  position: absolute;
+  top: calc(102px + var(--safe-area-top));
+  height: calc(100vh - 102px - var(--safe-area-top));
+  padding-bottom: var(--safe-area-bottom);
+  overflow: auto;
+  width: 100vw;
+  z-index: 1;
+}

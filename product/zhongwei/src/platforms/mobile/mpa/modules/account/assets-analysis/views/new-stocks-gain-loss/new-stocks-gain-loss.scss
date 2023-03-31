@@ -1,0 +1,100 @@
+.new-stocks-gain-loss {
+  height: 100%;
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding: 16px 24px 0;
+
+  > div {
+    margin-top: 24px;
+
+    &:first-child {
+      margin-top: 0;
+    }
+  }
+
+  :global {
+    .basic-card {
+      padding: 32px;
+    }
+
+    .rise-income-card,
+    .fall-income-card {
+      position: relative;
+
+      &:after {
+        content: '';
+        position: absolute;
+        width: 70px;
+        height: 70px;
+        display: block;
+        top: 20px;
+        right: 20px;
+      }
+    }
+
+    .rise-income-card {
+      margin-right: 24px;
+      background: linear-gradient(180deg, rgba(6, 184, 153, 12%) 0%, #fff 40%);
+
+      &:after {
+        background-image: url('@mobile/images/asset/icon_asset_rise.svg');
+      }
+    }
+
+    .fall-income-card {
+      background: linear-gradient(180deg, rgba(218, 7, 14, 14%) 0%, #fff 40%);
+
+      &:after {
+        background-image: url('@mobile/images/asset/icon_asset_fail.svg');
+      }
+    }
+  }
+}
+
+.pie-chart-box {
+  height: 200px;
+}
+
+.pie-box-split-line {
+  width: 1px;
+  height: 100%;
+  background: #f2f5ff;
+  margin: 0 24px;
+}
+
+.pie-chart-hint {
+  padding: 20px;
+  border-radius: 12px;
+  font-size: 22px;
+  color: #8f95a8;
+  background-color: #f7f8fc;
+  position: relative;
+  margin-top: 30px;
+
+  .dot {
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+  }
+
+  &:after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: -10px;
+    transform: translateX(-50%);
+    border: 10px solid transparent;
+    border-left-width: 10px;
+    border-right-width: 10px;
+    border-bottom-color: #f7f8fc;
+    border-top: 0;
+  }
+}
+
+.full-width-bottom-box {
+  width: 100vw;
+  background: #fff;
+  margin: 0 -24px;
+  border-radius: 24px 24px 0 0;
+  padding: 24px;
+}

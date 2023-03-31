@@ -1,0 +1,26 @@
+.search {
+  padding: 4px 30px;
+}
+
+.order-from {
+  padding: 24px 30px;
+  font-size: 24px;
+  color: var(--desc-color);
+}
+
+.order-button {
+  margin-top: 20px;
+  margin-bottom: 40px;
+  border-radius: 85px;
+  height: 88px;
+  background-color: var(--bg);
+  color: var(--trade-btn-color);
+  text-align: center;
+  font-size: 34px;
+  font-weight: 500;
+  cursor: pointer;
+
+  &:active {
+    opacity: .9;
+  }
+}

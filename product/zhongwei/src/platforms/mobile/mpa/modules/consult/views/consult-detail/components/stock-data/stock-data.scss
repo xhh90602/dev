@@ -1,0 +1,43 @@
+/* stylelint-disable function-no-unknown */
+@import '@/global-css/func.scss';
+
+.item {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin: 25px 0;
+
+  .name-code {
+    width: 50%;
+
+    .name {
+      font-size: calc-fontsize(14);
+      font-weight: 700;
+      color: #011628;
+    }
+
+    .code {
+      color: #8f95a8;
+      font-size: calc-fontsize(10);
+      font-weight: 400;
+      margin-top: 10px;
+    }
+
+    img {
+      width: calc-fontsize(14);
+      margin-top: -3px;
+      margin-right: 10px;
+    }
+  }
+
+  .main-num {
+    font-size: calc-fontsize(18);
+    font-weight: 700;
+    color: #011628;
+  }
+
+  .self-select img {
+    width: calc-fontsize(21);
+    vertical-align: -5px;
+  }
+}

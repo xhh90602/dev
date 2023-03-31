@@ -1,0 +1,141 @@
+html:global.white {
+  --sub-title-color: var(--main-tip-color);
+  --rmt-cell-content-header-color: #888;
+  --rmt-cell-body-color: #212121;
+  --rmt-cell-border-bottom-color: #f6f7f9;
+}
+
+html:global.black {
+  --sub-title-color: var(--main-tip-color);
+  --rmt-cell-content-header-color: #666;
+  --rmt-cell-body-color: #ddd;
+  --rmt-cell-border-bottom-color: #000001;
+}
+
+body {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0%);
+}
+
+.wrap {
+  height: 100%;
+  background-color: var(--second-page-background);
+}
+
+.stock-page {
+  --padding-left-right: 24px;
+
+  height: 100%;
+  display: flex;
+  // overflow: hidden;
+  flex-direction: column;
+  // min-height: 1400px;
+  box-sizing: border-box;
+  color: var(--main-content-color);
+  background-color: #f7f8fc;
+  border-radius: 24px;
+
+  :global {
+    ol {
+      padding: 5px 12px 7px;
+
+      li {
+        margin-bottom: 3px;
+      }
+    }
+
+    .special {
+      margin-bottom: 10px;
+    }
+
+    .table-title-label {
+      font-size: 26px;
+      color: #717686;
+      border: 0;
+    }
+
+    .content-item {
+      width: 100%;
+      color: #06b899;
+      font-weight: 700;
+      font-size: 30px;
+    }
+
+    .first-list {
+      font-weight: 400;
+      color: #011628;
+      padding-top: 26px;
+      padding-bottom: 26px;
+    }
+
+    .legend-wrap {
+      justify-content: center;
+
+      .legend-item-1 {
+        padding: 0 64px;
+      }
+    }
+  }
+
+  .title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 31px 25px 0 34px;
+
+    > h3 {
+      color: #011628;
+      font-size: 34px;
+      font-weight: 700;
+
+      .icon-style {
+        margin-left: 6px;
+      }
+    }
+
+    > span {
+      color: #8f95a8;
+      font-size: 24px;
+      font-weight: 400;
+    }
+  }
+
+  .chart {
+    height: 450px;
+    padding: var(--padding-left-right) 0;
+    padding-bottom: 0;
+    padding-left: 25px;
+    padding-right: 25px;
+    margin-bottom: 18px;
+  }
+
+  .table-con {
+    flex: 1;
+    min-height: 350px;
+    width: 96%;
+    margin-top: 64px;
+    margin-left: 26px;
+  }
+
+  .inner-table {
+    height: 100%;
+
+    :global {
+      th,
+      td {
+        border: 0;
+        color: #8f95a8;
+        font-size: 26px;
+      }
+    }
+  }
+
+  .chart-legend-div {
+    margin-top: 90px;
+  }
+}
+
+.page-container {
+  border-radius: 24px;
+  background-color: #fff;
+  margin: 16px;
+}

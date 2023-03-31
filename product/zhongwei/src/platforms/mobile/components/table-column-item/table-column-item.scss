@@ -1,0 +1,23 @@
+.import-text {
+  color: var(--text-color);
+  font-size: 27px;
+}
+
+.main-text {
+  font-size: 27px;
+}
+
+.name-and-code {
+  position: relative;
+  padding-left: 30px;
+
+  .order-icon {
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    // transform: translateX(-100%);
+    font-size: 26px;
+    width: 26px;
+    height: 26px;
+  }
+}

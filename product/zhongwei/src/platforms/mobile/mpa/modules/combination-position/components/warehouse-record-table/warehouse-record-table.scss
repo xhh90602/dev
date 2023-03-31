@@ -1,0 +1,35 @@
+.warehouse-record-table {
+  border-radius: 24px;
+  background-color: #fff;
+  overflow: hidden;
+
+  thead tr,
+  tbody tr {
+    display: flex;
+  }
+
+  thead th > div,
+  tbody td > div {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    line-height: 34px;
+  }
+
+  thead th > div {
+    padding: 20px 0 12px;
+  }
+
+  tbody td > div {
+    padding: 20px 0 24px;
+  }
+
+  th:first-child > div,
+  td:first-child > div {
+    padding-left: 44px;
+  }
+
+  table:last-child td {
+    border: none;
+  }
+}

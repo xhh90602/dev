@@ -1,0 +1,63 @@
+.title {
+  font-size: 36px;
+  font-weight: 700;
+  color: var(--text-color);
+}
+
+.content-text {
+  font-size: 34px;
+  color: var(--basic-color);
+  margin: 25px 0;
+}
+
+.quote-check-box {
+  img {
+    width: 36px;
+    height: 36px;
+    margin-right: 15px;
+  }
+
+  div {
+    font-size: 32px;
+    font-weight: 500;
+    color: var(--text-color);
+  }
+}
+
+.tool {
+  padding-top: 40px;
+  padding-bottom: 30px;
+  display: flex;
+  justify-content: space-between;
+
+  .cancel-btn,
+  .sure-btn {
+    width: 47%;
+    text-align: center;
+    border-radius: 65px;
+    border: 1px solid;
+    line-height: 80px;
+    cursor: pointer;
+    font-weight: bold;
+  }
+
+  .sure-btn {
+    background-color: var(--orange-color);
+    color: var(--trade-btn-color);
+    border-color: var(--orange-color);
+
+    &:active {
+      opacity: .9;
+    }
+  }
+
+  .cancel-btn {
+    color: var(--text-color);
+    background-color: #f2f5ff;
+    border-color: #f2f5ff;
+
+    &:active {
+      background-color: var(--contain-bg);
+    }
+  }
+}

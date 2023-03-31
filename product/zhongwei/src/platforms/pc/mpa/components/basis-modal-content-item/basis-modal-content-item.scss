@@ -1,0 +1,31 @@
+:global {
+  html {
+    --modal-content-label-color: #666;
+    --modal-content-value-color: #333;
+  }
+
+  html.black {
+    --modal-content-label-color: #999;
+    --modal-content-value-color: #fff;
+  }
+}
+
+.modal-content-item {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  font-size: 16px;
+  line-height: 22px;
+
+  & + & {
+    margin-top: 20px;
+  }
+
+  .item-left {
+    color: var(--modal-content-label-color);
+  }
+
+  .right-left {
+    color: var(--modal-content-value-color);
+  }
+}

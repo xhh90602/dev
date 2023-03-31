@@ -1,0 +1,91 @@
+.combination-detail {
+  --footer-height: 259px;
+
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.main {
+  flex: 1;
+  overflow: auto;
+
+  .basic-info {
+    display: flex;
+    justify-content: space-between;
+    padding: 38px 16px 0;
+  }
+
+  :global {
+    .basic-card,
+    .adm-capsule-tabs-header {
+      background-color: #f7f8fc;
+    }
+
+    .adm-capsule-tabs-header {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      padding: 23px 32px 30px;
+    }
+
+    .adm-capsule-tabs-tab-list {
+      height: 72px;
+      padding: 0 4px;
+      border-radius: 24px;
+      background-color: #ebedf5;
+    }
+
+    .adm-capsule-tabs-tab {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 64px;
+      padding: 0;
+    }
+
+    .adm-capsule-tabs-content {
+      padding: 0 16px;
+    }
+  }
+}
+
+.footer {
+  position: relative;
+  z-index: 100;
+  box-shadow: 0 0 40px 0 #d0d8e9;
+
+  .operation-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 98px;
+    background-color: #fff;
+  }
+
+  .operation-btn {
+    width: 433px;
+    height: 80px;
+    border: none;
+    border-radius: 80px;
+    background: #fa6d16;
+    color: #fff;
+    font-size: 30px;
+  }
+}
+
+.head-icon-box {
+  display: flex;
+  align-items: center;
+
+  span {
+    display: flex;
+    align-items: center;
+    color: #011628;
+    font-size: 40px;
+  }
+
+  span + span {
+    margin-left: 30px;
+  }
+}

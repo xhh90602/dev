@@ -1,0 +1,16 @@
+.combination-tabs {
+  th {
+    height: 70px !important;
+    color: #1f2d56;
+    font-size: 24px;
+  }
+
+  tbody td {
+    padding: 22px 0;
+  }
+
+  thead th:last-child,
+  tbody td:last-child {
+    padding-right: 10px;
+  }
+}

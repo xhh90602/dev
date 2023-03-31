@@ -1,0 +1,37 @@
+.my-strategy {
+  height: 100%;
+  padding: 20px 24px 40px;
+  background-color: #f7f8fc;
+  overflow-y: auto;
+
+  .my-strategy-item {
+    margin-bottom: 24px;
+    background-color: #fff;
+    border-radius: 24px;
+    padding: 30px 32px;
+  }
+
+  .not-more {
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px 0 32px;
+  }
+
+  :global {
+    .adm-infinite-scroll {
+      color: #b5bbcf;
+      font-size: 24px;
+      padding: 0;
+      display: block;
+      text-align: center;
+    }
+  }
+
+  .loading-page {
+    padding: 60% 0 0;
+  }
+
+  .empty-box {
+    padding: 180px 0 16px;
+  }
+}

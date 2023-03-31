@@ -1,0 +1,36 @@
+.page {
+  padding: 37px 32px;
+}
+
+.finish-box {
+  padding: 115px 87px 120px;
+  text-align: center;
+
+  img {
+    width: 136px;
+    height: 136px;
+    margin-bottom: 64px;
+  }
+
+  .title {
+    font-weight: bold;
+    font-size: 36px;
+  }
+
+  .desc {
+    margin-top: 32px;
+    margin-bottom: 110px;
+    font-size: 28px;
+    color: var(--desc-color);
+    line-height: 46px;
+  }
+
+  .button {
+    background-color: var(--orange-color);
+    height: 88px;
+    line-height: 88px;
+    font-size: 34px;
+    color: var(--basic-bg);
+    border-radius: 65px;
+  }
+}

@@ -1,0 +1,30 @@
+.weiquan-combination {
+  width: 100%;
+  min-height: 100%;
+  background-color: #fff;
+  padding: 34px 16px;
+
+  .empty-box {
+    padding: 160px 0 140px;
+  }
+
+  .btn-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 236px;
+    height: 72px;
+    background-color: #fa6d16;
+    font-size: 28px;
+    font-weight: 400;
+    color: #fff;
+    margin: 0 auto;
+    border-radius: 90px;
+
+    img {
+      width: 34px;
+      height: 34px;
+      margin-right: 12px;
+    }
+  }
+}

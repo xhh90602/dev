@@ -1,0 +1,17 @@
+.living-icon {
+  width: 96px;
+  height: 30px;
+  position: relative;
+
+  span {
+    position: absolute;
+    top: 0;
+    left: 26px;
+    max-height: 30px;
+    overflow: hidden;
+    line-height: 30px;
+    font-size: 20px;
+    font-weight: 400;
+    color: #fff;
+  }
+}

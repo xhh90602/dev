@@ -1,0 +1,114 @@
+.warp {
+  width: 100%;
+  background-color: #fff;
+  border-radius: 24px;
+  padding: 39px 30px 35px;
+  position: relative;
+  font-size: 24px;
+  margin-bottom: 18px;
+
+  .position-type {
+    width: 92px;
+    height: 50px;
+    position: absolute;
+    line-height: 40px;
+    font-size: 20px;
+    top: -13px;
+    color: #fa6d16;
+    left: -2px;
+    text-align: center;
+  }
+
+  .firm {
+    color: #fff;
+    background: url('../../../images/icon_zh_11.svg') no-repeat;
+    background-size: 92px 50px;
+  }
+
+  .simulation {
+    color: #f7f8fc;
+    background: url('../../../images/icon_zh_22.svg') no-repeat;
+    background-size: 92px 50px;
+  }
+}
+
+.top {
+  display: flex;
+  justify-content: space-between;
+  height: 91px;
+  margin-bottom: 24px;
+
+  .top-left {
+    flex: 1;
+
+    .top-left-name {
+      font-weight: 700;
+      color: #011628;
+      font-size: 36px;
+      margin-bottom: 2px;
+    }
+
+    .top-left-option {
+      font-size: 24px;
+      color: #8f95a8;
+      font-weight: 400;
+    }
+  }
+
+  .top-right {
+    width: 98px;
+    text-align: center;
+    box-sizing: border-box;
+    border-left: 1px solid #f2f5ff;
+    padding-left: 24px;
+
+    .top-right-number {
+      font-size: 32px;
+      color: #011628;
+      font-weight: 700;
+      margin-bottom: 12px;
+    }
+
+    .top-right-option {
+      color: #8f95a8;
+      font-size: 24px;
+    }
+  }
+}
+
+.content {
+  padding: 18px 0 25px;
+  border-top: 1px solid #f2f5ff;
+  border-bottom: 1px solid #f2f5ff;
+  display: flex;
+
+  .content-item {
+    flex: 1;
+
+    .content-item-name {
+      color: #8f95a8;
+    }
+
+    .content-item-value {
+      font-size: 42px;
+      margin-top: 5px;
+      font-weight: 700;
+    }
+
+    .content-item-option {
+      margin-top: 16px;
+    }
+  }
+}
+
+.bottom {
+  margin-top: 20px;
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+
+  .bottom-item {
+    width: 50%;
+    margin-top: 8px;
+  }
+}

@@ -1,0 +1,138 @@
+.table-list-box {
+  padding-top: 20px;
+  overflow-x: auto;
+
+  .table-header {
+    color: #8f95a8;
+    font-size: 22px;
+    font-weight: 400;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    .d1 {
+      width: 150px;
+      text-align: left;
+    }
+
+    .d2 {
+      width: 160px;
+      text-align: right;
+    }
+
+    .d3 {
+      width: 160px;
+      text-align: right;
+    }
+
+    .d4 {
+      width: 160px;
+      text-align: right;
+    }
+
+    .d5 {
+      width: 160px;
+      text-align: right;
+    }
+
+    .title-item {
+      flex-shrink: 0;
+
+      img {
+        width: 11px;
+        height: auto;
+        display: inline-block;
+        margin-left: 2px;
+        vertical-align: -4px;
+      }
+    }
+  }
+
+  .table-list {
+    .item {
+      display: flex;
+      justify-content: flex-start;
+      align-items: flex-start;
+      padding: 18px 0;
+
+      .stock-name {
+        font-size: 24px;
+        font-weight: 700;
+        color: #011628;
+        margin-bottom: 6px;
+      }
+
+      .stock-info {
+        color: #8f95a8;
+        font-size: 24px;
+        font-weight: 400;
+        display: flex;
+        align-items: center;
+      }
+
+      .stock-info span {
+        font-weight: 400;
+      }
+
+      img {
+        width: 30px;
+        height: auto;
+        margin-right: 10px;
+      }
+
+      .now-price {
+        color: #011628;
+        font-size: 26px;
+        font-weight: 400;
+        margin-bottom: 6px;
+      }
+
+      .cost-price {
+        font-size: 22px;
+        color: #8f95a8;
+        font-weight: 400;
+      }
+
+      .d1 {
+        width: 150px;
+        text-align: left;
+        flex-shrink: 0;
+      }
+
+      .d2 {
+        width: 160px;
+        text-align: right;
+        padding-right: 10px;
+        flex-shrink: 0;
+      }
+
+      .d3 {
+        width: 160px;
+        font-size: 26px;
+        font-weight: 400;
+        text-align: right;
+        flex-shrink: 0;
+      }
+
+      .d4 {
+        width: 160px;
+        font-size: 26px;
+        font-weight: 400;
+        text-align: right;
+        flex-shrink: 0;
+      }
+
+      .d5 {
+        width: 160px;
+        font-size: 26px;
+        font-weight: 400;
+        text-align: right;
+        flex-shrink: 0;
+      }
+    }
+  }
+
+  .empty-box {
+    padding: 30px 0;
+  }
+}

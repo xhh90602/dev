@@ -1,0 +1,99 @@
+:global {
+  svg {
+    width: 1em;
+    height: 1em;
+    vertical-align: middle;
+  }
+}
+
+div[id='root'] {
+  background-color: #fff;
+
+  img {
+    vertical-align: middle;
+  }
+}
+
+.container {
+  padding: 38px 22px 0;
+  background-color: #fff;
+  position: relative;
+  min-height: 100vh;
+}
+
+.cell {
+  padding: 22px 0;
+  display: flex;
+  align-items: center;
+
+  .head {
+    position: relative;
+    margin-right: 25px;
+
+    .avatar {
+      width: 64px;
+      height: 64px;
+      border-radius: 64px;
+    }
+
+    .analyse {
+      width: 26px;
+      height: 26px;
+      position: absolute;
+      bottom: 0;
+      right: 0;
+    }
+  }
+
+  .name {
+    font-size: 28px;
+    font-weight: 500;
+    margin-bottom: 10px;
+    line-height: 28px;
+  }
+
+  .user-type {
+    font-size: 24px;
+    line-height: 24px;
+    color: #8f95a8;
+  }
+
+  .btn {
+    width: 151px;
+    height: 64px;
+    text-align: center;
+    line-height: 64px;
+    font-size: 28px;
+    border-radius: 64px;
+    font-weight: 500;
+    margin-left: 25px;
+
+    &.attention {
+      color: #fff;
+      background-color: #fa6d16;
+    }
+
+    &.is-attention {
+      color: #717686;
+      font-weight: 700;
+      background-color: #eaedf7;
+    }
+
+    &.add-friend {
+      color: #1f2d56;
+      background-color: #fad92f;
+
+      img {
+        width: 32px;
+        height: 32px;
+        margin-top: -5px;
+      }
+    }
+
+    &.send-msg {
+      color: #fa6d16;
+      font-weight: 700;
+      background-color: #eaedf7;
+    }
+  }
+}

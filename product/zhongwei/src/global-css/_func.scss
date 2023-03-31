@@ -1,0 +1,3 @@
+@function calc-fontsize($gap) {
+  @return calc(1em + #{$gap}px);
+}

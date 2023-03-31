@@ -1,0 +1,131 @@
+.table-list {
+  .content {
+    background-color: #fff;
+    border-radius: 24px 24px 0 0;
+    padding: 30px 0 0;
+    overflow: hidden;
+    flex-grow: 1;
+
+    .header {
+      display: flex;
+      align-items: center;
+      margin-bottom: 22px;
+
+      .item {
+        font-size: 26px;
+        color: #8f95a8;
+        font-weight: 400;
+      }
+
+      img.sort {
+        width: 12px;
+        height: auto;
+        display: block;
+        margin-left: 10px;
+      }
+    }
+
+    .box {
+      height: 100%;
+      overflow: auto;
+
+      .item-box {
+        padding: 0;
+      }
+
+      .item {
+        display: flex;
+        align-items: flex-start;
+        padding: 11px 0;
+      }
+
+      .ranking {
+        text-align: center;
+      }
+
+      .stock-info {
+        padding: 0;
+      }
+
+      .name {
+        width: 100%;
+        font-size: 28px;
+        font-weight: 700;
+        color: #011628;
+        margin-bottom: 4px;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+      }
+
+      .market-code {
+        display: flex;
+        align-items: center;
+      }
+
+      .market {
+        width: 28px;
+        height: auto;
+        margin-right: 8px;
+      }
+
+      .code {
+        font-size: 26px;
+        color: #8f95a8;
+        font-weight: 400;
+      }
+
+      .value {
+        font-size: 30px;
+        color: #011628;
+        font-weight: 700;
+      }
+
+      span {
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+        display: block;
+        font-size: 28px;
+        font-weight: 400;
+        margin: 0 auto;
+        border-radius: 8px;
+        color: #8f95a8;
+        text-align: center;
+        background-color: #f7f8fc;
+        margin-top: 7px;
+      }
+
+      .d1 {
+        background-color: #eed9a4;
+        color: #c99d2b;
+      }
+
+      .d2 {
+        background-color: #ededed;
+        color: #8f95a8;
+      }
+
+      .d3 {
+        background-color: #eae5d9;
+        color: #ada38b;
+      }
+    }
+
+    .c1 {
+      width: 60px;
+      margin-right: 30px;
+    }
+
+    .c2 {
+      width: calc(100% - 90px - 180px);
+      padding-right: 30px;
+    }
+
+    .c3 {
+      width: 180px;
+      text-align: right;
+      flex-shrink: 0;
+    }
+  }
+}

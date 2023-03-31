@@ -1,0 +1,71 @@
+.stock-warehouse-record {
+  height: 100%;
+  overflow: auto;
+  padding: 12px 0;
+}
+
+.warehouse-record-item {
+  border-radius: 24px;
+  background-color: #fff;
+  overflow: hidden;
+
+  &:not(:last-child) {
+    margin-bottom: 16px;
+  }
+}
+
+.warehouse-record-time {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 82px;
+  padding: 0 30px 0 42px;
+  border-bottom: 1px solid #f2f5ff;
+
+  &:after {
+    display: inline-block;
+    content: '';
+    width: 11px;
+    height: 23px;
+    background-image: url('@mobile/images/icon_zh_more.svg');
+    background-size: 100% 100%;
+  }
+
+  .create-time {
+    color: #011628;
+    font-size: 28px;
+    line-height: 38px;
+  }
+}
+
+.warehouse-record-table {
+  thead th > div,
+  tbody td > div {
+    display: flex;
+    flex-direction: column;
+    line-height: 34px;
+  }
+
+  thead tr,
+  tbody tr {
+    display: flex;
+  }
+
+  thead th {
+    color: #b5bbcf;
+    padding: 22px 0 12px;
+  }
+
+  tbody td {
+    padding: 22px 0;
+  }
+
+  th:first-child > div,
+  td:first-child > div {
+    padding-left: 44px;
+  }
+
+  table:last-child td {
+    border: none;
+  }
+}

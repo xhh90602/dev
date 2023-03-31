@@ -1,0 +1,99 @@
+/* stylelint-disable function-no-unknown */
+.add-stock-box {
+  width: 100%;
+  height: 100%;
+  height: inherit;
+
+  :global {
+    .filter-result-page {
+      padding-bottom: 100px;
+    }
+  }
+
+  .strategy-btn-box {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #f8f6ff;
+    padding: 1px 0 0 34px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    background-color: #fff;
+    z-index: 1;
+    box-sizing: border-box;
+    padding-bottom: constant(safe-area-inset-bottom); /* 兼容 IOS<11.2 */
+    padding-bottom: env(safe-area-inset-bottom); /* 兼容 IOS>11.2 */
+
+    .tool-btn {
+      text-align: center;
+
+      p {
+        color: #717686;
+        font-weight: 400;
+        font-size: 20px;
+        margin-top: -10px;
+      }
+
+      img {
+        width: 42px;
+        height: auto;
+        display: inline-block;
+      }
+    }
+
+    .save-strategy-btn {
+      background-color: #fa6d16;
+      color: #fff;
+      font-size: 32px;
+      font-weight: 700;
+      text-align: center;
+      padding: 28px 68px;
+    }
+  }
+
+  .combination-btn-box {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    border-top: 1px solid #f8f6ff;
+    background-color: #fff;
+    z-index: 1;
+    padding-bottom: constant(safe-area-inset-bottom); /* 兼容 IOS<11.2 */
+    padding-bottom: env(safe-area-inset-bottom); /* 兼容 IOS>11.2 */
+
+    .btn {
+      width: 50%;
+      color: #8f95a8;
+      font-size: 34px;
+      font-weight: 500;
+      text-align: center;
+      padding: 28px 0;
+    }
+
+    .active-btn {
+      color: #011628;
+    }
+
+    .text {
+      width: 50%;
+      color: #011628;
+      font-size: 34px;
+      font-weight: 500;
+      text-align: center;
+
+      span {
+        color: #fa6d16;
+      }
+    }
+
+    .btn:first-child {
+      border-right: 1px solid #f8f6ff;
+    }
+  }
+}

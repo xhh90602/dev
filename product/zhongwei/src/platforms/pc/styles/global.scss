@@ -1,0 +1,80 @@
+@import './normalize';
+@import './theme';
+@import './antd';
+@import './quote-chart';
+
+:global {
+  /* stylelint-disable-next-line selector-max-id */
+  #root {
+    height: 100%;
+  }
+
+  .price-raise {
+    color: var(--rise-color);
+  }
+
+  .price-decline {
+    color: var(--fall-color);
+  }
+
+  html body {
+    color: var(--text-color);
+    background-color: var(--bg-color);
+  }
+
+  div {
+    box-sizing: border-box;
+  }
+
+  .menu {
+    padding-left: 6px;
+  }
+
+  .submenu {
+    padding-left: 11px;
+  }
+
+  .container {
+    background-color: var(--bg-color);
+    height: 100%;
+    width: 100%;
+  }
+
+  .contain-layout {
+    box-sizing: border-box;
+    padding: 2px 0;
+    background-color: var(--container-bg);
+  }
+
+  .icon-search-color {
+    color: var(--text-color);
+  }
+
+  .icon-close-color {
+    color: #aab9ca;
+    width: 14px;
+    height: 14px;
+  }
+
+  .input-dialog {
+    background-color: var(--package-input-bg-color) !important;
+    line-height: 40px !important;
+    padding: 0 16px !important;
+  }
+
+  .text-active {
+    color: var(--active-color);
+  }
+
+  .ml-4 {
+    margin-left: 4px;
+  }
+
+  .pr-14 {
+    padding-right: 14px;
+  }
+
+  .t-c {
+    text-align: center;
+  }
+}

@@ -1,0 +1,138 @@
+/* stylelint-disable no-descending-specificity */
+.hbar-charts {
+  height: 436px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 54px;
+
+  .y-axis {
+    > :first-child {
+      line-height: 27px;
+      padding-bottom: 13px;
+    }
+
+    > :not(:first-child) {
+      margin-top: 40px;
+      font-size: 26px;
+      line-height: 32px;
+    }
+  }
+
+  .custom-charts {
+    width: 217px;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    text-align: center;
+
+    > div {
+      margin-bottom: 32px;
+    }
+
+    > :first-child {
+      line-height: 27px;
+    }
+
+    .charts {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      position: relative;
+      height: 280px;
+      font-size: 20px;
+      line-height: 23px;
+      padding-bottom: 16px;
+    }
+
+    .charts:after {
+      content: '';
+      display: block;
+      position: absolute;
+      width: 1px;
+      height: 100%;
+      background-color: #f2f5ff;
+      left: 50%;
+      top: 0;
+    }
+
+    .charts .bar {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .charts .bar > div {
+      height: 20px;
+      margin-top: 4px;
+      top: 0;
+    }
+
+    .charts .bar.right {
+      margin-left: 50%;
+      align-items: flex-start;
+
+      > span {
+        padding-left: 10px;
+      }
+    }
+
+    .charts .bar.left {
+      margin-right: 50%;
+      align-items: flex-end;
+
+      > span {
+        padding-right: 10px;
+      }
+    }
+
+    .legend {
+      justify-content: space-around;
+    }
+  }
+
+  .legend {
+    height: 27px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .circle {
+      display: flex;
+      align-items: center;
+
+      span {
+        display: block;
+        height: 12px;
+        width: 12px;
+        border-radius: 50%;
+        margin-right: 15px;
+      }
+    }
+
+    .round-rect {
+      display: flex;
+      align-items: center;
+
+      span {
+        display: block;
+        width: 12px;
+        height: 5px;
+        border-radius: 2.5px;
+      }
+
+      span:first-child {
+        background-color: #da070e;
+        margin-right: 6px;
+      }
+
+      span:last-child {
+        background-color: #06b899;
+        margin-right: 15px;
+      }
+
+      &.hide span {
+        background-color: #8f95a8;
+      }
+    }
+  }
+}

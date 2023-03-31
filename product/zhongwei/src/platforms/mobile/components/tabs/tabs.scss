@@ -1,0 +1,11 @@
+.tab-icon {
+  position: relative;
+}
+
+.icon {
+  position: absolute;
+
+  & > span {
+    font-size: 53px;
+  }
+}

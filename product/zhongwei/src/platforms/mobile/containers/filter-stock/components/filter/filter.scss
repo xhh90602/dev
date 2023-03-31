@@ -1,0 +1,135 @@
+@import '@/global-css/mixin';
+
+.filter {
+  display: flex;
+  height: 100%;
+  font-size: 28px;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  width: 208px;
+  background-color: #f7f8fc;
+}
+
+.item {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 28px 0;
+  color: #8f95a8;
+}
+
+.item-total {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 32px;
+  height: 32px;
+  font-size: 24px;
+  color: #fa6d16;
+  border-radius: 50%;
+  border: 1px solid #fa6d16;
+}
+
+.item-active {
+  background-color: #fff;
+}
+
+.container {
+  flex: 1;
+  padding: 31px 37px;
+  overflow: auto;
+  background-color: #fff;
+}
+
+.group {
+  margin-bottom: 37px;
+}
+
+.group-title {
+  margin-bottom: 20px;
+  color: #011628;
+}
+
+.group-list {
+  display: flex;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+
+  .three-group-list {
+    width: 100%;
+  }
+
+  .three-group-box {
+    width: 100%;
+  }
+
+  .three-group-name {
+    color: #011628;
+    margin-bottom: 10px;
+  }
+
+  .three-group-module {
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+  }
+}
+
+.group-item {
+  @include muti-rows(2, 10px, 27px);
+
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 226px;
+  padding: 34px 35px;
+  border-radius: 12px;
+  /* stylelint-disable-next-line unit-case */
+  border: 1PX solid #b5bbcf;
+
+  .group-item-title {
+    margin-bottom: 3px;
+    font-size: 28px;
+  }
+
+  .group-item-condition {
+    display: inline-block;
+    width: 100%;
+    font-size: 24px;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .group-item-del {
+    display: flex;
+    position: absolute;
+    align-items: center;
+    justify-content: flex-end;
+    right: 0;
+    top: 0;
+    transform: translate(0, -50%);
+    width: 40px;
+    height: 40px;
+
+    > img {
+      width: 26px;
+      height: 26px;
+    }
+  }
+
+  &.group-item-chosen {
+    border: 1px solid rgba(250, 109, 22, 50%);
+    background: rgba(250, 109, 22, 10%);
+  }
+}

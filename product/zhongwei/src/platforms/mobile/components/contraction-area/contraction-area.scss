@@ -1,0 +1,26 @@
+.area {
+  transition: height .3s;
+  overflow: hidden;
+
+  .arrow {
+    text-align: center;
+  }
+
+  .bg-circle {
+    display: inline-block;
+    width: 86px;
+    height: 28px;
+    border-radius: 86px 86px 0 0;
+    text-align: center;
+    background-color: var(--contain-bg);
+  }
+
+  .hidden {
+    height: 0;
+    overflow: hidden;
+  }
+}
+
+.area.bg {
+  line-height: 28px;
+}

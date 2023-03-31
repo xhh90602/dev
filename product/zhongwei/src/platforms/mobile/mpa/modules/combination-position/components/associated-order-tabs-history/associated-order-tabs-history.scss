@@ -1,0 +1,31 @@
+.associated-order-table {
+  padding: 0 44px 10px;
+  border-radius: 24px;
+  background-color: #fff;
+  overflow: hidden auto;
+  max-height: 680px;
+
+  th {
+    padding: 27px 0;
+  }
+}
+
+.info-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  &:not(:last-child) {
+    margin-bottom: 42px;
+  }
+
+  .info-item-label {
+    color: #717686;
+    font-size: 28px;
+  }
+
+  .info-item-value {
+    color: #011628;
+    font-size: 30px;
+  }
+}

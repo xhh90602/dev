@@ -1,0 +1,95 @@
+.roll-in-hint-modal {
+  :global {
+    .adm-modal-title {
+      font-size: 36px;
+      font-weight: 700;
+      color: var(--text-color);
+      margin-bottom: 40px;
+    }
+
+    .adm-center-popup-body {
+      display: block;
+      max-height: min-content;
+      padding: 60px 0;
+    }
+
+    .adm-modal-content {
+      overflow: visible;
+      max-height: min-content;
+    }
+
+    .adm-center-popup-wrap {
+      position: absolute;
+      top: 0;
+      transform: translate(-50%, 0);
+      padding: 10% 0;
+    }
+  }
+}
+
+.step-desc-box {
+  display: flex;
+  position: relative;
+  padding-bottom: 80px;
+  margin-left: 10px;
+
+  &:first-child:after {
+    content: '';
+    position: absolute;
+    top: 48px;
+    left: 20.5px;
+    bottom: 0;
+    border: 1px dashed #eaedf7;
+    margin: 0 3px;
+  }
+}
+
+.step-avat {
+  background-color: #b5bbcf;
+  border-radius: 50%;
+  width: 48px;
+  height: 48px;
+  color: #fff;
+  font-size: 28px;
+  font-weight: 700;
+  text-align: center;
+  line-height: 48px;
+}
+
+.step-content {
+  flex: 1;
+  margin-left: 27px;
+
+  > div:first-child {
+    font-size: 32px;
+    line-height: 48px;
+    font-weight: 700;
+    color: var(--text-color);
+    margin-bottom: 10px;
+  }
+
+  > div:last-child {
+    font-size: 28px;
+    line-height: 40px;
+    font-weight: 400;
+    color: #717686;
+  }
+}
+
+.account-title {
+  font-size: 32px;
+  font-weight: 700;
+  color: var(--text-color);
+}
+
+.confirm-btn {
+  font-size: 34px;
+  color: #fff;
+  font-weight: 500;
+  background-color: var(--orange-color);
+  height: 88px;
+  line-height: 88px;
+  text-align: center;
+  border-radius: 44px;
+  margin-top: 60px;
+}

@@ -1,0 +1,45 @@
+html:global(.white) {
+  --main-theme-background: #fff; // 背景
+}
+
+html:global(.black) {
+  --main-theme-background: #11151e;
+}
+
+.tab-box {
+  padding: 12px 25px;
+  background-color: var(--main-theme-background);
+}
+
+.main-basic {
+  // background-color: var(--main-theme-background);
+  width: 100%;
+  overflow-x: hidden;
+  flex: 1;
+  // height: calc(100% - 102px);
+}
+
+.main-shareholder {
+  overflow-x: hidden;
+  // background-color: var(--main-theme-background);
+  flex: 1;
+  height: calc(100% - 102px);
+  width: 100%;
+}
+
+/* stylelint-disable-next-line selector-class-pattern */
+.main-companyAction {
+  // background-color: var(--main-theme-background);
+  flex: 1;
+  height: calc(100% - 102px);
+  width: 100%;
+}
+
+.all-nodata {
+  text-align: center;
+  line-height: 180px;
+  font-size: 24px;
+  color: var(--main-nodata-color);
+  margin-bottom: 27px;
+  border-bottom: 1px solid var(--main-border-line);
+}

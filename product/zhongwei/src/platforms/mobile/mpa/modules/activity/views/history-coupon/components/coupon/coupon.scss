@@ -1,0 +1,90 @@
+.coupon {
+  width: 686px;
+  border-radius: 24px;
+  background: #fff;
+  margin-bottom: 23px;
+  padding: 25px 32px;
+  box-sizing: border-box;
+}
+
+.drap-icon {
+  font-size: 20px;
+}
+
+.coupon-top {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+
+.coupon-card {
+  display: flex;
+}
+
+.coupon-icon {
+  width: 130px;
+  height: 108px;
+  border-radius: 14px;
+  background: #fe7c7c;
+  position: relative;
+  margin-right: 23px;
+}
+
+.coupon-title {
+  color: #1f2d56;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 36px;
+  margin: 14px 0 10px;
+}
+
+.coupon-time {
+  color: #8f95a8;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 30px;
+}
+
+.coupon-text {
+  position: relative;
+  top: 10px;
+  left: 10px;
+  font-size: 24px;
+  font-weight: 400;
+  color: #fff;
+}
+
+.use-coupon {
+  width: 125px;
+  height: 115px;
+  position: relative;
+  top: -15px;
+}
+
+.use-coupon img {
+  width: 125px;
+  height: 115px;
+}
+
+.rlues-main {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.rules-intro {
+  height: 30px;
+  color: rgba(143, 149, 168, 100%);
+  font-size: 22px;
+  font-weight: 400;
+  text-align: right;
+  line-height: 30px;
+  margin-right: 20px;
+}
+
+.rlues-content {
+  color: rgba(143, 149, 168, 100%);
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 36px;
+  margin-top: 13px;
+}

@@ -1,0 +1,49 @@
+.table {
+  .title {
+    display: flex;
+    align-items: center;
+    height: 67px;
+    color: #888;
+    font-size: 24px;
+
+    .title-item {
+      flex: 1;
+      text-align: right;
+
+      &:first-of-type {
+        text-align: left;
+      }
+    }
+  }
+
+  .content {
+    display: flex;
+    align-items: center;
+    color: #212121;
+    height: 88px;
+    font-size: 28px;
+    border-bottom: 1px solid #f2f5ff;
+    box-sizing: content-box;
+
+    &.content:last-child {
+      border-bottom: none;
+    }
+
+    span {
+      flex: 1;
+      text-align: right;
+
+      &:first-of-type {
+        text-align: left;
+      }
+    }
+  }
+}
+
+.more {
+  text-align: center;
+  color: #262d56;
+  height: 89px;
+  line-height: 89px;
+  font-size: 24px;
+}

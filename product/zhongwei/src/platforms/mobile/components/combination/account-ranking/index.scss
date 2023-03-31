@@ -1,0 +1,46 @@
+.warp {
+  width: 100%;
+  padding: 28px 0;
+  display: flex;
+  background-color: #fff;
+  border-radius: 24px;
+  font-size: 24px;
+  margin: 17px 0;
+
+  .item {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .name {
+      color: #011628;
+      font-weight: 700;
+      font-size: 34px;
+    }
+
+    .option {
+      margin-top: 5px;
+      color: #8f95a8;
+      font-weight: 24px;
+    }
+
+    .profit-ratio {
+      font-size: 24px;
+      font-weight: 400;
+    }
+  }
+
+  .more {
+    padding: 0 30px 0 10px;
+    display: flex;
+    justify-content: center;
+
+    img {
+      width: 14px;
+      height: auto;
+      display: inline-block;
+    }
+  }
+}

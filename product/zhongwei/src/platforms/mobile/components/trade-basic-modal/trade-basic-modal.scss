@@ -1,0 +1,97 @@
+.trade-modal {
+  :global {
+    .adm-modal-body,
+    .adm-modal-content {
+      max-height: none;
+    }
+  }
+}
+
+.top {
+  :global {
+    .adm-center-popup-wrap {
+      position: absolute;
+      top: 10%;
+      overflow-y: auto;
+      transform: translate(-50%, 0);
+      padding-bottom: 10%;
+    }
+  }
+}
+
+.title {
+  text-align: center;
+  font-weight: bold;
+  font-size: 36px;
+  color: var(--text-color);
+}
+
+.content {
+  font-size: 30px;
+
+  .content-item {
+    margin-bottom: 40px;
+    margin-top: 20px;
+
+    &:first-child {
+      margin-top: 48px;
+    }
+
+    &:last-child {
+      margin-bottom: 8px;
+    }
+  }
+
+  .label {
+    font-size: 28px;
+    color: var(--trade-btn-icon-color);
+  }
+}
+
+.tool {
+  padding-top: 40px;
+  padding-bottom: 30px;
+  display: flex;
+  justify-content: space-between;
+
+  .cancel-bg-btn,
+  .cancel-btn,
+  .sure-btn {
+    width: 47%;
+    text-align: center;
+    border-radius: 65px;
+    border: 1px solid;
+    height: 80px;
+    cursor: pointer;
+    font-weight: bold;
+  }
+
+  .sure-btn {
+    background-color: var(--orange-color);
+    color: var(--trade-btn-color);
+    border-color: var(--orange-color);
+
+    &:active {
+      opacity: .9;
+    }
+  }
+
+  .cancel-btn {
+    color: var(--text-color);
+    border-color: var(--trade-modal-btn-cancel-border-color);
+
+    &:active {
+      background-color: var(--contain-bg);
+    }
+  }
+
+  .cancel-bg-btn {
+    border-color: #f2f5ff;
+    background-color: #f2f5ff;
+    color: var(--text-color);
+
+    &:active {
+      opacity: .9;
+    }
+  }
+}

@@ -1,0 +1,20 @@
+.container {
+  padding: 32px;
+
+  :global {
+    .adm-switch {
+      --checked-color: var(--orange-color);
+      --height: 56px;
+      --width: 96px;
+    }
+  }
+}
+
+.basic-card {
+  margin-top: 25px;
+  padding: 30px;
+  font-size: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}

@@ -1,0 +1,8 @@
+@mixin muti-rows($columns-len: 1, $item-gap-row: 20px, $item-gap-column: 20px) {
+  width: calc((100% / #{$columns-len}) - (#{$columns-len} - 1) * #{$item-gap-row} / #{$columns-len});
+  margin-bottom: $item-gap-column;
+
+  &:not(:nth-of-type(#{$columns-len}n)) {
+    margin-right: $item-gap-row;
+  }
+}

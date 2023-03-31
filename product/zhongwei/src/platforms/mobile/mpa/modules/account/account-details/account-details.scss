@@ -1,0 +1,88 @@
+.account-details {
+  padding: 15px 24px;
+  font-size: 28px;
+}
+
+.upgrade-btn {
+  height: 48px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 15px;
+  font-size: 24px;
+  font-weight: 500;
+  color: #fff;
+  margin-left: 25px;
+  background: #fab02f;
+  border-radius: 30px;
+}
+
+.basic-card {
+  padding: 20px 35px;
+  margin-top: 24px;
+
+  > div {
+    padding: 20px 0;
+  }
+
+  &:first-child {
+    margin-top: 0;
+  }
+
+  .capsule-btn {
+    // border: 1px solid var(--orange-color);
+    --border-color: var(--orange-color);
+    --border-radius: 24px;
+
+    color: var(--orange-color);
+    font-size: 26px;
+    height: 48px;
+    line-height: 48px;
+    padding: 0 20px;
+    border-radius: 24px;
+  }
+
+  .more-arrow {
+    width: 20px;
+    height: 20px;
+    margin-left: 10px;
+  }
+}
+
+.sub-card {
+  background-color: #f6f8ff;
+  padding: 20px 32px !important;
+  margin: 0 -15px 10px;
+}
+
+.borrowing-balance-charts-box {
+  height: 280px;
+}
+
+.borrowing-balance {
+  text-align: center;
+}
+
+.borrowing-balance-hint {
+  padding: 10px 20px;
+  border-radius: 50px;
+  font-size: 22px;
+  color: #8f95a8;
+  background-color: #f7f8fc;
+  position: relative;
+  display: inline-block;
+  margin: 20px auto 0;
+
+  &:after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: -10px;
+    transform: translateX(-50%);
+    border: 10px solid transparent;
+    border-left-width: 10px;
+    border-right-width: 10px;
+    border-bottom-color: #f7f8fc;
+    border-top: 0;
+  }
+}

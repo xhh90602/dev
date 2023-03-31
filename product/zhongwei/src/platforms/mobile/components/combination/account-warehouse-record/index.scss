@@ -1,0 +1,90 @@
+.warp {
+  width: 100%;
+  padding: 28px;
+  background-color: #fff;
+  border-radius: 24px;
+  font-size: 24px;
+  margin-bottom: 15px;
+
+  .title {
+    color: #011628;
+    font-size: 34px;
+    font-weight: 700;
+    margin-bottom: 29px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .title-header {
+      font-weight: 700;
+      color: #011628;
+    }
+
+    .title-month {
+      font-size: 26px;
+      margin-left: 35px;
+      color: #8f95a8;
+      font-weight: 400;
+    }
+  }
+
+  img.go-detail {
+    width: 12px;
+    height: auto;
+  }
+
+  .table-list-box {
+    position: relative;
+
+    .img-mask {
+      width: 100%;
+      height: 426px;
+      filter: blur(15px);
+      background-color: #fff;
+
+      p {
+        margin: 40px 0;
+      }
+    }
+
+    .mask-box {
+      width: 100%;
+      position: absolute;
+      top: 35%;
+      left: 0;
+      text-align: center;
+      z-index: 0;
+      transform: translate(0, -50%);
+
+      img.lock {
+        width: 36px;
+        height: auto;
+        margin: 0 auto;
+      }
+
+      .sub-unlock-all-data {
+        font-size: 26px;
+        color: #717686;
+        font-weight: 400;
+        margin: 10px 0 20px;
+      }
+
+      .sub-btn {
+        width: 100px;
+        height: 48px;
+        line-height: 48px;
+        border-radius: 34px;
+        background-color: #2f9bfa;
+        color: #fff;
+        font-size: 24px;
+        font-weight: 400;
+        text-align: center;
+        margin: 0 auto;
+      }
+    }
+  }
+
+  .empty-box {
+    padding: 30px 0;
+  }
+}

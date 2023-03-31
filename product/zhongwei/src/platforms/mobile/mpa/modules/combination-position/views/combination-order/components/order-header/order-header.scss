@@ -1,0 +1,60 @@
+.combination-info {
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+
+  .name {
+    margin-right: 25px;
+    color: #011628;
+    font-size: 32px;
+    font-weight: 700;
+  }
+
+  .modify-name {
+    width: 30px;
+    height: 29px;
+    background-image: url('@mobile/images/edit-blue-icon.svg');
+    background-size: 100% 100%;
+  }
+}
+
+.asset-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 145px;
+  margin-top: 33px;
+  border-radius: 24px;
+  background-color: #fff;
+
+  .asset-info-item {
+    flex: 1;
+    padding-left: 46px;
+  }
+
+  .asset-info-item:first-child {
+    border-right: 1px solid #f2f5ff;
+  }
+
+  .label {
+    margin-top: 11px;
+    color: #717686;
+    font-size: 24px;
+  }
+
+  .value {
+    color: #011628;
+    font-size: 32px;
+    font-weight: 700;
+  }
+}
+
+.modify-name-box {
+  padding: 10px 0 33px;
+  border-bottom: 1px solid #f2f5ff;
+
+  textarea {
+    color: #011628;
+    font-size: 34px;
+  }
+}

@@ -1,0 +1,20 @@
+.container {
+  width: 100vw;
+  height: 100vh;
+  padding-top: 20px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.content {
+  background-color: #fff;
+  border-radius: 24px 24px 0 0;
+  padding: 32px;
+  margin-top: 20px;
+  flex: 1;
+
+  .split-line {
+    border-bottom: 1px solid #f2f5ff;
+  }
+}

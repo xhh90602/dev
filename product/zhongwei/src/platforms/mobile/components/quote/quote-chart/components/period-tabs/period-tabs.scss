@@ -1,0 +1,30 @@
+.list {
+  display: flex;
+  margin-bottom: 0;
+  padding: 9px 0;
+  overflow-x: auto;
+  border-top: 1px solid #f7f8fc;
+  font-size: 26px;
+
+  :global {
+    .adm-dropdown-item-title {
+      padding: 0;
+    }
+  }
+}
+
+.items {
+  padding: 2px 50px;
+  padding-left: 0;
+  text-align: center;
+  color: #8f95a8;
+  cursor: pointer;
+  white-space: nowrap;
+  font-size: 26px;
+
+  &.items-active {
+    border-radius: 12px;
+    font-weight: 700;
+    color: #011628;
+  }
+}

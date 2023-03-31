@@ -1,0 +1,13 @@
+.position-item {
+  width: 80px;
+  background-color: var(--trade-btn-bg);
+  color: var(--text-color);
+  font-size: 24px;
+  border-radius: 8px;
+  line-height: 42px;
+}
+
+.position-item.active {
+  background-color: var(--trade-btn-day-active-bg);
+  color: var(--trade-btn-day-active-color);
+}

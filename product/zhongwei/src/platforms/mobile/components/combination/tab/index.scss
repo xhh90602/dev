@@ -1,0 +1,45 @@
+.my-tabs {
+  width: 100%;
+  height: 100%;
+
+  --adm-color-primary: var(--text-color);
+  --fixed-active-line-width: 30px;
+  --content-padding: 0;
+
+  :global {
+    .adm-tabs-header {
+      border-bottom: none;
+      box-sizing: border-box;
+      width: 100%;
+      position: fixed;
+      z-index: 1;
+      left: 0;
+      background-color: #f7f8fc;
+    }
+
+    .adm-tabs-tab {
+      color: #8f95a8;
+      font-size: 30px;
+      padding: 17px 0 31px;
+    }
+
+    .adm-tabs-tab-wrapper-stretch {
+      flex: none;
+      padding: 0 65px 0 0;
+    }
+
+    .adm-tabs-tab-list {
+      padding-left: 30px;
+    }
+
+    .adm-tabs-content {
+      padding: 100px 0 0;
+    }
+
+    .adm-tabs-tab-active {
+      color: var(--text-color);
+      font-size: 32px;
+      font-weight: 600;
+    }
+  }
+}

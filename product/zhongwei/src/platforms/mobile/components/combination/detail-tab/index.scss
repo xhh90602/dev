@@ -1,0 +1,32 @@
+.my-tabs {
+  width: 100%;
+  height: 100%;
+
+  --adm-color-primary: var(--text-color);
+  --fixed-active-line-width: 30px;
+  --content-padding: 0;
+
+  :global {
+    .adm-tabs-header {
+      border-bottom: none;
+      box-sizing: border-box;
+    }
+
+    .adm-tabs-tab {
+      color: #8f95a8;
+      font-size: 30px;
+      padding: 17px 0 31px;
+    }
+
+    .adm-tabs-tab-wrapper-stretch {
+      flex: none;
+      padding: 0 70px 0 0;
+    }
+
+    .adm-tabs-tab-active {
+      color: var(--text-color);
+      font-size: 32px;
+      font-weight: 600;
+    }
+  }
+}

@@ -1,0 +1,16 @@
+export default {
+  name: '简体名字',
+  hot_recommend: '热门推荐',
+  live: '直播',
+  preview: '预告',
+  previous: '往期',
+  playback: '回放',
+  appointment: '预约',
+  nomore: '沒有更多了',
+  living: '直播中',
+  success: '成功',
+  alreadyAppointment: '已预约过,不可重复预约',
+  loading: '加载中',
+  error_info: '获取分析师信息失败',
+  appointment_tip: '预约成功，您将在直播开始收到提醒',
+};

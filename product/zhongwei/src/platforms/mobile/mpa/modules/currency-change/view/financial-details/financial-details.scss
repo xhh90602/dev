@@ -1,0 +1,137 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  position: relative;
+}
+
+.content {
+  position: relative;
+  flex: 1 1;
+  padding: 0 20px 20px;
+  overflow: auto;
+}
+
+.popup-selector {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  position: relative;
+
+  .popup-selector-btn {
+    padding: 0 40px;
+    font-size: 26px;
+    height: 72px;
+    display: flex;
+    align-items: center;
+    border-radius: 36px;
+    font-weight: 500;
+    color: var(--text-color);
+    border: 1px solid #eaedf7;
+    background-color: #fff;
+
+    &:after {
+      content: '';
+      border: 12px solid transparent;
+      border-left-width: 6px;
+      border-right-width: 6px;
+      border-top-color: #8f95a8;
+      border-bottom: 0;
+      margin-left: 20px;
+    }
+
+    &.active:after {
+      border-bottom-color: #8f95a8;
+      border-top: 0;
+    }
+  }
+
+  .popup-content {
+    position: absolute;
+    z-index: 9999;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba($color: #000, $alpha: 50%);
+  }
+}
+
+.card-title {
+  padding: 30px 20px 15px;
+  font-size: 28px;
+  font-weight: 500;
+  color: var(--basic-color);
+}
+
+.card-content {
+  background-color: #fff;
+  border-radius: 30px;
+  padding: 20px 32px;
+
+  > div {
+    padding: 20px 0;
+  }
+
+  > div:not(:last-child) {
+    border-bottom: 1px solid #f2f5ff;
+  }
+
+  .icome-expend {
+    font-size: 26px;
+    font-weight: 400;
+    color: #717686;
+    padding-top: 20px;
+  }
+
+  .detail-item {
+    display: flex;
+    align-items: center;
+
+    .type-icon {
+      font-size: 84px;
+      width: 84px;
+      height: 84px;
+      line-height: 84px;
+      margin-right: 22px;
+    }
+
+    .type-detail {
+      flex: 1;
+      font-size: 24px;
+      color: var(--desc-color);
+      line-height: 1.5;
+
+      .type-name {
+        font-size: 28px;
+        font-weight: 700;
+        color: var(--text-color);
+      }
+    }
+
+    .price-detail {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      font-size: 24px;
+      color: var(--desc-color);
+
+      .income,
+      .expend {
+        font-size: 32px;
+        font-weight: 700;
+        padding-bottom: 20px;
+      }
+
+      .income {
+        color: var(--orange-color);
+      }
+
+      .expend {
+        color: var(--text-color);
+      }
+    }
+  }
+}

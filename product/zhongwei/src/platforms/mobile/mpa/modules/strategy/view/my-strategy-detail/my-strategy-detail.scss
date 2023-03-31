@@ -1,0 +1,342 @@
+/* stylelint-disable max-nesting-depth */
+.my-strategy-detail {
+  min-height: 100%;
+  background-color: #f7f8fc;
+  display: flex;
+  flex-direction: column;
+
+  .head-top {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 30px;
+    background-color: #f7f8fc;
+    flex-shrink: 0;
+    flex-grow: 0;
+
+    .back {
+      width: auto;
+      height: 44px;
+      display: inline-block;
+      padding: 0 30px 0 0;
+      flex-shrink: 1;
+    }
+
+    .title {
+      font-size: 34px;
+      font-weight: 700;
+      color: #011628;
+      flex-grow: 1;
+      text-align: center;
+    }
+
+    .qx-btn {
+      font-size: 28px;
+      color: #b5bbcf;
+    }
+
+    .active {
+      color: #fa6d16;
+    }
+  }
+
+  :global {
+    .adm-pull-to-refresh {
+      background-color: #f7f8fc;
+      flex-grow: 1;
+      display: inherit;
+      flex-direction: inherit;
+    }
+
+    .adm-pull-to-refresh-content {
+      flex-grow: 1;
+      background-color: #fff;
+    }
+
+    .adm-infinite-scroll {
+      color: #b5bbcf;
+      font-size: 24px;
+      padding: 0;
+      display: block;
+      text-align: center;
+    }
+  }
+
+  .tool-popover-bar {
+    :global {
+      .adm-popover-inner-content {
+        padding: 6px 20px;
+      }
+
+      .popover-box {
+        font-size: 10px;
+      }
+
+      .popover-item {
+        border-bottom: 1px solid #f2f5ff;
+        padding: 16px 0;
+        font-size: 26px;
+        font-weight: 400;
+        color: #011628;
+        text-align: center;
+      }
+
+      .popover-item:last-child {
+        border: none;
+      }
+    }
+  }
+
+  .content-box {
+    padding: 0;
+  }
+
+  .popover-tip {
+    :global {
+      .adm-popover-inner-content {
+        padding: 20px;
+        font-size: 26px;
+        font-weight: 400;
+        color: #717686;
+        text-align: center;
+      }
+    }
+  }
+
+  .strategy-condition-box {
+    display: flex;
+    padding: 0 0 30px 30px;
+    overflow-x: auto;
+    background-color: #f7f8fc;
+  }
+
+  .strategy-item-box {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-right: 8px;
+
+    .item {
+      width: 226px;
+      height: 106px;
+      border-radius: 12px;
+      background-color: #eaedf7;
+      text-align: center;
+      margin-right: 22px;
+      padding: 15px 20px;
+      flex-shrink: 0;
+
+      .name {
+        font-size: 28px;
+        color: #1f2d56;
+        font-weight: 400;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+      }
+
+      .text {
+        color: #1f2d56;
+        font-size: 24px;
+        font-weight: 500;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+      }
+    }
+  }
+
+  .stock-box {
+    background-color: #fff;
+    border-top-left-radius: 24px;
+    border-top-right-radius: 24px;
+    padding: 0 32px;
+
+    .condition-box {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 27px 0;
+      border-bottom: 1px solid #f2f5ff;
+
+      .text {
+        font-size: 26px;
+        color: #8f95a8;
+        font-weight: 400;
+
+        span {
+          color: #717686;
+          font-weight: 700;
+        }
+      }
+
+      .last-update {
+        font-size: 24px;
+        color: #8f95a8;
+        font-weight: 400;
+      }
+    }
+  }
+
+  .stock-list-box {
+    .head {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 24px 0;
+
+      .item {
+        color: #717686;
+        font-size: 26px;
+        font-weight: 400;
+      }
+    }
+
+    .d1 {
+      width: 50%;
+      text-align: left;
+      display: flex;
+      align-items: center;
+    }
+
+    .d2 {
+      width: 25%;
+      text-align: right;
+    }
+
+    .d3 {
+      width: 25%;
+      text-align: right;
+    }
+
+    .list-box {
+      overflow-y: auto;
+
+      .row {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 24px;
+      }
+
+      .item {
+        font-size: 32px;
+        font-weight: 700;
+        color: #011628;
+
+        .select-box {
+          margin-right: 20px;
+        }
+
+        .icon-select {
+          width: 36px;
+          height: auto;
+          display: inline-block;
+        }
+
+        .left {
+          overflow: hidden;
+
+          .name {
+            font-size: 30px;
+            font-weight: 700;
+            color: #011628;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            overflow: hidden;
+          }
+        }
+      }
+
+      .code-new {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        color: #8f95a8;
+        font-weight: 400;
+        font-size: 24px;
+
+        .new-tag {
+          width: 40px;
+          height: auto;
+          display: inline-block;
+          margin-left: 10px;
+        }
+      }
+    }
+  }
+
+  .btn-box {
+    width: 100%;
+    flex-shrink: 0;
+    flex-grow: 0;
+    background-color: #fff;
+    border-top: 1px solid #f7f8fc;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+
+    .tool {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 60px;
+
+      .item {
+        font-size: 20px;
+        font-weight: 400;
+        color: #717686;
+        text-align: center;
+        padding: 16px 0 20px;
+
+        img {
+          width: 40px;
+          height: auto;
+          display: block;
+          margin: 0 auto;
+        }
+      }
+    }
+
+    .select-bar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 60px;
+
+      .all-text {
+        font-size: 34px;
+        color: #011628;
+        font-weight: 500;
+        padding: 25px 30px 30px;
+
+        span {
+          color: #fa6d16;
+        }
+      }
+
+      .add-text {
+        font-size: 34px;
+        color: #8f95a8;
+        font-weight: 500;
+        padding: 25px 30px 30px;
+
+        &.active {
+          color: #011628;
+        }
+      }
+    }
+  }
+
+  .loading-page {
+    padding: 30% 0 0;
+  }
+
+  .empty-box {
+    width: 100%;
+    padding-top: 180px;
+    margin: 0 auto;
+    border-radius: 24px;
+    background-color: #fff;
+  }
+}

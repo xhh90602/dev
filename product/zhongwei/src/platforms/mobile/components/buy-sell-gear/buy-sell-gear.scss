@@ -1,0 +1,84 @@
+.buy-sell-gear {
+  position: relative;
+  display: flex;
+  border-top: 1px solid var(--line-desc-color);
+
+  &:after {
+    position: absolute;
+    left: 50%;
+    content: '';
+    width: 1px;
+    height: 100%;
+    background-color: var(--line-desc-color);
+  }
+}
+
+.sell-box,
+.buy-box {
+  padding-top: 10px;
+  width: 50%;
+}
+
+.buy-box {
+  padding-right: 20px;
+}
+
+.sell-box {
+  padding-left: 20px;
+}
+
+.gear-item {
+  display: flex;
+  flex-shrink: 0;
+  color: var(--desc-color);
+  line-height: 44px;
+  border-radius: 7px;
+  // padding: 0 20px;
+  padding-left: 15px;
+
+  .label {
+    width: 60px;
+    text-align: left;
+  }
+
+  .price {
+    // flex: 1;
+    width: 100px;
+    text-align: left;
+  }
+
+  .qty {
+    width: 80px;
+    flex: 1;
+    text-align: right;
+  }
+}
+
+.orange-color:active {
+  background-color: var(--orange-active-bg);
+}
+
+.blue-color:active {
+  background-color: var(--blue-active-bg);
+}
+
+.bid {
+  .gear-item {
+    // background-color: #f5f8ff;
+
+    &:first-of-type {
+      background-color: var(--orange-active-bg);
+    }
+  }
+}
+
+.ask {
+  /* stylelint-disable-next-line no-descending-specificity */
+  .gear-item {
+    // background-color: #f5f8ff;
+
+    &:first-of-type {
+      background-color: var(--blue-active-bg);
+    }
+  }
+}

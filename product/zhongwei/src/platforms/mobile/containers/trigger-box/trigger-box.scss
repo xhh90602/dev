@@ -1,0 +1,221 @@
+.trigger-box {
+  background: linear-gradient(180deg, rgba(232, 240, 255, 100%) 0%, rgba(255, 255, 255, 0%) 100%);
+  padding: 33px 33px 0;
+  background-size: 100% 100px;
+  background-repeat: no-repeat;
+}
+
+.title {
+  font-size: 30px;
+  font-weight: 700;
+  margin-bottom: 22px;
+}
+
+.m-t-10 {
+  margin-top: 10px;
+}
+
+.grid-input {
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  :global {
+    .adm-input-element,
+    .adm-input {
+      --color: inherit;
+
+      font-size: 32px;
+      font-weight: bold;
+    }
+  }
+}
+
+.price-text {
+  margin-top: -10px;
+  pointer-events: none;
+  user-select: none;
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.padding-tab {
+  margin-right: 50px;
+
+  :global {
+    .adm-capsule-tabs-tab {
+      font-size: 26px;
+      line-height: 50px;
+      padding: 0 2px;
+    }
+  }
+}
+
+.margin-line {
+  margin: 10px 0 26px;
+}
+
+.padding {
+  padding: 30px 20px;
+}
+
+.padding-right {
+  padding: 30px 0 30px 20px;
+}
+
+.padding-end {
+  padding-top: 30px;
+}
+
+.label {
+  font-size: 26px;
+  color: var(--trade-btn-icon-color);
+  line-height: 50px;
+}
+
+.content {
+  font-size: 30px;
+  color: var(--text-color);
+}
+
+.select-text {
+  font-weight: bold;
+  color: var(--text-color);
+  font-size: 30px;
+  margin-right: 21px;
+}
+
+.r-chart {
+  position: relative;
+  font-size: 20px;
+
+  .low {
+    position: absolute;
+    left: 140px;
+    bottom: 0;
+  }
+
+  .top {
+    position: absolute;
+    left: 330px;
+    top: 28px;
+  }
+
+  .top-right {
+    position: absolute;
+    right: 54px;
+    top: 28px;
+  }
+
+  .down {
+    position: absolute;
+    right: 82px;
+    top: 76px;
+    font-weight: bold;
+  }
+
+  .up {
+    position: absolute;
+    left: 310px;
+    top: 186px;
+    font-weight: bold;
+  }
+
+  .low-buy {
+    position: absolute;
+    bottom: 0;
+    left: 330px;
+  }
+
+  .low-right-buy {
+    position: absolute;
+    bottom: 0;
+    right: 42px;
+  }
+
+  .up-buy {
+    position: absolute;
+    bottom: 32px;
+    right: 30px;
+    font-weight: bold;
+  }
+
+  .down-buy {
+    position: absolute;
+    bottom: 32px;
+    left: 114px;
+    font-weight: bold;
+  }
+
+  .top-buy {
+    position: absolute;
+    top: 30px;
+    left: 144px;
+  }
+}
+
+.chart-desc {
+  margin-top: -22px;
+  color: #b5bbcf;
+}
+
+.chart-icon {
+  color: var(--trade-btn-icon-color);
+}
+
+.r-form {
+  height: 234px;
+  display: flex;
+
+  :global {
+    .adm-grid {
+      align-items: center;
+    }
+  }
+
+  .r-form-icon {
+    width: 38px;
+    flex-shrink: 0;
+    margin-right: 15px;
+    position: relative;
+
+    :global {
+      .icon-1,
+      .icon-2 {
+        font-size: 38px;
+      }
+
+      .icon-1 {
+        position: absolute;
+        left: 0;
+        top: 32px;
+      }
+
+      .icon-2 {
+        position: absolute;
+        left: 0;
+        bottom: 18px;
+      }
+
+      .icon-line {
+        position: absolute;
+        top: 88px;
+        left: 14px;
+      }
+    }
+  }
+
+  .r-form-input {
+    flex: 1;
+  }
+}
+
+.l-content,
+.s-content {
+  :global {
+    .adm-grid {
+      align-items: stretch;
+    }
+  }
+}

@@ -1,0 +1,122 @@
+.content-hint {
+  display: flex;
+  align-items: center;
+
+  svg {
+    width: 26px;
+    height: 26px;
+    margin-left: 12px;
+    vertical-align: middle;
+  }
+}
+
+.operation-box,
+.cost-box,
+.order-btn-box {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #f2f5ff;
+}
+
+.operation-box {
+  align-items: center;
+  padding: 23px 41px 23px 6px;
+
+  :global {
+    .adm-checkbox {
+      --gap: 25px;
+      --font-size: 26px;
+    }
+  }
+
+  .add-stock {
+    display: flex;
+    align-items: center;
+    color: #2f9bfa;
+    font-size: 26px;
+    font-weight: 700;
+  }
+
+  .add-stock:before {
+    display: inline-block;
+    content: '';
+    width: 23px;
+    height: 23px;
+    margin-right: 12px;
+    background-image: url('@mobile/images/add-blue-icon.svg');
+    background-size: 100% 100%;
+  }
+}
+
+.cost-box {
+  padding: 18px 47px 27px 0;
+
+  .cost-item {
+    line-height: 32px;
+  }
+}
+
+.deal-amount-box {
+  white-space: nowrap;
+  padding-right: 20px;
+
+  .label {
+    margin-bottom: 4px;
+    color: #717686;
+    font-size: 24px;
+  }
+
+  .value {
+    color: #011628;
+    font-size: 28px;
+    font-weight: 700;
+  }
+}
+
+.purchasing-power-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  &:not(:last-child) {
+    margin-bottom: 10px;
+  }
+
+  .label {
+    margin-right: 40px;
+    color: #8f95a8;
+    font-size: 24px;
+  }
+
+  .value {
+    color: #011628;
+    font-size: 26px;
+    line-height: 31px;
+  }
+
+  .value.red-color {
+    color: #fa2f36;
+  }
+}
+
+.purchasing-power-box + .purchasing-power-box .label {
+  width: 186px;
+}
+
+.order-btn-box {
+  padding: 22px 24px 14px 0;
+  border: none;
+
+  .submit-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 321px;
+    height: 80px;
+    border: none;
+    border-radius: 80px;
+    background-color: #fa6d16;
+    color: #fff;
+    font-size: 30px;
+  }
+}

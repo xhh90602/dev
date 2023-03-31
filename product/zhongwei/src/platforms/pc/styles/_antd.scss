@@ -1,0 +1,105 @@
+html body {
+  :global {
+    .ant-layout {
+      height: 100%;
+    }
+
+    .ant-layout-sider {
+      background-color: var(--bg-color);
+    }
+
+    .ant-menu-item-selected,
+    .ant-menu-item-selected a,
+    .ant-menu-item-selected a:hover {
+      color: var(--active-color);
+    }
+
+    .ant-menu:not(.ant-menu-horizontal) .ant-menu-item-selected {
+      background-color: transparent;
+
+      &:after {
+        display: none;
+      }
+    }
+
+    .ant-menu-submenu-selected {
+      color: var(--import-color);
+      background-color: var(--active-bg);
+    }
+
+    .ant-menu-vertical .ant-menu-item,
+    .ant-menu-vertical-left .ant-menu-item,
+    .ant-menu-vertical-right .ant-menu-item,
+    .ant-menu-inline .ant-menu-item,
+    .ant-menu-vertical .ant-menu-submenu-title,
+    .ant-menu-vertical-left .ant-menu-submenu-title,
+    .ant-menu-vertical-right .ant-menu-submenu-title,
+    .ant-menu-inline .ant-menu-submenu-title {
+      margin: 0;
+    }
+
+    .ant-menu-vertical > .ant-menu-item,
+    .ant-menu-vertical-left > .ant-menu-item,
+    .ant-menu-vertical-right > .ant-menu-item,
+    .ant-menu-inline > .ant-menu-item,
+    .ant-menu-vertical > .ant-menu-submenu > .ant-menu-submenu-title,
+    .ant-menu-vertical-left > .ant-menu-submenu > .ant-menu-submenu-title,
+    .ant-menu-vertical-right > .ant-menu-submenu > .ant-menu-submenu-title,
+    .ant-menu-inline > .ant-menu-submenu > .ant-menu-submenu-title {
+      height: 40px;
+      line-height: 40px;
+    }
+
+    /*
+      覆盖按钮默认样式
+    */
+    .ant-btn-primary,
+    .ant-btn-primary:hover,
+    .ant-btn-primary:focus {
+      color: var(--white);
+      background: var(--primary-color);
+      border-color: var(--primary-color);
+      padding: 0;
+    }
+
+    /*
+      覆蓋单选框样式
+    */
+    .ant-radio-checked .ant-radio-inner,
+    .ant-radio-checked:after,
+    .ant-radio-wrapper:hover .ant-radio {
+      border-color: var(--primary-color);
+    }
+
+    .ant-input-affix-wrapper {
+      background-color: initial;
+      border: 0;
+      align-items: center;
+      padding: 4px;
+    }
+
+    .ant-input-affix-wrapper > input.ant-input {
+      background-color: initial;
+    }
+
+    .ant-input-affix-wrapper:focus,
+    .ant-input-affix-wrapper-focused {
+      box-shadow: none;
+    }
+
+    .ant-radio-group-solid .ant-radio-button-wrapper-checked:not(.ant-radio-button-wrapper-disabled):focus-within {
+      box-shadow: 0 0 0 3px transparent !important;
+    }
+
+    /*
+      覆蓋表格排序样式
+    */
+    .ant-table-column-sorters {
+      justify-content: center;
+    }
+
+    .ant-table-column-title {
+      flex: none;
+    }
+  }
+}

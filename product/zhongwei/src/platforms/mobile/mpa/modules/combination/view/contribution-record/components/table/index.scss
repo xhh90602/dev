@@ -1,0 +1,132 @@
+/* stylelint-disable no-descending-specificity */
+.table {
+  .title {
+    display: flex;
+    align-items: center;
+    margin-bottom: 32px;
+
+    .title-item {
+      flex: 1;
+      font-size: 24px;
+      color: #717686;
+
+      &.d1 {
+        text-align: left;
+        font-weight: 400;
+        font-size: 24px;
+      }
+
+      &.d2 {
+        text-align: right;
+        font-weight: 400;
+        font-size: 24px;
+      }
+    }
+  }
+
+  .table-list {
+    .content {
+      display: flex;
+      align-items: center;
+    }
+
+    .item {
+      width: 100%;
+      display: flex;
+      border-top: 1px solid #f2f5ff;
+      padding: 20px 0;
+    }
+
+    .content:nth-child(1) {
+      .rank {
+        background-color: #eed9a4;
+        color: #c99d2b;
+      }
+    }
+
+    .content:nth-child(2) {
+      .rank {
+        background-color: #ededed;
+        color: #8f95a8;
+      }
+    }
+
+    .content:nth-child(3) {
+      .rank {
+        background-color: #eae5d9;
+        color: #ada38b;
+      }
+    }
+
+    .d1 {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      flex: 1;
+      text-align: left;
+
+      .rank {
+        display: inline-block;
+        width: 39px;
+        height: 39px;
+        line-height: 39px;
+        border-radius: 8px;
+        font-size: 28px;
+        font-weight: 400;
+        text-align: center;
+        margin-right: 15px;
+        background-color: #f7f8fc;
+        color: #8f95a8;
+      }
+    }
+
+    .market {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+    }
+
+    .stock-name {
+      font-size: 24px;
+      font-weight: 500;
+      color: #011628;
+    }
+
+    img {
+      width: 32px;
+      height: auto;
+      display: inline-block;
+      margin-right: 8px;
+    }
+
+    .code {
+      color: #8f95a8;
+      font-size: 22px;
+      font-weight: 400;
+    }
+
+    .d2 {
+      flex: 1;
+      text-align: right;
+
+      .amount {
+        font-size: 28px;
+        font-weight: 500;
+      }
+
+      .proportion {
+        font-weight: 400;
+        font-size: 24px;
+        color: #8f95a8;
+      }
+    }
+  }
+}
+
+.more {
+  text-align: center;
+  color: #262d56;
+  height: 89px;
+  line-height: 89px;
+  font-size: 24px;
+}

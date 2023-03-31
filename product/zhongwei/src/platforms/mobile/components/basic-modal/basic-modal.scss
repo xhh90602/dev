@@ -1,0 +1,80 @@
+.basic-modal {
+  :global {
+    .adm-center-popup-wrap {
+      width: 640px;
+      min-width: 640px;
+      max-width: 640px;
+    }
+
+    .adm-modal-body:not(.adm-modal-with-image) {
+      padding-top: 48px;
+    }
+
+    .adm-center-popup-body {
+      border-radius: 24px;
+    }
+
+    .adm-center-popup-close {
+      top: 25px;
+      right: 25px;
+      padding: 5px;
+      color: #999;
+      font-size: 38px;
+    }
+
+    .adm-modal-title {
+      margin: 0;
+      padding: 0 48px;
+      color: #011628;
+      font-size: 36px;
+      font-weight: 700;
+    }
+
+    .adm-modal-content {
+      padding: 48px 32px;
+      color: #1f2d56;
+      font-size: 30px;
+    }
+
+    .adm-modal-footer {
+      padding: 0 35px 44px;
+    }
+
+    .adm-modal-footer.adm-space {
+      --gap-vertical: 0;
+    }
+
+    .adm-space-vertical {
+      flex-direction: row;
+    }
+
+    .adm-space-item {
+      flex: 1;
+    }
+
+    .adm-space-item + .adm-space-item {
+      margin-left: 26px;
+    }
+
+    .modal-cancel-btn,
+    .modal-confirm-btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 80px;
+      border-radius: 65px;
+      font-size: 32px;
+      font-weight: 700;
+    }
+
+    .modal-cancel-btn {
+      background-color: #f2f5ff;
+      color: #011628;
+    }
+
+    .modal-confirm-btn {
+      background-color: #fa6d16;
+      color: #fff;
+    }
+  }
+}

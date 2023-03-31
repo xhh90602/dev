@@ -1,0 +1,20 @@
+<svg fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 80" class="design-iconfont">
+  <path fill="#FFF5F6" d="M36 2A35 35 0 1 0 36 72A35 35 0 1 0 36 2Z"/>
+  <g filter="url(#1zk5wnrnb__filter0_b_6915_38913)">
+    <path fill="#FDEEEF" fill-opacity=".2" d="M46.5 13A32.5 32.5 0 1 0 46.5 78A32.5 32.5 0 1 0 46.5 13Z"/>
+  </g>
+  <mask id="1zk5wnrnb__vhdotlmx4a" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="1" y="2" width="70" height="70">
+    <path fill="#FFF5F6" d="M36 2A35 35 0 1 0 36 72A35 35 0 1 0 36 2Z"/>
+  </mask>
+  <g mask="url(#1zk5wnrnb__vhdotlmx4a)">
+    <path d="M-9 21L6.23077 32.1158L26 29.5L54 54V40.5" stroke="#FCECED" stroke-width="5"/>
+  </g>
+  <defs>
+    <filter id="1zk5wnrnb__filter0_b_6915_38913" x="9" y="8" width="75" height="75" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+      <feGaussianBlur in="BackgroundImageFix" stdDeviation="2.5"/>
+      <feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_6915_38913"/>
+      <feBlend in="SourceGraphic" in2="effect1_backgroundBlur_6915_38913" result="shape"/>
+    </filter>
+  </defs>
+</svg>

@@ -1,0 +1,15 @@
+.pull-refresh-box {
+  height: 100%;
+
+  :global {
+    .adm-pull-to-refresh,
+    .adm-pull-to-refresh-content {
+      height: 100%;
+    }
+
+    .adm-pull-to-refresh-head-content {
+      color: #b5bbcf;
+      font-size: 22px;
+    }
+  }
+}

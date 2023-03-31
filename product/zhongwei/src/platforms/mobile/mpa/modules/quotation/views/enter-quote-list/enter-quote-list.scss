@@ -1,0 +1,38 @@
+.page {
+  padding: 10px 32px 32px;
+}
+
+.card {
+  margin-bottom: 29px;
+  padding: 38px;
+  height: 290px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: var(--basic-bg);
+  font-size: 24px;
+}
+
+.hk-card {
+  background: url('@mobile/images/high-quotation/hk_quota_item_bg.svg') no-repeat;
+  background-size: cover;
+
+  @extend .card;
+}
+
+.us-card {
+  background: url('@mobile/images/high-quotation/us_quota_item_bg.svg') no-repeat;
+  background-size: cover;
+
+  @extend .card;
+}
+
+.description {
+  opacity: .7;
+}
+
+.name {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 14px;
+}

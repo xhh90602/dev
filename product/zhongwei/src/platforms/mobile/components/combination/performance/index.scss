@@ -1,0 +1,33 @@
+.warp {
+  width: 100%;
+  padding: 36px;
+  background-color: #fff;
+  border-radius: 24px;
+  font-size: 24px;
+  margin-bottom: 15px;
+
+  .title {
+    font-size: 34px;
+    margin-bottom: 29px;
+
+    .title-header {
+      font-weight: 700;
+      color: #011628;
+    }
+
+    .title-month {
+      font-size: 26px;
+      margin: 0 10px 0 35px;
+      color: #8f95a8;
+    }
+
+    .title-minute {
+      font-size: 26px;
+      color: #8f95a8;
+    }
+  }
+
+  .empty-box {
+    padding: 30px 0;
+  }
+}

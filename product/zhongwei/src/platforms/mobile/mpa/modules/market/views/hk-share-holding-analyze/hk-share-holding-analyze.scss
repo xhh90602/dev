@@ -1,0 +1,80 @@
+.hk-share-hloding-analyze {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+  font-size: 22px;
+  color: #8f95a8;
+}
+
+.module-box {
+  margin: 8px 16px;
+  width: 100%;
+  border-radius: 24px;
+  background: #fff;
+  padding-left: 35px;
+  padding-right: 25px;
+
+  .module-header {
+    display: flex;
+    align-items: baseline;
+    margin: 27px 0;
+
+    .module-title {
+      margin-right: 33px;
+      color: #011628;
+      font-size: 32px;
+      line-height: 45px;
+      font-weight: 700;
+    }
+
+    .module-sub-title {
+      color: rgb(143, 149, 168);
+      font-size: 24px;
+      font-weight: 400;
+    }
+  }
+}
+
+.share-holding-ratio {
+  position: relative;
+
+  .legend {
+    position: absolute;
+    top: 529px;
+    left: 94px;
+    right: 66px;
+  }
+
+  .number-strands-split-line {
+    width: 552px;
+    position: absolute;
+    top: 583px;
+    left: 94px;
+    border-top: 1px #f2f5ff solid;
+  }
+}
+
+.line-charts {
+  height: 580px;
+}
+
+.footer-hint {
+  display: flex;
+  line-height: 1.5;
+  align-items: flex-start;
+  padding: 0 13px 0 25px;
+  opacity: 1;
+  color: rgb(181, 187, 207);
+  font-size: 22px;
+  font-weight: 400;
+
+  .icon {
+    padding-top: 1px;
+    margin-right: 10px;
+    color: #b5bbcf;
+    width: 22px;
+    height: 22px;
+  }
+}

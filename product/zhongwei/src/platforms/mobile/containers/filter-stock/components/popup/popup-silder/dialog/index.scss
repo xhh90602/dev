@@ -1,0 +1,80 @@
+/* stylelint-disable selector-class-pattern */
+/* stylelint-disable function-no-unknown */
+.custom-content {
+  .header {
+    padding: 50px 30px;
+    position: relative;
+
+    .title {
+      font-size: 36px;
+      text-align: center;
+      font-weight: 700;
+    }
+
+    .close {
+      position: absolute;
+      top: 50px;
+      right: 40px;
+    }
+  }
+
+  .content-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .text {
+      font-size: 32px;
+      margin: 0 20px;
+    }
+
+    .stepper-box {
+      display: inline-block;
+    }
+  }
+
+  .errorText {
+    height: 38px;
+    padding: 10px 0 0 220px;
+    font-size: 24px;
+    color: red;
+  }
+
+  .confirm-text {
+    text-align: center;
+    padding: 20px 80px;
+    margin-bottom: 30px;
+    padding-bottom: constant(safe-area-inset-bottom); /* 兼容 IOS<11.2 */
+    padding-bottom: env(safe-area-inset-bottom); /* 兼容 IOS>11.2 */
+    margin-top: 60px;
+
+    .btn {
+      padding: 20px 60px;
+      background-color: #ff5c00;
+      text-align: center;
+      border-radius: 40px;
+      color: #fff;
+      font-size: 34px;
+    }
+  }
+
+  :global {
+    .adm-stepper {
+      .adm-stepper-input {
+        height: 70px;
+        border-radius: 10px;
+        overflow: hidden;
+        border: 1px solid #eee;
+        background-color: #fff;
+      }
+
+      input {
+        height: 100%;
+      }
+
+      button {
+        display: none;
+      }
+    }
+  }
+}

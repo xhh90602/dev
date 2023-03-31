@@ -1,0 +1,48 @@
+.order-list {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  position: relative;
+
+  .tab {
+    margin: 20px;
+  }
+
+  .card-table {
+    position: relative;
+    flex: 1;
+    padding: 20px 30px 0;
+    border-radius: 24px 24px 0 0;
+    background-color: var(--basic-bg);
+    overflow-y: auto;
+  }
+
+  .search-form {
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    & > div {
+      cursor: pointer;
+    }
+  }
+
+  :global {
+    .icon-search {
+      color: var(--text-color);
+    }
+  }
+}
+
+.middle {
+  margin: 0 10px;
+}
+
+.order {
+  padding: 0 40px;
+}
+
+.date {
+  padding: 0 27px;
+}

@@ -1,0 +1,51 @@
+.page-wrapper {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  background-color: #fff;
+  padding: 21px 16px 0;
+}
+
+.tab-box {
+  margin-bottom: 10px;
+}
+
+.info-item {
+  padding: 38px 0;
+  border-bottom: 1px solid rgba(240,242,249,1);
+  display: flex;
+  justify-content: space-between;
+
+  .left-content {
+    flex-grow: 1;
+  }
+
+  .content-box {
+    display: -webkit-box;
+    line-height: 48px;
+    color: #011628;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    margin-bottom: 13px;
+  }
+
+  .date-box {
+    color: #8f95a8;
+  }
+
+  .right-img {
+    margin-left: 10px;
+    width: 200px;
+    height: 138px;
+    flex-shrink: 0;
+    border-radius: 16px;
+    overflow: hidden;
+
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+}

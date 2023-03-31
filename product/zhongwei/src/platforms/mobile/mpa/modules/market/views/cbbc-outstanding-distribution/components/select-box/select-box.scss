@@ -1,0 +1,38 @@
+.select-box {
+  height: 28px;
+  width: 80px;
+  margin-left: 10px;
+
+  :global {
+    .ant-select,
+    .ant-select-selector {
+      height: 100% !important;
+      width: 100% !important;
+      box-shadow: none !important;
+    }
+
+    .ant-select-selector {
+      border: none !important;
+      background-color: #f5f5f5 !important;
+      border-radius: 4px !important;
+    }
+
+    .ant-select-selection-placeholder,
+    .ant-select-selection-search-input {
+      font-weight: 400;
+      font-size: 14px;
+      color: #212121;
+    }
+  }
+}
+
+.icon-box {
+  width: 6px;
+  height: 4px;
+  display: flex;
+  align-items: center;
+
+  img {
+    height: 100%;
+  }
+}

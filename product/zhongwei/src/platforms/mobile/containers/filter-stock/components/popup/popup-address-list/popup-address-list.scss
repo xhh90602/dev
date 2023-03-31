@@ -1,0 +1,78 @@
+.industury-pop {
+  height: 100vh;
+  padding-top: 30px;
+  margin-left: -38px;
+  margin-right: -38px;
+  display: flex;
+  flex-direction: column;
+
+  .title-container {
+    margin-bottom: 30px;
+    padding-left: 37px;
+
+    .title-style {
+      color: #011628;
+      font-size: 38px;
+      font-weight: 700;
+      // font-family: 'PingFang HK';
+      margin-left: 264px;
+    }
+  }
+
+  .search-style {
+    margin: 0 41px 16px 31px;
+
+    :global {
+      .adm-search-bar-input-box {
+        background-color: #f7f8fc;
+      }
+    }
+  }
+
+  .list-box {
+    flex-grow: 1;
+    flex-shrink: 0;
+  }
+
+  .item-header {
+    color: #011628;
+    font-size: 30px;
+    font-weight: 700;
+    // font-family: 'PingFang HK';
+
+    :global {
+      .adm-index-bar-anchor-title {
+        background-color: #f7f8fc;
+        padding-left: 31px;
+      }
+    }
+  }
+
+  .item-style {
+    height: 88px;
+    color: #717686;
+    font-size: 28px;
+    font-weight: 400;
+    // font-family: 'PingFang HK';
+
+    :global {
+      .adm-list-item-content-main {
+        padding-left: 31px;
+      }
+    }
+  }
+
+  .btn-container {
+    height: 94px;
+    text-align: center;
+    line-height: 94px;
+    color: #011628;
+    font-size: 34px;
+    font-weight: 500;
+    margin-bottom: 20px;
+
+    .reset-style {
+      margin-right: 307px;
+    }
+  }
+}

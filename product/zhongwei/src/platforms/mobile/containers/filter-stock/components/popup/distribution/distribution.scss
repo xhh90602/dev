@@ -1,0 +1,19 @@
+.popup {
+  padding: 51px 38px 0;
+  font-size: 26px;
+
+  :global {
+    .adm-slider-track {
+      height: 16px;
+    }
+
+    .adm-slider-fill {
+      height: 16px;
+      background-color: #fa6d16;
+    }
+  }
+}
+
+.main {
+  flex: 1;
+}

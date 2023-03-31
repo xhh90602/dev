@@ -1,0 +1,135 @@
+.combination-box {
+  padding: 30px;
+}
+
+.info-config {
+  position: relative;
+  display: flex;
+
+  &:after {
+    content: '';
+    position: absolute;
+    top: 30px;
+    left: 50%;
+    bottom: 20px;
+    width: 1px;
+    background-color: var(--contain-bg);
+  }
+
+  & > div {
+    width: 50%;
+  }
+
+  & > div:nth-child(2) {
+    padding-left: 70px;
+  }
+
+  .label {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: var(--desc-color);
+  }
+
+  .num {
+    margin-top: 26px;
+    margin-bottom: 9px;
+    font-size: 32px;
+    color: var(--text-color);
+    font-weight: bold;
+  }
+}
+
+.title-label {
+  margin-bottom: 20px;
+  font-size: 32px;
+  color: var(--text-color);
+  font-weight: bold;
+}
+
+.combination-tip {
+  position: absolute;
+  top: -6px;
+  padding: 2px 9px;
+  font-size: 24px;
+  border-radius: 6px;
+  left: 0;
+}
+
+.combination-item {
+  width: 33.33%;
+
+  .item-label {
+    color: var(--trade-btn-icon-color);
+    font-size: 24px;
+    margin-bottom: 12px;
+  }
+
+  .item-content {
+    font-size: 26px;
+    line-height: 1.5;
+
+    & > div:nth-child(2) {
+      font-size: 24px;
+      color: var(--desc-color);
+    }
+  }
+}
+
+%card {
+  position: relative;
+  padding: 42px 26px 10px;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 24px;
+  border: 1px solid transparent;
+
+  & > div:nth-child(3) {
+    text-align: center;
+  }
+
+  & > div:nth-child(4) {
+    text-align: right;
+  }
+}
+
+.combination-current {
+  @extend %card;
+
+  margin-top: 20px;
+  background-color: #f7f8fc;
+
+  .combination-tip {
+    color: var(--trade-btn-icon-color);
+    background-color: #eaedf7;
+  }
+}
+
+.combination-change {
+  @extend %card;
+
+  background-color: #fffdfb;
+  border-color: #f2f5ff;
+  z-index: 2;
+
+  .combination-tip {
+    color: var(--orange-color);
+    background-color: #fff5e8;
+  }
+
+  .item-content {
+    font-weight: bold;
+  }
+
+  &:after {
+    display: inline-block;
+    content: '';
+    position: absolute;
+    top: -27px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 47px;
+    height: 47px;
+    background-image: url('@mobile/images/warehouse-arrow-icon.svg');
+    background-size: 100% 100%;
+  }
+}

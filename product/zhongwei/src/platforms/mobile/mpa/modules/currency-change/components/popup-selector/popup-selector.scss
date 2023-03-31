@@ -1,0 +1,73 @@
+.popup-selector {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+  overflow: hidden;
+  background-color: rgba($color: #000, $alpha: 50%);
+}
+
+.popup-content {
+  background-color: #fff;
+  border-radius: 0 0 30px 30px;
+  padding: 0 34px 70px;
+  width: 100vw;
+
+  .title {
+    font-size: 26px;
+    color: #717686;
+    padding: 25px 0;
+  }
+
+  .content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+
+    .item {
+      width: 30%;
+      height: 72px;
+      line-height: 72px;
+      text-align: center;
+      border-radius: 24px;
+      margin-right: 5%;
+      margin-bottom: 20px;
+      background-color: #f7f8fc;
+      color: var(--text-color);
+
+      &:nth-child(3n+3) {
+        margin-right: 0;
+      }
+
+      &.active {
+        background-color: #fff5ef;
+        color: var(--orange-color);
+      }
+    }
+  }
+
+  .action {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 40px;
+
+    > div {
+      width: 310px;
+      height: 80px;
+      line-height: 80px;
+      text-align: center;
+      font-size: 32px;
+      font-weight: 700;
+      border-radius: 40px;
+      color: var(--text-color);
+      background-color: #f2f5ff;
+
+      &.confirm {
+        background-color: var(--orange-color);
+        color: #fff;
+      }
+    }
+  }
+}

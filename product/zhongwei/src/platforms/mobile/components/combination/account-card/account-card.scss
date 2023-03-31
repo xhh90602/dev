@@ -1,0 +1,146 @@
+.warp {
+  width: 100%;
+  background-color: #fff;
+  border-radius: 24px;
+  padding: 39px 34px 35px;
+  position: relative;
+  font-size: 24px;
+  // margin-bottom: 18px;
+}
+
+.footer-option img {
+  width: 24px;
+  height: 24px;
+  display: block;
+  position: relative;
+  top: 4px;
+}
+
+.top {
+  display: flex;
+  justify-content: space-between;
+  height: 91px;
+  padding-bottom: 23px;
+  // margin-bottom: 24px;
+  margin-top: 9px;
+  border-bottom: 1px solid #f2f5ff;
+}
+
+.top-left {
+  flex: 1;
+  display: flex;
+
+  .head-logo {
+    width: 72px;
+    height: 72px;
+    border-radius: 50%;
+  }
+
+  .head-logo img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .top-left-name {
+    font-weight: 700;
+    color: #011628;
+    font-size: 30px;
+    margin-left: 23px;
+    margin-top: 16px;
+  }
+
+  .add-wei {
+    margin-left: 10px;
+    margin-top: 10px;
+    width: 100px;
+    height: 48px;
+    background-color: #fff5e7;
+    color: #fa6d16;
+    font-weight: 400;
+    text-align: center;
+    line-height: 48px;
+    font-size: 24px;
+    border-radius: 34px;
+  }
+}
+
+.top-right {
+  width: 98px;
+  text-align: center;
+  box-sizing: border-box;
+  border-left: 1px solid #f2f5ff;
+  padding-left: 24px;
+
+  .top-right-number {
+    font-size: 32px;
+    color: #011628;
+    font-weight: 700;
+    margin-bottom: 12px;
+  }
+
+  .top-right-option {
+    color: #8f95a8;
+    font-size: 24px;
+  }
+}
+
+.main {
+  display: flex;
+  padding: 24px 0 31px;
+  border-bottom: 1px solid #f2f5ff;
+
+  .main-left {
+    flex: 1;
+    // background-color: aqua;
+  }
+
+  .main-left:nth-of-type(2) {
+    padding-left: 34px;
+  }
+
+  .main-num {
+    color: #da070e;
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 10px;
+  }
+
+  .main-data {
+    display: flex;
+  }
+
+  .main-data-txt {
+    color: #717686;
+    font-size: 23px;
+    font-weight: 400;
+  }
+
+  .main-data-info {
+    color: #011628;
+    font-size: 26px;
+    font-weight: 700;
+    margin-left: 19px;
+    margin-top: 5px;
+  }
+}
+
+.footer {
+  padding-top: 27px;
+}
+
+.footer-option {
+  height: 38px;
+  line-height: 38px;
+  display: flex;
+}
+
+.footer-option:nth-of-type(1) {
+  margin-bottom: 17px;
+}
+
+.footer-option-intro {
+  color: #8f95a8;
+  font-size: 24px;
+  font-weight: 400;
+  margin-left: 16px;
+}

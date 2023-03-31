@@ -1,0 +1,173 @@
+.subscription-info-box,
+.ranking-info-box {
+  margin-bottom: 27px;
+}
+
+.subscription-info-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 16px;
+
+  .combination-info {
+    flex: 1;
+    padding: 0 17px;
+    white-space: nowrap;
+    border-right: 1px solid #eaedf7;
+  }
+
+  .combination-info-name-box {
+    display: flex;
+  }
+
+  .subscription-info {
+    padding-left: 18px;
+    text-align: center;
+
+    .subscription-btn,
+    .subscription-btn-now {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 34px;
+      font-size: 24px;
+    }
+
+    .subscription-btn {
+      padding: 8px 20px;
+      border: 1px solid #2f9bfa;
+      color: #2f9bfa;
+    }
+
+    .subscription-btn:before {
+      display: inline-block;
+      content: '+';
+    }
+
+    .subscription-btn-now {
+      padding: 8px 20px 8px 10px;
+      border: 1px solid #ced1dd;
+      color: #ced1dd;
+    }
+
+    .subscription-btn-now:before {
+      display: inline-block;
+      content: '';
+      width: 30px;
+      height: 25px;
+      background-image: url('@mobile/images/icon_yes.svg');
+      background-size: 100% 100%;
+      vertical-align: middle;
+    }
+  }
+
+  .combination-info-name,
+  .subscription-info-num {
+    color: #011628;
+    font-size: 36px;
+    font-weight: 700;
+  }
+
+  .combination-info-describe,
+  .subscription-info-label {
+    margin: 10px 0 0;
+    color: #8f95a8;
+    font-size: 24px;
+  }
+
+  .combination-info-name,
+  .combination-info-describe {
+    white-space: pre-wrap;
+  }
+
+  .ranking-box {
+    height: 39px;
+    padding: 0 16px;
+    margin-left: 15px;
+    border-radius: 60px;
+    background: rgba(47, 155, 250, 10%);
+    color: #2f9bfa;
+    font-size: 24px;
+    line-height: 39px;
+  }
+
+  .ranking-box svg {
+    width: 10px;
+    height: 10px;
+    margin-left: 10px;
+    vertical-align: middle;
+  }
+}
+
+.ranking-info-box {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 164px;
+  padding-right: 40px;
+  border-radius: 24px;
+  background-color: #fff;
+
+  &:after {
+    position: absolute;
+    right: 36px;
+    display: inline-block;
+    content: '';
+    width: 13px;
+    height: 23px;
+    background-image: url('@mobile/images/icon_zh_more.svg');
+    background-size: 100% 100%;
+    vertical-align: middle;
+  }
+
+  .ranking-item {
+    color: #8f95a8;
+    font-size: 24px;
+    text-align: center;
+  }
+
+  .ranking-item-num,
+  .profit-num {
+    color: #011628;
+  }
+
+  .ranking-item-num {
+    font-size: 34px;
+    font-weight: 700;
+  }
+
+  .ranking-item-label {
+    margin: 4px 0;
+  }
+}
+
+.ranking-modal-content {
+  padding: 0 40px;
+
+  :global {
+    .adm-checkbox {
+      --adm-color-light: #b5bbcf;
+      --adm-color-primary: #fa6d16;
+      --icon-size: 36px;
+      --font-size: 24px;
+      --gap: 17px;
+    }
+
+    .adm-checkbox-content {
+      line-height: 40px;
+    }
+  }
+
+  .ranking-desc {
+    margin-bottom: 35px;
+    color: #011628;
+    font-size: 32px;
+    line-height: 52px;
+  }
+
+  .leaderboard-rules {
+    color: #2f9bfa;
+    margin-left: 15px;
+  }
+}

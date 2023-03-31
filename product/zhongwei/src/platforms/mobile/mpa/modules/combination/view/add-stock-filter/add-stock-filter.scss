@@ -1,0 +1,257 @@
+/* stylelint-disable max-nesting-depth */
+.add-stock {
+  background-color: #fff;
+  min-height: 100%;
+  height: 100%;
+
+  .add-stock-content {
+    display: flex;
+    flex-direction: column;
+    height: calc(100% - 88px);
+  }
+
+  .stock-list-box {
+    flex-grow: 1;
+    overflow-y: auto;
+
+    .item {
+      padding: 22px 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid #f2f5ff;
+    }
+
+    .l {
+      padding: 0;
+    }
+
+    .name {
+      font-size: 28px;
+      font-weight: 500;
+      color: #011628;
+    }
+
+    .market-code {
+      display: flex;
+      justify-content: flex-start;
+      align-content: center;
+    }
+
+    .market {
+      width: 30px;
+      height: auto;
+      margin-right: 8px;
+    }
+
+    .code {
+      font-size: 26px;
+      font-weight: 400;
+      color: #8f95a8;
+    }
+
+    .add-stock {
+      width: 48px;
+      height: 48px;
+      display: inline-block;
+    }
+  }
+
+  .search-box {
+    padding: 16px 32px 0;
+
+    .icon-search {
+      width: 34px;
+      height: auto;
+      display: block;
+    }
+
+    :global {
+      .adm-popover {
+        width: 100%;
+        max-width: calc(100vw - 64px);
+      }
+
+      .adm-search-bar-active {
+        .adm-search-bar-input-box {
+          border: 1px solid #fa6d16;
+        }
+      }
+
+      .adm-popover-inner-content {
+        padding: 0 20px;
+      }
+
+      .adm-popover-inner {
+        width: 100%;
+        max-height: 8rem;
+        overflow: auto;
+      }
+    }
+  }
+
+  .search-result-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 0 20px;
+
+    &.btl {
+      border-bottom: 1px solid #f2f5ff;
+    }
+
+    .left {
+      font-size: 26px;
+      font-weight: 400;
+      color: #8f95a8;
+
+      span {
+        color: #fa6d16;
+        font-weight: 400;
+        font-size: 26px;
+      }
+    }
+
+    .right {
+      font-size: 26px;
+      font-weight: 400;
+      color: #2f9bfa;
+    }
+  }
+
+  .selected-stock-list-box {
+    display: flex;
+    flex-grow: 1;
+    margin-right: 23px;
+    padding: 33px 25px;
+  }
+
+  .selected-stock-list {
+    background-color: #f7f8fc;
+    overflow: auto hidden;
+    flex-shrink: 0;
+
+    .item-box {
+      display: flex;
+      justify-content: space-between;
+      align-content: center;
+
+      .item {
+        width: 156px;
+        height: 140px;
+        border-radius: 13px;
+        background-color: #f0f2fa;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        flex-grow: 0;
+        flex-shrink: 0;
+        margin-right: 23px;
+      }
+
+      .active {
+        background-color: #fff;
+      }
+
+      .close {
+        width: 32px;
+        height: 32px;
+        position: absolute;
+        top: -8px;
+        right: -8px;
+      }
+
+      .name {
+        width: 100%;
+        color: #011628;
+        font-size: 26px;
+        font-weight: 700;
+        text-align: center;
+        margin-bottom: 3px;
+        padding: 0 20px;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+      }
+
+      .market-code {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .market {
+        width: 30px;
+        height: auto;
+        margin-right: 8px;
+      }
+
+      .code {
+        font-size: 26px;
+        font-weight: 400;
+        color: #8f95a8;
+      }
+    }
+  }
+
+  .bt1 {
+    padding: 0;
+    border-bottom: 1px solid #f7f8fc;
+    margin: 0 33px;
+  }
+
+  .my-choice {
+    padding: 32px;
+
+    .title {
+      padding-bottom: 32px;
+    }
+
+    .type-list {
+      overflow-x: auto;
+
+      .type-list-box {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+      }
+
+      .item {
+        padding: 8px 24px;
+        border-radius: 65px;
+        margin-right: 24px;
+        background-color: #eaedf7;
+        color: #717686;
+        font-size: 28px;
+        font-weight: 400;
+        flex-grow: 0;
+        flex-shrink: 0;
+      }
+
+      .active {
+        background-color: #fa6d16;
+        color: #fff;
+      }
+    }
+  }
+
+  .stock-list {
+    padding: 0 32px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    overflow: hidden;
+
+    .title {
+      font-size: 26px;
+      color: #717686;
+      font-weight: 400;
+    }
+  }
+
+  .empty-box {
+    padding: 50px 0 30px;
+  }
+}

@@ -1,0 +1,129 @@
+.stock-name {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.content,
+.content-bold {
+  color: #011628;
+  word-break: break-all;
+}
+
+.content {
+  font-size: 27px;
+}
+
+.content-bold {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.difference-text {
+  color: #fab02f;
+}
+
+.second-level-content {
+  color: #8f95a8;
+  font-size: 22px;
+}
+
+.wait-status {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.wait-status:before {
+  display: inline-block;
+  content: '';
+  width: 22px;
+  height: 22px;
+  background-image: url('@mobile/images/waiting-icon.svg');
+  background-size: 100% 100%;
+  margin-right: 6px;
+}
+
+.th-all-market-box {
+  display: flex;
+  align-items: center;
+}
+
+.th-all-market-box:after {
+  display: inline-block;
+  content: '';
+  width: 12px;
+  height: 11px;
+  background-image: url('@mobile/images/drop-down-icon.svg');
+  background-size: 100% 100%;
+  margin-left: 25px;
+}
+
+.deal-icon-box {
+  position: relative;
+  display: flex;
+  align-items: center;
+
+  .deal-icon {
+    position: absolute;
+    left: -32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 24px;
+    height: 24px;
+    border-radius: 4px;
+    font-size: 18px;
+  }
+
+  .buy-icon {
+    color: #fa6d16;
+    background-color: #fff5e8;
+  }
+
+  .sell-icon {
+    color: #2f9bfa;
+    background-color: #e8f2ff;
+  }
+}
+
+.warehouse-to-title {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+
+  .before-text {
+    margin-right: 60px;
+  }
+}
+
+.warehouse-to-content {
+  .ratio-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .before-ratio:after {
+    display: inline-block;
+    content: '';
+    width: 30px;
+    height: 16px;
+    margin: 0 15px;
+    background-image: url('@mobile/images/icon_jt.svg');
+    background-size: 100% 100%;
+  }
+
+  .state-box {
+    color: #8f95a8;
+    font-size: 22px;
+  }
+
+  .entrust-price {
+    margin-left: 5px;
+  }
+}
+
+.deal-direction {
+  font-size: 24px;
+}

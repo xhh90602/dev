@@ -1,0 +1,29 @@
+.tab-list {
+  border-radius: 24px;
+  opacity: 1;
+  display: flex;
+  padding: 4px;
+  justify-content: space-between;
+  overflow-x: auto;
+}
+
+.tab-item {
+  color: #8f95a8;
+  min-height: 56px;
+  font-size: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  flex: 0 0 auto;
+  width: 223px;
+}
+
+.tab-item.active {
+  color: #1f2d56;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 100%);
+  font-weight: 700;
+}

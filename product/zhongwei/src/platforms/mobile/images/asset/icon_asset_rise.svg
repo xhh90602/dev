@@ -1,0 +1,20 @@
+<svg fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 80" class="design-iconfont">
+  <path fill="#F5FFFE" d="M36 2A35 35 0 1 0 36 72A35 35 0 1 0 36 2Z"/>
+  <g filter="url(#isty8bslq__filter0_b_6915_38911)">
+    <path fill="#CCFAF5" fill-opacity=".1" d="M46.5 13A32.5 32.5 0 1 0 46.5 78A32.5 32.5 0 1 0 46.5 13Z"/>
+  </g>
+  <mask id="isty8bslq__a7fn1punka" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="1" y="2" width="70" height="70">
+    <path fill="#F5FFFE" d="M36 2A35 35 0 1 0 36 72A35 35 0 1 0 36 2Z"/>
+  </mask>
+  <g mask="url(#isty8bslq__a7fn1punka)">
+    <path d="M1 54L13.8132 44.5684L27.7912 51.0526L54 26H42.9341" stroke="#E3F7F4" stroke-width="5"/>
+  </g>
+  <defs>
+    <filter id="isty8bslq__filter0_b_6915_38911" x="9" y="8" width="75" height="75" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+      <feGaussianBlur in="BackgroundImageFix" stdDeviation="2.5"/>
+      <feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_6915_38911"/>
+      <feBlend in="SourceGraphic" in2="effect1_backgroundBlur_6915_38911" result="shape"/>
+    </filter>
+  </defs>
+</svg>

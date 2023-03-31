@@ -1,0 +1,34 @@
+.container {
+  height: 100%;
+  padding: 32px;
+  position: relative;
+
+  :global {
+    .basic-card {
+      padding: 44px;
+      margin-bottom: 25px;
+    }
+  }
+}
+
+.bg-img {
+  position: fixed;
+  width: 145px;
+  height: 145px;
+  top: 40px;
+  right: 40px;
+  z-index: -1;
+}
+
+.copy-btn {
+  font-size: 24px;
+  border: 1px solid #e8b995;
+  color: var(--orange-color);
+  width: 77px;
+  height: 42px;
+  line-height: 42px;
+  text-align: center;
+  margin-right: 10px;
+  border-radius: 30px;
+  display: inline-block;
+}

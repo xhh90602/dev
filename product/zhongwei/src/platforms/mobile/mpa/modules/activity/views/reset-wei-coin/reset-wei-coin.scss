@@ -1,0 +1,149 @@
+.page {
+  width: 100%;
+  height: 100%;
+  padding-bottom: 40px;
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(to bottom, #f5dec6 0%, #faf2eb 35%, #f6f8fc 100%);
+  position: relative;
+  overflow-y: auto;
+}
+
+.page-title {
+  height: 88px;
+  line-height: 88px;
+  display: flex;
+  font-size: 34px;
+  font-weight: 700;
+  color: #011628;
+  padding: 13px 42px 10px 30px;
+  box-sizing: border-box;
+}
+
+.page-title img {
+  width: 19px;
+  height: 48px;
+  margin-top: 22px;
+  margin-right: 254px;
+}
+
+.query {
+  width: 686px;
+  height: 136px;
+  border-radius: 24px;
+  background: #fff;
+  display: flex;
+  padding: 49px 47px 41px 41px;
+  box-sizing: border-box;
+  justify-content: space-between;
+  margin: 30px auto 0;
+}
+
+.query img {
+  width: 32px;
+  height: 32px;
+  margin-right: 21px;
+  position: relative;
+  top: 6px;
+}
+
+.query-num {
+  color: #011628;
+  font-size: 36px;
+  font-weight: 500;
+}
+
+.query-main {
+  width: 686px;
+  flex: 1;
+  overflow-y: scroll;
+  border-radius: 24px;
+  opacity: 1;
+  background: #fff;
+  margin: 33px auto 0;
+  padding: 38px 36px 31px 31px;
+  box-sizing: border-box;
+}
+
+.query-main-title {
+  color: #011628;
+  font-size: 34px;
+  font-weight: 700;
+}
+
+.query-main-row {
+  margin-top: 31px;
+  margin-bottom: 10px;
+  color: #8f95a8;
+  font-size: 26px;
+  font-weight: 400;
+  display: flex;
+  justify-content: space-between;
+}
+
+.query-main-item {
+  display: flex;
+  justify-content: space-between;
+  height: 89px;
+  padding: 26px 0;
+  color: #011628;
+  font-size: 30px;
+  font-weight: 500;
+}
+
+.query-main-item img {
+  width: 32px;
+  height: 32px;
+  margin-right: 11px;
+  position: relative;
+  top: 6px;
+}
+
+.time {
+  color: #717686;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 44.5px;
+}
+
+.no-data {
+  width: 686px;
+  height: 554px;
+  border-radius: 24px;
+  opacity: 1;
+  background: #fff;
+  margin: 33px auto 0;
+  padding-top: 38px;
+  box-sizing: border-box;
+}
+
+.no-data-title {
+  color: #011628;
+  font-size: 34px;
+  font-weight: 700;
+  margin-left: 31px;
+}
+
+.no-data-item {
+  width: 200px;
+  height: 232px;
+  text-align: center;
+  margin-top: 38px;
+  position: relative;
+  left: 50%;
+  margin-left: -100px;
+  color: #8f95a8;
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.no-data-item img {
+  width: 200px;
+  height: 200px;
+}
+
+.more {
+  text-align: center;
+  color: #011628;
+  margin-top: 20px;
+}

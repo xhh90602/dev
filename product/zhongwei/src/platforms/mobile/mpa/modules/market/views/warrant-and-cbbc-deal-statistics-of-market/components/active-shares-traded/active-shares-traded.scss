@@ -1,0 +1,146 @@
+/* stylelint-disable function-no-unknown */
+@import '@/global-css/func.scss';
+
+.active-shares-traded {
+  // margin-left: -16px;
+  // margin-right: -16px;
+  margin-bottom: 24px;
+  background-color: #fff;
+  border-radius: 24px;
+  padding-top: 28px;
+
+  .small-title-name {
+    color: #011628;
+    font-size: 34px;
+    font-weight: 700;
+    margin: 0 0 32px 32px;
+  }
+
+  .tab-box {
+    padding: 0 32px;
+    margin-bottom: 32px;
+  }
+
+  .table {
+    flex: 1;
+    min-height: 350px;
+    width: 100%;
+  }
+
+  .inner-table {
+    height: 100%;
+  }
+}
+
+// .table-title-style {
+//   color: #717686;
+//   font-size: 26px;
+// }
+
+.table-box {
+  flex: 1;
+  overflow: auto;
+  padding-left: 28px;
+  padding-right: 30px;
+
+  :global {
+    .table-header-cell {
+      border-bottom: 0;
+      color: #717686;
+      font-size: 26px;
+    }
+
+    th,
+    td {
+      border-bottom: 0;
+      padding-bottom: 34px;
+    }
+  }
+
+  .table-body-cell {
+    padding-bottom: 37px;
+    vertical-align: top;
+  }
+
+  .name-code-info {
+    // margin-left: 24px;
+
+    .name-style {
+      color: #011628;
+      font-size: 28px;
+      font-weight: 700;
+    }
+
+    .other-name {
+      color: #8470eb;
+      font-size: 22px;
+      font-weight: 700;
+    }
+
+    .market-tag {
+      width: calc-fontsize(14);
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+
+    .code-style {
+      margin-left: 50px;
+      margin-right: 11px;
+      color: #8f95a8;
+      font-size: 26px;
+    }
+  }
+
+  .plus-strand {
+    color: #011628;
+    font-size: 28px;
+    font-weight: 700;
+  }
+
+  .stock-warrants {
+    color: #011628;
+    font-size: 28px;
+    font-weight: 700;
+  }
+}
+
+.percentage-value {
+  height: 16px;
+  line-height: 16px;
+  display: flex;
+  width: 100%;
+  font-size: 20px;
+  color: #fff;
+  padding: 0 10%;
+  box-sizing: border-box;
+}
+
+.percentage-subscription {
+  text-align: left;
+  // background: linear-gradient(to left, transparent 8px, #06b899 0);
+  background: #06b899;
+  border-radius: 8px 0 0 8px;
+  margin-right: -8px;
+  position: relative;
+
+  &:after {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 4px;
+    height: 100%;
+    background: var(--background);
+    z-index: 210;
+    // transform: rotate(45deg) translateX(-50%);
+  }
+}
+
+.percentage-put {
+  text-align: right;
+  margin-left: -6px;
+  // background: linear-gradient(90deg, transparent 8px, #da070e 0);
+  background: #da070e;
+  border-radius: 0 8px 8px 0;
+}

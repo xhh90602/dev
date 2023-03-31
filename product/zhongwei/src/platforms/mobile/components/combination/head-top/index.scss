@@ -1,0 +1,38 @@
+.head-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 32px;
+
+  .left {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    img {
+      width: 22px;
+      height: auto;
+      display: inline-block;
+    }
+  }
+
+  .title {
+    font-size: 34px;
+    font-weight: 700;
+    color: #011628;
+  }
+
+  .right {
+    width: 56px;
+
+    .complete {
+      font-size: 28px;
+      font-weight: 400;
+      color: #b5bbcf;
+    }
+
+    .active {
+      color: #fa6d16;
+    }
+  }
+}

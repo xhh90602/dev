@@ -1,0 +1,76 @@
+:root {
+  --assist-color: #717686;
+  --remark-color: #b5bbcf;
+  --basic-bg: #fff;
+  --basic-color: #1f2d56;
+  --contain-bg: #f7f8fc;
+  --bold-bg: #ebedf5;
+  --btn-shadow-color: #eaedf7;
+  --text-color: #011628;
+  --desc-color: #8f95a8;
+  --link-color: #2f9bfa;
+  --link-bg: rgba(47, 155, 250, 5%);
+  --orange-bg: rgba(250, 109, 22, 10%);
+  --orange-low-bg: #f7f1f1;
+  --orange-desc-text-color: #bc8b6c;
+  --orange-active-bg: #fffaf7;
+  --orange-color: #fa6d16;
+  --pending-color: #fab02f;
+  --error-color: var(--desc-color);
+  --finish-color: #06b899;
+  --pending-bg: rgba(250, 176, 47, 5%);
+  --error-bg: #f2f5ff;
+  --finish-bg: rgba(6, 184, 153, 5%);
+  --blue-color: #2f9bfa;
+  --blue-active-bg: #f2f9ff;
+  --red-color: #da070e;
+  --green-color: #06b899;
+  --line-desc-color: #f2f5ff;
+  --trade-btn-bg: var(--bold-bg);
+  --trade-btn-color: var(--basic-bg);
+  --trade-btn-icon-color: #717686;
+  --trade-btn-day-active-color: var(--trade-btn-color);
+  --trade-btn-day-color: #b5bbcf;
+  --trade-btn-day-active-bg: #8088a1;
+  --tips-bg: rgba(0, 0, 0, 70%);
+  --expand-bg: #f6f8ff;
+  --expand-index-bg: #edf0fb;
+  --hk-color: #8470eb;
+  --cn-color: #ff8686;
+  --us-color: #5da0ff;
+  --trade-modal-btn-cancel-border-color: #d6dae5;
+  --trade-modal-btn-border-color: #dbdee8;
+  --tab-list-border-bk: rgba(0, 0, 0, 5%);
+  --trade-card-linear-gradient: linear-gradient(180deg, #fff, #e8f0ff);
+  --border-color: var(--assist-color);
+  --border-style: solid;
+}
+
+.red-green {
+  --rise-color: #da070e;
+  --fall-color: #06b899;
+  --rise-bg-color: linear-gradient(180deg, rgba(6, 184, 153, 16%) 0%, rgba(217, 253, 247, 12%) 100%);
+  --fall-bg-color: linear-gradient(180deg, rgba(184, 6, 6, 16%) 0%, rgba(253, 230, 217, 12%) 100%);
+  --equal-bg-color: linear-gradient(180deg, rgba(143, 149, 168, 24%) 0%, rgba(237, 241, 255, 12%) 100%);
+  --dialog-rise-bg: linear-gradient(180deg, rgba(230, 150, 150, 100%) 0%, rgba(255, 255, 255, 100%) 100%);
+  --dialog-fall-bg: linear-gradient(180deg, rgba(96, 198, 180, 100%) 0%, rgba(255, 255, 255, 100%) 100%);
+  --dialog-rise-color: #a94343;
+  --dialog-fall-color: #0c6d5c;
+}
+
+.green-red {
+  --rise-color: #06b899;
+  --fall-color: #da070e;
+  --rise-bg-color: linear-gradient(180deg, rgba(184, 6, 6, 16%) 0%, rgba(253, 230, 217, 12%) 100%);
+  --fall-bg-color: linear-gradient(180deg, rgba(6, 184, 153, 16%) 0%, rgba(217, 253, 247, 12%) 100%);
+  --equal-bg-color: linear-gradient(180deg, rgba(143, 149, 168, 24%) 0%, rgba(237, 241, 255, 12%) 100%);
+  --dialog-rise-bg: linear-gradient(180deg, rgba(96, 198, 180, 100%) 0%, rgba(255, 255, 255, 100%) 100%);
+  --dialog-fall-bg: linear-gradient(180deg, rgba(230, 150, 150, 100%) 0%, rgba(255, 255, 255, 100%) 100%);
+  --dialog-rise-color: #0c6d5c;
+  --dialog-fall-color: #a94343;
+}
+
+.black {
+  --text-color: #011628;
+  --contain-bg: #f7f8fc;
+}

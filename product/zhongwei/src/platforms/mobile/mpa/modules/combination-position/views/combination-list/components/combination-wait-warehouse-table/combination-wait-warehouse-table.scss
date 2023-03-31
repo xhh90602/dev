@@ -1,0 +1,23 @@
+.wait-warehouse-table {
+  background-color: #fff;
+}
+
+.info-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  &:not(:last-child) {
+    margin-bottom: 42px;
+  }
+
+  .info-item-label {
+    color: #717686;
+    font-size: 28px;
+  }
+
+  .info-item-value {
+    color: #011628;
+    font-size: 30px;
+  }
+}

@@ -1,0 +1,119 @@
+html:global(.white) {
+  --main-theme-background: #fff; // 背景
+  --main-drown-background: #fff;
+  --main-content-color: #b5bbcf;
+  --main-active-color: rgba(250, 109, 22, 100%);
+}
+
+html:global(.black) {
+  --main-theme-background: #11151e;
+  --main-drown-background: #253049;
+}
+
+.page-wrapper {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  // padding-top: 21px;
+  padding: 0 16px;
+  background-color: #f7f8fc;
+}
+
+.tab-box {
+  padding: 21px 25px;
+  min-height: 64px;
+  color: rgba(31, 45, 86, 100%);
+  font-size: 28px;
+  font-weight: 700;
+  background-color: #fff;
+}
+
+.dropdown-wrap {
+  background: #fff;
+  box-shadow: 0 2px 0 0 #f6f7f9, 0 2px 0 0 #f2f2f5 inset;
+  padding: 0 25px;
+
+  :global {
+    .adm-dropdown {
+      background: var(--main-drown-background);
+      height: 100%;
+    }
+
+    .adm-dropdown-item-title-text {
+      font-size: 30px;
+      font-weight: 400;
+    }
+
+    .adm-dropdown-item-title-arrow {
+      color: var(--main-content-color);
+    }
+
+    .adm-dropdown-item-active {
+      color: var(--main-active-color) !important;
+    }
+
+    .adm-dropdown .adm-dropdown-nav {
+      justify-content: space-between;
+    }
+
+    .adm-dropdown-item {
+      width: 49%;
+      height: 64px;
+      border-radius: 16px;
+      border: .5px solid #dbdee9;
+      flex: none;
+      justify-content: space-between;
+      color: var(--main-content-color);
+    }
+
+    .adm-dropdown-item .adm-dropdown-item-title {
+      flex: 1;
+      justify-content: space-between;
+    }
+  }
+}
+
+.drop-wrap {
+  padding: 24px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+
+  li {
+    font-weight: 400;
+    font-size: 28px;
+    color: #999;
+    width: 200px;
+    line-height: 80px;
+  }
+
+  .selected {
+    color: var(--main-active-color);
+  }
+}
+
+.drop-wrap::-webkit-scrollbar {
+  width: 16px;
+  height: 100%;
+  background-color: var(--main-tip-color);
+}
+
+.drop-wrap::-webkit-scrollbar-thumb {
+  background-color: var(--main-tip-color);
+  border-radius: 8px;
+}
+
+.drop-wrap::-webkit-scrollbar-track {
+  background: var(--main-theme-background);
+}
+
+.table-wrap {
+  background-color: var(--main-theme-background);
+  height: calc(100% - 182px);
+  overflow: hidden;
+  flex-shrink: 1;
+  flex-grow: 1;
+  padding: 0 25px;
+  padding-top: 24px;
+  border-radius: 0 0 24px  24px;
+}

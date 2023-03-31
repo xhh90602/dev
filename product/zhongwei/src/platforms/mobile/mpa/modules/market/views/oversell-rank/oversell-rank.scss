@@ -1,0 +1,59 @@
+div[id='root'] {
+  font-size: 22px;
+  color: #8f95a8;
+}
+
+.container {
+  overflow: auto;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.tab-nav {
+  margin: 16px 32px 0;
+
+  > div > div {
+    font-size: 30px;
+    font-weight: 700;
+    height: 64px;
+  }
+}
+
+.select-nav {
+  margin: 16px 32px 22px;
+  height: 72px;
+  flex: none;
+
+  .bazaar-select,
+  .date-select {
+    flex: none;
+    height: 72px;
+    padding-left: 39px;
+    padding-right: 30px;
+
+    > span {
+      color: #011628;
+      font-size: 28px;
+      font-weight: 700;
+    }
+  }
+
+  .bazaar-select {
+    width: 208px;
+    border-radius: 24px;
+    background-color: #fff;
+  }
+
+  .date-select {
+    width: 454px;
+    border-radius: 24px;
+    background-color: #fff;
+  }
+}
+
+.rank {
+  background: #fff;
+  flex: 1;
+  padding: 32px;
+}
