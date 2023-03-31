@@ -87,6 +87,17 @@ module.exports = {
         exclude: /node_modules/, // 排除node_modules文件夹
         // include: path.join(__dirname, 'src'), // 只匹配src文件夹
         use: [
+          {
+            loader: 'thread-loader', // 多进程打包, 用于加快打包速度
+            options: {
+              workers: 3, // 进程数
+              workerParallelJobs: 50, // 每个进程并行处理的任务数
+              workerNodeArgs: ['--max-old-space-size=1024'], // 每个进程的node参数
+              poolTimeout: 2000, // 空闲时等待的毫秒数
+              poolParallelJobs: 50, // 池中并行处理的任务数
+              name: 'my-pool', // 池的名称
+            },
+          },
           // 缓存打包结果, 用于加快打包速度, 不兼容webpack5, 需要安装@2版本, 或者使用webpack5的cache: { type: 'filesystem' }
           // 'cache-loader',
           {
@@ -110,17 +121,6 @@ module.exports = {
                 ['@babel/plugin-transform-runtime', { // 使用@babel/plugin-transform-runtime, 用于减少打包后的文件体积
                 }],
               ],
-            },
-          },
-          {
-            loader: 'thread-loader', // 多进程打包, 用于加快打包速度
-            options: {
-              workers: 3, // 进程数
-              workerParallelJobs: 50, // 每个进程并行处理的任务数
-              workerNodeArgs: ['--max-old-space-size=1024'], // 每个进程的node参数
-              poolTimeout: 2000, // 空闲时等待的毫秒数
-              poolParallelJobs: 50, // 池中并行处理的任务数
-              name: 'my-pool', // 池的名称
             },
           },
         ],
